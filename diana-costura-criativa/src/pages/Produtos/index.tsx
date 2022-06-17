@@ -4,6 +4,9 @@ import { ReactComponent as Logo } from "assets/logo-preto.svg";
 export default function Produtos() {
   return (
     <>
+
+      {/*cabecalho */}
+
       {/*pré cabecalho */}
       <div>
         <div>
@@ -19,24 +22,22 @@ export default function Produtos() {
           <i>WhatsApp</i>
         </div>
       </div>
-
-      {/*cabecalho */}
       <section>
         <div>
           <Logo />
           <nav>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <p>Home</p>
               </li>
               <li>
-                <a href="#">Sobre</a>
+                <p>Sobre</p>
               </li>
               <li>
-                <a href="#">Produtos</a>
+                <p>Produtos</p>
               </li>
               <li>
-                <a href="#">Contato</a>
+                <p>Contato</p>
               </li>
             </ul>
           </nav>
@@ -66,7 +67,6 @@ export default function Produtos() {
       </section>
 
       {/* about/sobre */}
-
       <section>
         <div>
           <img src="assets/diana-perfil.png" alt="Foto de perfil da Diana" />
@@ -84,7 +84,6 @@ export default function Produtos() {
       </section>
 
       {/* meus materiais */}
-
       <section>
         <div>
           <h2>Meus Materiais</h2>
@@ -127,7 +126,6 @@ export default function Produtos() {
       </section>
 
       {/* produtos */}
-
       <section>
         <div>
           <h2>Meus Produtos</h2>
@@ -145,12 +143,12 @@ export default function Produtos() {
         </div>
         {/* card produto */}
         <div>
-          <img src="" alt="" />
+          <img src="assets/produto-ex.png" alt="" />
           <h3>Necessaire</h3>
           <p>Valor R$20.00</p>
           <div>
             <button>
-              <a href="#">Comprar</a>
+              <p>Comprar</p>
             </button>
             <i>details</i>
           </div>
@@ -203,7 +201,12 @@ export default function Produtos() {
       <section>
         <div>
           <h2>Contato</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit repudiandae blanditiis at corporis, nam inventore eaque ea, repellendus quia soluta porro aut adipisci recusandae dicta assumenda, velit ipsam ex.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+            suscipit repudiandae blanditiis at corporis, nam inventore eaque ea,
+            repellendus quia soluta porro aut adipisci recusandae dicta
+            assumenda, velit ipsam ex.
+          </p>
         </div>
         <div>
           <div>
@@ -223,54 +226,89 @@ export default function Produtos() {
         </div>
 
         <form action="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dignissimos soluta atque veniam porro, laudantium impedit inventore quis voluptatem aliquid dolorem ratione perspiciatis magnam sit fugit explicabo natus provident molestiae.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+            dignissimos soluta atque veniam porro, laudantium impedit inventore
+            quis voluptatem aliquid dolorem ratione perspiciatis magnam sit
+            fugit explicabo natus provident molestiae.
+          </p>
           <div>
-            <input type="text" name="nome" required placeholder="Informe seu nome.."/>
-            <input type="email" name="email" required placeholder="Informe seu email.."/>
+            <input
+              type="text"
+              name="nome"
+              required
+              placeholder="Informe seu nome.."
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Informe seu email.."
+            />
           </div>
-          <input type="text" name="assunto" required placeholder="Informe seu assunto.."/>
-          <input type="message" name="message" required placeholder="Informe sua mensagem.."/>
+          <input
+            type="text"
+            name="assunto"
+            required
+            placeholder="Informe seu assunto.."
+          />
+          <input
+            type="message"
+            name="message"
+            required
+            placeholder="Informe sua mensagem.."
+          />
           <button>Enviar Mensagem</button>
         </form>
       </section>
 
       {/* footer*/}
-
       <footer>
         <div>
           <img src="" alt="Logotipo Dianita Costura Criativa" />
           <p>Feitos à mão com paixão</p>
           <div>
-            <div><i>facebook</i></div>
-            <div><i>instagram</i></div>
-            <div><i>whatsapp</i></div>
+            <div>
+              <i>facebook</i>
+            </div>
+            <div>
+              <i>instagram</i>
+            </div>
+            <div>
+              <i>whatsapp</i>
+            </div>
           </div>
         </div>
 
         <div>
           <h3>Localização</h3>
-          <p><i>pin</i>Piracicaba - São Paulo - Brazil</p>
-          <p><i>tel</i>+55 19 99999-9999</p>
-          <p><i>mail</i>info@example.com</p>
+          <p>
+            <i>pin</i>Piracicaba - São Paulo - Brazil
+          </p>
+          <p>
+            <i>tel</i>+55 19 99999-9999
+          </p>
+          <p>
+            <i>mail</i>info@example.com
+          </p>
         </div>
 
         <div>
           <h3>Links</h3>
-          <a href="#">Home</a>
-          <a href="#">Sobre</a>
-          <a href="#">Produtos</a>
-          <a href="#">Contato</a>
+          <p>link - Home</p>
+          <p>link - Sobre</p>
+          <p>link - Produtos</p>
+          <p>link - Contato</p>
         </div>
 
         <div>
           <h3>Novidades</h3>
           <p>Cadastre seu email e receba nossas novidades!</p>
-          <input type="email" name="email" placeholder="info@example.com">
-            <button>Cadastrar</button>
-          </input>
+          <input type="email" name="email" placeholder="info@example.com" />
+          <button>Cadastrar</button>          
         </div>
       </footer>
 
     </>
-  );
+  )
 }
