@@ -4,8 +4,8 @@ export default function Materials() {
   return (
     <>
       {/* meus materiais */}
-      <section>
-        <div>
+      <section className="">
+        <div className="">
           <h2>Meus Materiais</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,

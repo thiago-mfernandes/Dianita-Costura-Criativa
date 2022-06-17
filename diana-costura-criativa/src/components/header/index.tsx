@@ -1,24 +1,28 @@
 import { ReactComponent as Logo } from "assets/logo-preto.svg";
 import styles from "./Header.module.scss";
+import { FaMapPin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { MdEmail, MdFacebook } from 'react-icons/md'
 
 export default function Header() {
   return (
     <>
       {/* header */}
       {/* pré cabecalho */}
-      <div>
-        <div>
-          <i>pin</i>
-          <p>Piracicaba - São Paulo, Brazil</p>
-          <i>email</i>
-          <p>info@example.com</p>
+      <div className="header__container">
+        <div className="header__location">
+          <FaMapPin className={styles.icone}/>
+          <p className="header__content">Piracicaba - São Paulo, Brazil</p>
+          <MdEmail className={styles.icone}/>
+          <p className="header__content">info@example.com</p>
         </div>
-        <div>
-          <p>Redes Sociais:</p>
-          <i>face</i>
-          <i>insta</i>
-          <i>WhatsApp</i>
+
+        <div className="header__socialMedia">
+          <p className="header__content">Redes Sociais:</p>
+          <MdFacebook className={styles.icone}/>
+          <FaInstagram className={styles.icone}/>
+          <FaWhatsapp className={styles.icone}/>
         </div>
+
       </div>
       {/* cabecalho */}
       <section>
@@ -67,3 +71,4 @@ export default function Header() {
     </>
   );
 }
+
