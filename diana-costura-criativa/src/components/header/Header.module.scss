@@ -1,12 +1,28 @@
 @import 'scss/variables.scss';
 
 .icone {
-    font-size: 1.75rem;
+    font-size: 1rem;
     color: $marromTipo;
+    margin: 0 8px;
 }
 
-.header__container {
-    display: flex;
-    align-itens: center;
+.header {
+    background-image: url("../../assets/bg1.svg");
+    background-position: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 7.5%;
+        border-bottom: 1px solid $laranjaPrincipal;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
 }
+
 

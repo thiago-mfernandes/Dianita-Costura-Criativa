@@ -1,31 +1,30 @@
 import { ReactComponent as Logo } from "assets/logo-preto.svg";
 import styles from "./Header.module.scss";
 import { FaMapPin, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { MdEmail, MdFacebook } from 'react-icons/md'
+import { MdEmail, MdFacebook } from "react-icons/md";
 
 export default function Header() {
   return (
     <>
       {/* header */}
       {/* pré cabecalho */}
-      <div className="header__container">
-        <div className="header__location">
-          <FaMapPin className={styles.icone}/>
-          <p className="header__content">Piracicaba - São Paulo, Brazil</p>
-          <MdEmail className={styles.icone}/>
-          <p className="header__content">info@example.com</p>
-        </div>
+      <section className={styles.header}>
+        <div className={styles.header__container}>
+          <div className={styles.header__box}>
+            <FaMapPin className={styles.icone} />
+            <p className="header__content">Piracicaba - São Paulo, Brazil</p>
+            <MdEmail className={styles.icone} />
+            <p className="header__content">info@example.com</p>
+          </div>
 
-        <div className="header__socialMedia">
-          <p className="header__content">Redes Sociais:</p>
-          <MdFacebook className={styles.icone}/>
-          <FaInstagram className={styles.icone}/>
-          <FaWhatsapp className={styles.icone}/>
+          <div className={styles.header__box}>
+            <p className="header__content">Redes Sociais:</p>
+            <MdFacebook className={styles.icone} />
+            <FaInstagram className={styles.icone} />
+            <FaWhatsapp className={styles.icone} />
+          </div>
         </div>
-
-      </div>
-      {/* cabecalho */}
-      <section>
+        {/* cabecalho */}
         <div>
           <Logo />
           <nav>
@@ -71,4 +70,3 @@ export default function Header() {
     </>
   );
 }
-
