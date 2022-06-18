@@ -14,7 +14,7 @@
     background-position: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    
+    padding: 5%;
 
     &__container {
         display: flex;
@@ -33,6 +33,67 @@
         align-items: center;
         visibility: hidden; //mobile-only
     }
+
+    &__containerContent {
+        //padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+
+        &___title {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            font-size: 3rem;
+            color: $marromTipo;
+            font-family: $fonteTitulo;
+            text-transform: uppercase;
+        }
+
+        &___subtitle {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            font-size: 1rem;
+            color: $marromTipo;
+            text-transform: uppercase;
+        }
+
+        &___content {
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            color: $marromTipo;            
+        }
+
+        
+    }
+
+    &__containerImg {
+        width: 100%;
+        border: 1px solid $laranjaPrincipal;
+        border-radius: 50% 50% 0 0;
+        display: flex;
+        justify-content: center;
+
+        &___imgProduto {
+            width: 90%;
+            margin: 5%;
+            border-radius: 50% 50% 0 0;
+        }
+    }
+
+    &__botao {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        color: $marromTipo;
+        background-color: $bgBotao;
+        border: none;
+        margin: 2.5% 0;
+        height: 10vh;
+        width: 100%;
+        font-weight: 900;
+    }
+
 }
 
 

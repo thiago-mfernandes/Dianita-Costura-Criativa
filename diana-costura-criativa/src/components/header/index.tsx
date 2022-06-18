@@ -1,16 +1,15 @@
 import { ReactComponent as Logo } from "assets/logo-preto.svg";
 import styles from "./Header.module.scss";
-import style from './Nav.module.scss'
+import style from "./Nav.module.scss";
 import { FaMapPin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdFacebook } from "react-icons/md";
-
+import Produto from 'assets/produto-ex.png';
 
 export default function Header() {
-
   return (
     <>
       {/* header */}
-      
+
       {/* pré cabecalho */}
       <header className={styles.header}>
         <div className={styles.header__container}>
@@ -30,7 +29,7 @@ export default function Header() {
         </div>
         {/* cabecalho */}
         <div className={style.navContainer}>
-          <Logo className={style.logo}/>
+          <Logo className={style.logo} />
           <nav className={style.navContainer__nav}>
             {/* menu hamburguer mobile */}
             <button className={style.navContainer__hamburguer}>
@@ -48,26 +47,31 @@ export default function Header() {
           </nav>
         </div>
 
-        <div>
+        <div className={styles.header__containerContent}>
           {/*container do titulo principal e botao */}
           <div>
             <div>
-              <h2>Feitos à mão com</h2>
-              <h1>Paixão</h1>
+              <h2 className={styles.header__containerContent___subtitle}>
+                Feitos à mão com
+              </h2>
+              <h1 className={styles.header__containerContent___title}>
+                Paixão
+              </h1>
             </div>
             <div>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-                corporis ducimus tempora reiciendis error, quaerat totam, quam,
-                labore aspernatur beatae nemo.
+              <p className={styles.header__containerContent___content}>
+                Peças com a sua personalidade e originalidade você encontra aqui
+                .
               </p>
-              <button>Saiba Mais</button>
             </div>
           </div>
+
           {/*container da imagem de capa */}
-          <div>
-            <img src="assets/produto-ex.png" alt="Produto" />
+          <div className={styles.header__containerImg}>
+            <img src={Produto} alt="Produto" className={styles.header__containerImg___imgProduto}/>
           </div>
+
+          <button className={styles.header__botao}>Saiba Mais</button>
         </div>
       </header>
     </>

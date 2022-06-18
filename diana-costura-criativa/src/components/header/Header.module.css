@@ -11,6 +11,7 @@
   background-position: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  padding: 5%;
 }
 .header__container {
   display: flex;
@@ -23,4 +24,54 @@
   display: flex;
   align-items: center;
   visibility: hidden;
+}
+.header__containerContent {
+  display: flex;
+  flex-direction: column;
+}
+.header__containerContent___title {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  color: #57504B;
+  font-family: "Abril Fatface", serif;
+  text-transform: uppercase;
+}
+.header__containerContent___subtitle {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  color: #57504B;
+  text-transform: uppercase;
+}
+.header__containerContent___content {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #57504B;
+}
+.header__containerImg {
+  width: 100%;
+  border: 1px solid #9d4400;
+  border-radius: 50% 50% 0 0;
+  display: flex;
+  justify-content: center;
+}
+.header__containerImg___imgProduto {
+  width: 90%;
+  margin: 5%;
+  border-radius: 50% 50% 0 0;
+}
+.header__botao {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #57504B;
+  background-color: #9d9285;
+  border: none;
+  margin: 2.5% 0;
+  height: 10vh;
+  width: 100%;
+  font-weight: 900;
 }/*# sourceMappingURL=Header.module.css.map */
