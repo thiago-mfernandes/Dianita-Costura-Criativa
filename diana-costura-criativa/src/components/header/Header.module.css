@@ -1,0 +1,26 @@
+.icone {
+  font-size: 1rem;
+  color: #57504B;
+  margin: 0 8px;
+  max-width: 0px;
+}
+
+.header {
+  background-image: url("../../assets/bg1.svg");
+  filter: opacity(0.9);
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7.5%;
+  max-height: 0;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+}/*# sourceMappingURL=Header.module.css.map */

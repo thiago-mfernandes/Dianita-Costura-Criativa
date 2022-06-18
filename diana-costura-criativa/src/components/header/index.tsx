@@ -1,14 +1,18 @@
 import { ReactComponent as Logo } from "assets/logo-preto.svg";
 import styles from "./Header.module.scss";
+import style from './Nav.module.scss'
 import { FaMapPin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdFacebook } from "react-icons/md";
 
+
 export default function Header() {
+
   return (
     <>
       {/* header */}
+      
       {/* pré cabecalho */}
-      <section className={styles.header}>
+      <header className={styles.header}>
         <div className={styles.header__container}>
           <div className={styles.header__box}>
             <FaMapPin className={styles.icone} />
@@ -25,22 +29,21 @@ export default function Header() {
           </div>
         </div>
         {/* cabecalho */}
-        <div>
-          <Logo />
-          <nav>
-            <ul>
-              <li>
-                <p>Home</p>
-              </li>
-              <li>
-                <p>Sobre</p>
-              </li>
-              <li>
-                <p>Produtos</p>
-              </li>
-              <li>
-                <p>Contato</p>
-              </li>
+        <div className={style.navContainer}>
+          <Logo className={style.logo}/>
+          <nav className={style.navContainer__nav}>
+            {/* menu hamburguer mobile */}
+            <button className={style.navContainer__hamburguer}>
+              <div className={style.navContainer__hamburguer___line}></div>
+              <div className={style.navContainer__hamburguer___line}></div>
+              <div className={style.navContainer__hamburguer___line}></div>
+            </button>
+
+            <ul className={style.navContainer__ul}>
+              <li>Home</li>
+              <li>Sobre</li>
+              <li>Produtos</li>
+              <li>Contato</li>
             </ul>
           </nav>
         </div>
@@ -66,7 +69,7 @@ export default function Header() {
             <img src="assets/produto-ex.png" alt="Produto" />
           </div>
         </div>
-      </section>
+      </header>
     </>
   );
 }

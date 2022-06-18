@@ -1,27 +1,37 @@
-@import 'scss/variables.scss';
+@import '../../scss/variables.scss', 
+        '../../scss/mixins.scss'; 
 
 .icone {
     font-size: 1rem;
     color: $marromTipo;
     margin: 0 8px;
+    max-width: 0px;
 }
 
 .header {
     background-image: url("../../assets/bg1.svg");
+    filter: opacity(0.9);
     background-position: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 7.5%;
-        border-bottom: 1px solid $laranjaPrincipal;
+        max-height: 0; //mobile-only
+        
+        // - inserir esta propriedade no tablet e desktop
+        //border-bottom: 1px solid $laranjaPrincipal;
+
     }
 
     &__box {
         display: flex;
         align-items: center;
+        visibility: hidden; //mobile-only
     }
 }
 

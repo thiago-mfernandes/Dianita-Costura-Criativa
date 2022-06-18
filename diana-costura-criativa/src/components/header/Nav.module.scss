@@ -1,0 +1,42 @@
+@import '../../scss/variables.scss';
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+
+    &__nav {
+        padding-right: 5%;
+        max-width: 0px; //mobile-only
+        max-height: 0px; //mobile-only
+    }
+
+    &__hamburguer {
+        position: absolute;
+            top: 5.5%;
+            right: 5%;
+        width: 15%;
+        height: 7.5%;
+        background-color: transparent;
+        border: 3px solid $marromTipo;
+        padding: 2.5% 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &___line {
+            width: 100%;
+            height: 3px;
+            background-color: $marromTipo;
+        }
+    }
+
+    &__ul {
+        list-style: none;
+        visibility: hidden;
+    }
+}
+
+.logo {
+    width: 40%;
+}

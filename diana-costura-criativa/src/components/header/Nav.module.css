@@ -1,0 +1,36 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+.navContainer__nav {
+  padding-right: 5%;
+  max-width: 0px;
+  max-height: 0px;
+}
+.navContainer__hamburguer {
+  position: absolute;
+  top: 5.5%;
+  right: 5%;
+  width: 15%;
+  height: 7.5%;
+  background-color: transparent;
+  border: 3px solid #57504B;
+  padding: 2.5% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navContainer__hamburguer___line {
+  width: 100%;
+  height: 3px;
+  background-color: #57504B;
+}
+.navContainer__ul {
+  list-style: none;
+  visibility: hidden;
+}
+
+.logo {
+  width: 40%;
+}/*# sourceMappingURL=Nav.module.css.map */
