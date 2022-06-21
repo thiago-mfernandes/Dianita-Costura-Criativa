@@ -1,0 +1,45 @@
+@import "../../scss//variables.scss";
+
+.about {
+  padding: 5%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: $fonteTitulo;
+    font-size: 1.75rem;
+    margin: 5% 0 15% 0;
+    //titulo repetido  - REFATORAR - 
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 8%);
+    margin-bottom: 10%;
+  }
+
+  &__content {
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: center;
+    color: $marromTipo;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #57504b;
+    background-color: #9d9285;
+    border: none;
+    margin: 2.5% 0;
+    height: 10vh;
+    width: 100%;
+    font-weight: 900;
+    //botao repetido com o botao do header - REFATORAR - 
+  }
+}
