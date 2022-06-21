@@ -1,1 +1,37 @@
-/*# sourceMappingURL=About.module.css.map */
+.about {
+  padding: 0 5%;
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__title {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.75rem;
+  margin: 5% 0 15% 0;
+  color: #57504B;
+}
+.about__img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 10%;
+}
+.about__content {
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  color: #57504B;
+}
+.about__button {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #57504b;
+  background-color: #9d9285;
+  border: none;
+  margin: 2.5% 0;
+  height: 10vh;
+  width: 100%;
+  font-weight: 900;
+}/*# sourceMappingURL=About.module.css.map */

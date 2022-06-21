@@ -1,3 +1,134 @@
-.menu {
-    padding: 0 128px;
+@import "../../scss/variables.scss";
+
+.container {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.produtosHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // REFATORAR AQUI
+  &__title {
+    font-family: "Abril Fatface", serif;
+    font-size: 1.75rem;
+    margin: 5% 0 5% 0;
+    color: $marromTipo;
+  }
+
+  // REFATORAR AQUI
+  &__content {
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: center;
+    color: $marromTipo;
+  }
+}
+
+.produtosFilter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5%;
+
+  &__button {
+    width: 47.5%;
+    margin: 2.5% 0;
+    font-size: 1.25rem;
+    color: #57504b;
+    background-color: transparent;
+    border: 1px solid $laranjaPrincipal;
+    height: 10vh;
+    transition: font-size 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+      background-color: $bgBotao;
+      color: white;
+      border: $bgBotao;
+      font-size: 1.35rem;
+      font-weight: bold;
+      transition: font-size 0.25s ease-in-out;
+      transition: background-color 0.25s ease-in-out;
+    }
+  }
+}
+
+.produtosCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $laranjaPrincipal;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 8%);
+  width: 90%;
+
+  &__img {
+    width: 100%;
+    border: 1px solid $laranjaPrincipal;
+  }
+
+  // REFATORAR AQUI
+  &__title {
+    font-family: "Abril Fatface", serif;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 1.25rem;
+    color: $marromTipo;
+    padding: 5% 0;
+    border-bottom: 1px solid $laranjaPrincipal;
+
+        & span {
+            font-size: 0.9rem;
+            font-weight: lighter;
+        }
+    }
+
+    &__content {
+        font-size: 1rem;
+        line-height: 24px;
+        text-align: center;
+        color: $marromTipo;
+        margin: 0;
+        padding: 5%;
+        border-bottom: 1px solid $laranjaPrincipal;
+    }
+}
+
+.produtosAction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        border-right: 1px solid $laranjaPrincipal;
+        text-align: center;
+        width: 100%;
+        height: 7.5vh;
+        padding: 5%;
+        color: $marromTipo;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.125rem;
+    }
+
+    &__btnDetails{
+        background-color: transparent;
+        border: none;
+
+        & span {
+            color: $marromTipo;
+
+        }
+    }
+}
+

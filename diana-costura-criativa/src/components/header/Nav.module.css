@@ -1,11 +1,44 @@
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    height: 0;
+    transform: translate3d(0, -25%, 0);
+  }
+  to {
+    opacity: 1;
+    height: 36%;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    height: 0;
+    transform: translate3d(0, -25%, 0);
+  }
+  to {
+    opacity: 1;
+    height: 36%;
+    transform: none;
+  }
+}
 .navContainer {
   display: flex;
   justify-content: space-between;
 }
-.navContainer__nav {
+.navContainer__navClose {
   padding-right: 5%;
   max-width: 0px;
   max-height: 0px;
+}
+.navContainer__navOpen {
+  padding-right: 5%;
 }
 .navContainer__hamburguer {
   position: absolute;
@@ -25,9 +58,33 @@
   height: 3px;
   background-color: #57504B;
 }
-.navContainer__ul {
+.navContainer__ulClose {
   list-style: none;
-  visibility: hidden;
+  visibility: collapse;
+}
+.navContainer__ulOpen {
+  list-style: none;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 36%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 7.5%;
+  -webkit-animation: fadeIn 0.95s ease-in-out;
+          animation: fadeIn 0.95s ease-in-out;
+}
+.navContainer__ulOpen li {
+  font-size: 1.5rem;
+  padding: 2.5% 0;
+  -webkit-animation: fadeIn 0.95s ease-in-out;
+          animation: fadeIn 0.95s ease-in-out;
+}
+.navContainer__ulOpen li:hover {
+  font-weight: bold;
 }
 
 .logo {

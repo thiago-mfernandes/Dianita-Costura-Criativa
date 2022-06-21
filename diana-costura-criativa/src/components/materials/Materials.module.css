@@ -1,1 +1,59 @@
-/*# sourceMappingURL=Materials.module.css.map */
+.materials {
+  padding: 0 5%;
+  background-image: url("../../assets/bg2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.materials__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.materials__title {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.75rem;
+  margin: 5% 0 15% 0;
+  color: #57504B;
+}
+.materials__content {
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  color: #57504b;
+}
+.materials__content span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.materials__card {
+  background-color: white;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+  border: 1px solid #9d4400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15%;
+}
+.materials__card___icon {
+  width: 30%;
+  padding: 5% 0;
+}
+.materials__card___title {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.75rem;
+  margin: 5% 0 0 0;
+  color: #57504B;
+  width: 100%;
+  border-top: 1px solid #9d4400;
+  border-bottom: 1px solid #9d4400;
+  padding: 2.5% 0;
+  text-align: center;
+}
+.materials__card___content {
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  color: #57504b;
+  padding: 5%;
+}/*# sourceMappingURL=Materials.module.css.map */

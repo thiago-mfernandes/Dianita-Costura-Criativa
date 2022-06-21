@@ -1,3 +1,116 @@
-.menu {
-  padding: 0 128px;
+.container {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produtosHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.produtosHeader__title {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.75rem;
+  margin: 5% 0 5% 0;
+  color: #57504B;
+}
+.produtosHeader__content {
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  color: #57504B;
+}
+
+.produtosFilter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5%;
+}
+.produtosFilter__button {
+  width: 47.5%;
+  margin: 2.5% 0;
+  font-size: 1.25rem;
+  color: #57504b;
+  background-color: transparent;
+  border: 1px solid #9d4400;
+  height: 10vh;
+  transition: font-size 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.produtosFilter__button:hover {
+  background-color: #9d9285;
+  color: white;
+  border: #9d9285;
+  font-size: 1.35rem;
+  font-weight: bold;
+  transition: font-size 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.produtosCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #9d4400;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+  width: 90%;
+}
+.produtosCard__img {
+  width: 100%;
+  border: 1px solid #9d4400;
+}
+.produtosCard__title {
+  font-family: "Abril Fatface", serif;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #57504B;
+  padding: 5% 0;
+  border-bottom: 1px solid #9d4400;
+}
+.produtosCard__title span {
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+.produtosCard__content {
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  color: #57504B;
+  margin: 0;
+  padding: 5%;
+  border-bottom: 1px solid #9d4400;
+}
+
+.produtosAction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.produtosAction__btn {
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid #9d4400;
+  text-align: center;
+  width: 100%;
+  height: 7.5vh;
+  padding: 5%;
+  color: #57504B;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.produtosAction__btnDetails {
+  background-color: transparent;
+  border: none;
+}
+.produtosAction__btnDetails span {
+  color: #57504B;
 }/*# sourceMappingURL=Produtos.module.css.map */
