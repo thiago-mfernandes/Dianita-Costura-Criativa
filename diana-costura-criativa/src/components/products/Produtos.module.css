@@ -29,6 +29,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 5%;
+  margin-bottom: 15%;
 }
 .produtosFilter__button {
   width: 47.5%;
@@ -58,10 +59,17 @@
   border: 1px solid #9d4400;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
   width: 90%;
+  margin-bottom: 10%;
+  overflow: hidden;
 }
 .produtosCard__img {
   width: 100%;
   border: 1px solid #9d4400;
+  transition: 0.75s;
+}
+.produtosCard__img:hover {
+  transform: scale(1.1);
+  transition: 0.75s;
 }
 .produtosCard__title {
   font-family: "Abril Fatface", serif;
@@ -113,4 +121,8 @@
 }
 .produtosAction__btnDetails span {
   color: #57504B;
+}
+
+.scale {
+  transition: scale 1s;
 }/*# sourceMappingURL=Produtos.module.css.map */

@@ -35,6 +35,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 5%;
+  margin-bottom: 15%;
 
   &__button {
     width: 47.5%;
@@ -66,10 +67,17 @@
   border: 1px solid $laranjaPrincipal;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 8%);
   width: 90%;
+  margin-bottom: 10%;
+  overflow: hidden;
 
   &__img {
     width: 100%;
     border: 1px solid $laranjaPrincipal;
+    transition: .75s;
+    &:hover {
+        transform: scale(1.1);
+        transition: .75s;
+    }
   }
 
   // REFATORAR AQUI
@@ -132,3 +140,6 @@
     }
 }
 
+.scale {
+    transition: scale 1s;
+}

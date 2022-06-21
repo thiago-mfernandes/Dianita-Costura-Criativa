@@ -1,5 +1,6 @@
 import styles from "./Produtos.module.scss";
 import prdt1 from "assets/produtos/necessaire-tradicional/neces-trad-1.jpeg";
+import prdt2 from "assets/produtos/necessaire-romantica/neces-romantica-1.jpeg";
 
 export default function Products() {
   return (
@@ -36,6 +37,28 @@ export default function Products() {
           </h3>
           <p className={styles.produtosCard__content}>
             Material externo nylon e forro 100% algodão.
+          </p>
+          <div className={styles.produtosAction}>
+            <button className={styles.produtosAction__btn}>Comprar</button>
+            <button className={styles.produtosAction__btnDetails}>
+              <span className="material-symbols-outlined">info</span>
+            </button>
+          </div>
+        </div>
+
+        <div className={styles.produtosCard}>
+          <img
+            className={styles.produtosCard__img}
+            src={prdt2}
+            alt="Necessaire Romântica"
+          />
+          <h3 className={styles.produtosCard__title}>
+            Necessáire Romântica <br />
+            <span>R$33.00</span>
+          </h3>
+          <p className={styles.produtosCard__content}>
+            Material externo e interno 100% algodão com alça removível de
+            material sintético.
           </p>
           <div className={styles.produtosAction}>
             <button className={styles.produtosAction__btn}>Comprar</button>
