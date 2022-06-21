@@ -3,9 +3,21 @@ import styles from "./Header.module.scss";
 import style from "./Nav.module.scss";
 import { FaMapPin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdFacebook } from "react-icons/md";
-import Produto from 'assets/produtos/produto-ex.png';
+import Produto from "assets/produtos/produto-ex.png";
+
+import { useState } from "react";
+/* 
+1.a constante active armazena o estado do menu entre aberto e fechado
+comecando em false;
+2.a funcao ToggleMode alterna o estado da constante active atraves do setMode
+*/
 
 export default function Header() {
+  const [active, setMode] = useState(false);
+  const ToggleMode = () => {
+    setMode(!active);
+  };
+
   return (
     <>
       {/* header */}
@@ -30,19 +42,36 @@ export default function Header() {
         {/* cabecalho */}
         <div className={style.navContainer}>
           <Logo className={style.logo} />
-          <nav className={style.navContainer__nav}>
+
+          <nav
+            className={
+              active
+                ? style.navContainer__navOpen
+                : style.navContainer__navClose
+            }
+          >
             {/* menu hamburguer mobile */}
-            <button className={style.navContainer__hamburguer}>
+            <button
+              className={style.navContainer__hamburguer}
+              onClick={ToggleMode}
+            >
               <div className={style.navContainer__hamburguer___line}></div>
               <div className={style.navContainer__hamburguer___line}></div>
               <div className={style.navContainer__hamburguer___line}></div>
             </button>
 
-            <ul className={style.navContainer__ul}>
-              <li>Home</li>
-              <li>Sobre</li>
-              <li>Produtos</li>
-              <li>Contato</li>
+            {/* a ul recebe uma classe aberto ou fechado */}
+            <ul
+              className={
+                active
+                  ? style.navContainer__ulOpen
+                  : style.navContainer__ulClose
+              }
+            >
+              <li className={styles.navContainer__ulOpen___item}>Home</li>
+              <li className={styles.navContainer__ulOpen___item}>Sobre</li>
+              <li className={styles.navContainer__ulOpen___item}>Produtos</li>
+              <li className={styles.navContainer__ulOpen___item}>Contato</li>
             </ul>
           </nav>
         </div>
@@ -67,7 +96,11 @@ export default function Header() {
 
           {/*container da imagem de capa */}
           <div className={styles.header__containerImg}>
-            <img src={Produto} alt="Produto" className={styles.header__containerImg___imgProduto}/>
+            <img
+              src={Produto}
+              alt="Produto"
+              className={styles.header__containerImg___imgProduto}
+            />
           </div>
 
           <button className={styles.header__botao}>Saiba Mais</button>

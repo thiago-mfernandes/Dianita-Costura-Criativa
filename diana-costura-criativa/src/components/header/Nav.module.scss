@@ -1,13 +1,18 @@
-@import '../../scss/variables.scss';
+@import '../../scss/variables.scss', 
+        '../../scss/animation.scss';
 
 .navContainer {
     display: flex;
     justify-content: space-between;
-
-    &__nav {
+    
+    &__navClose {
         padding-right: 5%;
         max-width: 0px; //mobile-only
         max-height: 0px; //mobile-only
+    }
+
+    &__navOpen {
+        padding-right: 5%;
     }
 
     &__hamburguer {
@@ -30,12 +35,38 @@
         }
     }
 
-    &__ul {
+    &__ulClose {
         list-style: none;
-        visibility: hidden;
+        visibility: collapse;
+    }
+
+    &__ulOpen {
+        list-style: none;
+        background-color: #fff;
+        position: absolute;
+            top: 80px;
+            left: 0;
+        width: 100%;
+        height: 36%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 7.5%;
+        animation: fadeIn 0.95s ease-in-out;
+
+        & li {
+            font-size: 1.5rem;
+            padding: 2.5% 0;
+            animation: fadeIn 0.95s ease-in-out;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
     }
 }
 
 .logo {
     width: 40%;
 }
+
