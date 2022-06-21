@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 import style from "./Nav.module.scss";
 import { FaMapPin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdFacebook } from "react-icons/md";
-import Produto from 'assets/produto-ex.png';
+import Produto from 'assets/produtos/produto-ex.png';
 
 export default function Header() {
   return (
@@ -60,8 +60,7 @@ export default function Header() {
             </div>
             <div>
               <p className={styles.header__containerContent___content}>
-                Peças com a sua personalidade e originalidade você encontra aqui
-                .
+                Peças com personalidade e originalidade você encontra aqui.
               </p>
             </div>
           </div>
