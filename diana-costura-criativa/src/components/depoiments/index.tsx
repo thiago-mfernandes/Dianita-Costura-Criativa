@@ -1,12 +1,21 @@
 import styles from "./Depoiments.module.scss";
-import { useState } from "react";
+import { Slider, SliderProps, Slide } from "./slider";
 
-export default function Depoiments() {
-  const [currentTestimonial, setCurrentTestimonial] = useState({
-    text: "A bolsa infantil é de excelente qualidade. Possui forro impermeável e bolso interno com zíper para separar coisas dentro. Muito útil quando preciso levar o lanchinho e a madeira do meu filho! Recomendo a todos..",
-    author: "Thiago Fernandes",
-    subTitle: "Programador",
-  });
+
+//parado em 24:00
+
+
+
+export default function Depoiments() { 
+  {/* settings do slider */}
+  const settings: SliderProps = {
+    spaceBetween: 50,
+    slidesPerView: 3,
+    navigation: true,
+    pagination: {
+      clickable: true
+    }
+  }
 
   const testimonials = [
     {
@@ -24,81 +33,7 @@ export default function Depoiments() {
       author: "Thiago Fernandes",
       subTitle: "Programador",
     }
-  ];
-
-  function nextTestimonial(currentTestimonial: any) {
-    {
-      /* pegando o text do array testimonial */
-    }
-    const testimonialText = testimonials.map((testimonial) => testimonial.text);
-
-    {
-      /* pegando a posicao do testimonial atual pelo indexOf do testimonialText*/
-    }
-    const positionOfCurrentTestmonial = testimonialText.indexOf(
-      currentTestimonial.text
-    );
-
-    {
-      /* pegando a posicao do testimonial do proximo item */
-    }
-    const positionOfNextTestmonial =
-      testimonialText.indexOf(currentTestimonial.text) + 1;
-
-    {
-      /* proxima posicao */
-    }
-    const next = testimonialText[positionOfNextTestmonial];
-
-    {
-      /* pego o objeto inteiro */
-    }
-    const nextObjectTestimonial = testimonials.filter((testimonial) => {
-      const testimonialPosition = testimonial.text.indexOf(next) + 1;
-      return testimonialPosition;
-    });
-
-    {
-      /* verifico se o tamanho do array eh igual ao item atual + 1 */
-    }
-    const lastTestimonialInArray =
-      testimonials.length === positionOfCurrentTestmonial + 1;
-
-    {
-      /* se for o ultimo da posicao, eu seto sendo o primeiro novamente */
-    }
-    if (lastTestimonialInArray) {
-      setCurrentTestimonial(testimonials[0]);
-    } else {
-      setCurrentTestimonial(nextObjectTestimonial[0]);
-    }
-  }
-
-  function previousTestimonial() {
-    const testimonialText = testimonials.map((testimonial) => testimonial.text);
-    const positionOfCurrentTestimonial = testimonialText.indexOf(
-      currentTestimonial.text
-    );
-    const positionOfPreviousTestmonial =
-      testimonialText.indexOf(currentTestimonial.text) - 1;
-
-    const previous = testimonialText[positionOfPreviousTestmonial];
-    
-    const previousObjectTestimonial = testimonials.filter((testimonial) => {
-      const testimonialPosition = testimonial.text.indexOf(previous) - 1;
-      return testimonialPosition;
-    });
-
-    const lastTestimonialInArray =
-      testimonials.length === positionOfCurrentTestimonial - 1;
-
-    if (lastTestimonialInArray) {
-      setCurrentTestimonial(testimonials[0]);
-    } else {
-      setCurrentTestimonial(previousObjectTestimonial[0]);
-    }
-
-  }
+  ]; 
 
   return (
     <>
@@ -110,21 +45,37 @@ export default function Depoiments() {
           adquiridos:
         </p>
 
+        <Slider settings={settings}>
+          <Slide>
+            <h1>Teste 1</h1>
+          </Slide>
+          <Slide>
+            <h1>Teste 2</h1>
+          </Slide>
+          <Slide>
+            <h1>Teste 3</h1>
+          </Slide>
+          <Slide>
+            <h1>Teste 4</h1>
+          </Slide>
+        </Slider>
+
         <div>
           {/* aqui deve ser um article, verificar */}
           <div className={styles.cardDepoiments}>
             <article className={styles.cardDepoiments__content}>
-              {currentTestimonial.text}
+            A bolsa infantil é de excelente qualidade. Possui forro impermeável e bolso interno com zíper para separar coisas dentro. Muito útil quando preciso levar o lanchinho e a madeira do meu filho! Recomendo a todos..
             </article>
             <h3 className={styles.cardDepoiments__author}>
-              {currentTestimonial.author}
+              Thiago Fernandes
             </h3>
             <p className={styles.cardDepoiments__authorSubtitle}>
-              {currentTestimonial.subTitle}
+              Programador
             </p>
           </div>
 
-          {/* controlador do slider */}
+          {/* controlador do slider 
+          
           <div className={styles.controllerContainer}>
             <button
               className={styles.controllerContainer__controller}
@@ -139,6 +90,7 @@ export default function Depoiments() {
               <span className="material-symbols-outlined">chevron_right</span>
             </button>
           </div>
+          */}
         </div>
       </section>
     </>
