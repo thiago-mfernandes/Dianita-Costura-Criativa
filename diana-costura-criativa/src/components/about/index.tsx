@@ -28,7 +28,8 @@ export default function About() {
               ATELIÊ, e buscando trazer em minhas peças um diferencial que
               atenda a necessidade dos meus clientes e também encante os olhos.
               Essa sou eu, empreendendo com amor e dedicação.
-              <br /><br />
+              <br />
+              <br />
               DIANA(Dianita costura criativa).
             </p>
             <button className={styles.about__button}>Saiba Mais</button>
