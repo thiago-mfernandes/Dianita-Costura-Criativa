@@ -1,5 +1,5 @@
 import styles from "./About.module.scss";
-import ImgDiana from 'assets/diana-perfil.png'
+import ImgDiana from "assets/diana-perfil.png";
 
 export default function About() {
   return (
@@ -10,10 +10,26 @@ export default function About() {
           <img className={styles.about__img} src={ImgDiana} alt="Foto Diana" />
           <div className={styles.about__container}>
             <p className={styles.about__content}>
-              Qualificações: Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Dicta porro ullam aut obcaecati voluptatibus quidem quos
-              blanditiis recusandae! Atque ea earum, harum nulla itaque iusto
-              animi numquam voluptatibus ratione libero!
+              Oi, deixa eu me apresentar...
+              <br />
+              <br />
+              Meu nome é Diana, a artesã do ateliê{" "}
+              <span>"DIANITA COSTURA CRIATIVA"</span>.
+              <br />
+              Sou técnica de enfermagem e instrumentadora cirúrgica de formação,
+              porém, o artesanal sempre fez parte da minha vida, nas mais
+              diferentes técnicas. Em meados de 2018, conheci a costura criativa
+              e me encantei, logo tomei coragem, comprei minha primeira máquina
+              e foi o início de tudo.
+              <br />
+              <br />
+              Fui aprendendo e a cada peça que confeccionava, procurava me
+              aprimorar nas técnicas. Hoje continuo me dividindo entre o CLT e o
+              ATELIÊ, e buscando trazer em minhas peças um diferencial que
+              atenda a necessidade dos meus clientes e também encante os olhos.
+              Essa sou eu, empreendendo com amor e dedicação.
+              <br /><br />
+              DIANA(Dianita costura criativa).
             </p>
             <button className={styles.about__button}>Saiba Mais</button>
           </div>
