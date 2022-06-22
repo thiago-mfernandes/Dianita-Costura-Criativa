@@ -1,0 +1,24 @@
+@import "../../scss//variables.scss";
+
+.locale{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+
+    // REFATORAR
+    &__title{
+        font-family: $fonteTitulo;
+        font-size: 1.75rem;
+        margin: 5% 0 15% 0;
+        color: $marromTipo;
+        width: 100%;
+        margin: 10% 0;
+        text-align: center;
+    }
+
+    &__mapa{
+        width: 100%;
+        height: 450px;
+        border: none;
+    }
+}
