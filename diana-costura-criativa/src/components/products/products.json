@@ -5,20 +5,91 @@
       "title": "Necessáire Tradicional",
       "preco": "R$30.00",
       "description": "Material externo nylon e forro 100% algodão.",
-      "image": {
-        "url": "/assets/produtos/necessaire-tradicional/neces-trad-1.jpeg",
-        "alt": "Necessaire Tradicional"
-      }
+      "photo": "/assets/produtos/necessaire-tradicional/neces-trad-1.jpeg"
     },
     {
-        "id": 2,
+      "id": 2,
       "title": "Necessáire Romântica",
       "preco": "R$33.00",
       "description": "Material externo e interno 100% algodão com alça removível de material sintético.",
-      "image": {
-        "url": "/assets/produtos/necessaire-romantica/neces-romantica-1.jpeg",
-        "alt": "Necessaire Romantica"
-      }
+      "photo": "/assets/produtos/necessaire-romantica/neces-romantica-1.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Mini Necessáire Anne",
+      "preco": "R$25.00",
+      "description": "Material externo e interno 100% algodão com alça removível de material sintético.",
+      "photo": "assets/produtos/mini-necessaire ANNE/mini-necess-anne-1.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Porta-Óculos",
+      "preco": "R$22.00",
+      "description": "Material externo e interno 100% algodão.",
+      "photo": "assets/produtos/porta-oculos/porta-oculos-1.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Porta-Óculos",
+      "preco": "R$22.00",
+      "description": "Material externo e interno 100% algodão.",
+      "photo": "assets/produtos/porta-oculos/porta-oculos-2.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Porta-Óculos",
+      "preco": "R$22.00",
+      "description": "Material externo e interno 100% algodão.",
+      "photo": "assets/produtos/porta-oculos/porta-oculos-3.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Kit Marcelle",
+      "preco": "R$58.00",
+      "description": "1 - Necessàire tradicional + 1 - Carteira Íntima. Material externo nylon/linho e forro com cetim; fechos de ambas em material sintético.",
+      "photo": "assets/produtos/kit-marcelle/kit-marcelle-1.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Kit Menininhas",
+      "preco": "R$35.00",
+      "description": "1 - Mini Necessàire + 1 - Porta-Moedas. Material externo nylon e interno 100% algodão.",
+      "photo": "assets/produtos/kit-menininhas/kit-menininhas-1.jpeg"
+    },
+    {
+      "id": 9,
+      "title": "Kit Menininhas",
+      "preco": "R$35.00",
+      "description": "1 - Mini Necessàire + 1 - Porta-Moedas. Material externo nylon e interno 100% algodão.",
+      "photo": "assets/produtos/kit-menininhas/kit-menininhas-2.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "Kit Menininhas",
+      "preco": "R$35.00",
+      "description": "1 - Mini Necessàire + 1 - Porta-Moedas. Material externo nylon e interno 100% algodão.",
+      "photo": "assets/produtos/kit-menininhas/kit-menininhas-3.jpeg"
+    },
+    {
+      "id": 11,
+      "title": "Kit Porta-Esmalte + Porta-Alicate",
+      "preco": "R$39.90",
+      "description": "1 - Necessàire Porta-Esmalte + 1 - Porta-Alicate. Material externo nylon e interno 100% algodão.",
+      "photo": "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-1.jpeg"
+    },
+    {
+      "id": 12,
+      "title": "Kit Porta-Esmalte + Porta-Alicate",
+      "preco": "R$39.90",
+      "description": "1 - Necessàire Porta-Esmalte + 1 - Porta-Alicate. Material externo nylon e interno 100% algodão.",
+      "photo": "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-2.jpeg"
+    },
+    {
+      "id": 13,
+      "title": "Kit Necessàire + Porta-Moedas",
+      "preco": "R$39.90",
+      "description": "1 - Necessàire + 1 - Porta-Moedas. Material externo nylon e interno plástico impermeável.",
+      "photo": "assets/produtos/kit-porta-moedas/porta-moedas-3.jpeg"
     }
   ]
 }

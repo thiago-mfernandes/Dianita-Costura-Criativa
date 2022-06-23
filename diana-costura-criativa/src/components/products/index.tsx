@@ -2,7 +2,6 @@ import styles from "./Produtos.module.scss";
 import necessTrad1 from "assets/produtos/necessaire-tradicional/neces-trad-1.jpeg";
 import data from "./products.json";
 
-
 export default function Products() {
   return (
     <>
@@ -28,14 +27,13 @@ export default function Products() {
           <button className={styles.produtosFilter__button}>Kit</button>
         </div>
 
-        {/* card produto 
-        {/* necessaire tradicional */}
+        {/* card produto */}
         {data.produtcs.map((product) => (
           <div className={styles.produtosCard} key={product.id}>
             <img
               className={styles.produtosCard__img}
-              src={`${product.image.url}`}
-              alt={product.image.alt}
+              src={`${product.photo}`}
+              alt={product.title}
             />
             <h3 className={styles.produtosCard__title}>
               {product.title}
