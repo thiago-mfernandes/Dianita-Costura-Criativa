@@ -1,0 +1,24 @@
+{
+  "produtcs": [
+    {
+      "id": 1,
+      "title": "Necessáire Tradicional",
+      "preco": "R$30.00",
+      "description": "Material externo nylon e forro 100% algodão.",
+      "image": {
+        "url": "/assets/produtos/necessaire-tradicional/neces-trad-1.jpeg",
+        "alt": "Necessaire Tradicional"
+      }
+    },
+    {
+        "id": 2,
+      "title": "Necessáire Romântica",
+      "preco": "R$33.00",
+      "description": "Material externo e interno 100% algodão com alça removível de material sintético.",
+      "image": {
+        "url": "/assets/produtos/necessaire-romantica/neces-romantica-1.jpeg",
+        "alt": "Necessaire Romantica"
+      }
+    }
+  ]
+}
