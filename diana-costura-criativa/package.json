@@ -10,6 +10,7 @@
     "@types/node": "^16.11.41",
     "@types/react": "^18.0.13",
     "@types/react-dom": "^18.0.5",
+    "json-server": "^0.17.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,6 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "backend": "json-server --watch db.json --port 5000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "json-loader": "^0.5.7",
     "sass": "^1.52.3",
     "typescript-plugin-css-modules": "^3.4.0"
   }

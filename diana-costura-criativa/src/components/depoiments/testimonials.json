@@ -1,0 +1,23 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "text": "O porta-óculos valeu a pena! Além de muito bonito, protege a lente do óculos de riscar dentro da bolsa no dia a dia. Recomendadíssimo..",
+      "author": "Maria Gabriela",
+      "subTitle": "Jornalista"
+    },
+    {
+      "id": 2,
+      "text": "Presenteei minha filha com o kit porta-esmalte. Ela amou o presente!",
+      "author": "Leontina Vieira",
+      "subTitle": "Secretária"
+    },
+    {
+      "id": 3,
+      "text": "A bolsa infantil é de excelente qualidade. Possui forro impermeável e bolso interno com zíper para separar coisas dentro. Muito útil quando preciso levar o lanchinho e a madeira do meu filho! Recomendo a todos..",
+      "author": "Thiago Fernandes",
+      "subTitle": "Programador"
+    }
+  ],
+  "products": [{}]
+}
