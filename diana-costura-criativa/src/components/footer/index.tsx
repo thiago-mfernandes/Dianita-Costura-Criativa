@@ -2,6 +2,7 @@ import styles from "./Footer.module.scss";
 import { ReactComponent as Logo } from "assets/logo-branco.svg";
 import { MdFacebook } from "react-icons/md";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -26,30 +27,62 @@ export default function Footer() {
             </div>
           </div>
 
-          <address>
-            <p>123 Street, New York, USA</p>
-            <p>+012 345 67890</p>
-            <p>info@example.com</p>
-          </address>
+          <article className={styles.footerContainer__address}>
+            <h2 className={styles.footerContainer__address___title}>
+              Localização
+            </h2>
+            <address className={styles.footerContainer__address___box}>
+              <FiMapPin
+                className={styles.footerContainer__address___box____icon}
+              />
+              <p className={styles.footerContainer__address___box____content}>
+                Piracicaba - São Paulo - Brasil
+              </p>
+            </address>
+            <address className={styles.footerContainer__address___box}>
+              <FiPhone
+                className={styles.footerContainer__address___box____icon}
+              />
+              <p className={styles.footerContainer__address___box____content}>
+                +55 19 983561522
+              </p>
+            </address>
+            <address className={styles.footerContainer__address___box}>
+              <FiMail
+                className={styles.footerContainer__address___box____icon}
+              />
+              <p className={styles.footerContainer__address___box____content}>
+                info@example.com
+              </p>
+            </address>
+          </article>
 
-          <div>
-            <h2>Link's Rápidos</h2>
-            <p>Home</p>
-            <p>Sobre</p>
-            <p>Produtos</p>
-            <p>Contato</p>
+          <div className={styles.footerContainer__links}>
+            <h2 className={styles.footerContainer__links___title}>
+              Link's Rápidos
+            </h2>
+            <p className={styles.footerContainer__links___content}>&gt; Home</p>
+            <p className={styles.footerContainer__links___content}>
+              &gt; Sobre
+            </p>
+            <p className={styles.footerContainer__links___content}>
+              &gt; Produtos
+            </p>
+            <p className={styles.footerContainer__links___content}>
+              &gt; Contato
+            </p>
           </div>
 
-          <div>
-            <h2>Novidades</h2>
-            <p>
+          <div className={styles.footerContainer__newsletter}>
+            <h2 className={styles.footerContainer__newsletter___title}>Novidades</h2>
+            <p className={styles.footerContainer__newsletter___content}>
               Cadastre seu email para receber notificações de novos produtos
             </p>
-            <input type="text" placeholder="info@example.com" />
-            <button>Assinar</button>
+            <input className={styles.footerContainer__newsletter___input} type="text" placeholder="info@example.com" />
+            <button className={styles.footerContainer__newsletter___button}>Assinar</button>
           </div>
-          <hr />
-          <div>
+          
+          <div className={styles.footerContainer__copyright}>
             <p>
               &copy;{" "}
               <span>

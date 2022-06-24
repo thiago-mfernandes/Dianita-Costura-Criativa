@@ -13,8 +13,10 @@
 
 .swiper-button-prev {
     color: #57504B;
+    left: 0px;
 }
 
 .swiper-button-next {
     color: #57504B;
+    right: 0px;
 }

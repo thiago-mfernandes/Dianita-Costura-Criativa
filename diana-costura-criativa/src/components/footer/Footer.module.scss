@@ -49,4 +49,138 @@
         }
     }
 
+    &__address {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+
+        &___title {
+            font-family: "Abril Fatface", serif;
+            font-size: 1.75rem;
+            margin: 5% 0 15% 0;
+            color: $rosaPadrao;
+            width: 100%;
+            margin: 15% 0;
+        }
+
+        &___box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0;
+
+            &____icon {
+                color: white;
+                margin: 0 5% 0 0;
+                font-size: 0.9rem;
+            }
+
+            &____content {
+                color: white;
+                margin: 2% 0;
+            }
+        }
+
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+
+        &___title {
+            font-family: "Abril Fatface", serif;
+            font-size: 1.75rem;
+            margin: 5% 0 15% 0;
+            color: $rosaPadrao;
+            width: 100%;
+            margin: 0 0 10% 0;
+        }
+
+        &___content {
+            color: white;
+            margin: 2% 0;
+        }
+    }
+
+    &__newsletter {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+
+        &___title {
+            font-family: "Abril Fatface", serif;
+            font-size: 1.75rem;
+            margin: 5% 0 15% 0;
+            color: $rosaPadrao;
+            width: 100%;
+            margin: 0 0 10% 0;
+        }
+
+        &___content {
+            color: white;
+            margin: 0 0 5% 0;
+        }
+
+        &___input {
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: transparent;
+            padding: 2%;
+            margin-bottom: 5%;
+            height: 7.5vh;
+            width: 100%;
+            &:active {
+                color: $rosaPadrao;
+            }
+        }
+
+        &___button {
+            border: none;
+            background-color: $rosaPadrao;
+            padding: 2%;
+            height: 7.5vh;
+            width: 100%;
+            font-size: 1.25rem;
+            color: $marromTipo;
+            transition: background-color 0.25s;
+            transition: color 0.25s;
+            transition: border .25s;
+
+            &:hover {
+                background-color: $linkHover;
+                color: white;
+                transition: background-color 0.25s;
+                transition: color 0.25s;
+            }
+            &:active {
+                border: 1px solid $linkActive;
+                transition: border .25s;
+                color: $bgFooter;
+            }
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+
+        & p {
+            color: $marromAcinzentado;
+            font-size: .65rem;
+            margin: 2% 0;
+
+            & span {
+                font-weight: bold;
+            }
+
+            & a {
+                color: $laranjaPrincipal;
+                text-decoration: none;
+            }
+        }
+
+
+    }
+
 }
