@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 import style from "./Nav.module.scss";
 import { FaMapPin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdFacebook } from "react-icons/md";
-import Produto from "assets/produtos/produto-ex.png";
+import Produto from "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-1.3.jpeg";
 
 import { useState } from "react";
 /* 
@@ -93,18 +93,8 @@ export default function Header() {
               </p>
             </div>
           </div>
-
-          {/*container da imagem de capa */}
-          <div className={styles.header__containerImg}>
-            <img
-              src={Produto}
-              alt="Produto"
-              className={styles.header__containerImg___imgProduto}
-            />
-          </div>
-
-          <button className={styles.header__botao}>Saiba Mais</button>
         </div>
+          <button className={styles.header__botao}>Saiba Mais</button>
       </header>
     </>
   );

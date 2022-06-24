@@ -10,17 +10,15 @@
 
 .header {
     background-image: url("../../assets/bg1.svg");
-    filter: opacity(0.9);
-    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    padding: 5%;
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 7.5%;
+        padding: 0 7.5%;        
         max-height: 0; //mobile-only
         
         // - inserir esta propriedade no tablet e desktop
@@ -38,6 +36,11 @@
         //padding: 0 5%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        //------------------------------------------
+        //margim para ajuste apenas no mobile
+        margin-bottom: 80%;
+        //------------------------------------------
 
         &___title {
             width: 100%;
@@ -62,24 +65,11 @@
             width: 100%;
             text-align: center;
             font-size: 1rem;
-            color: $marromTipo;            
+            color: $marromTipo; 
+            margin: 5% 0 0 0;           
         }
 
         
-    }
-
-    &__containerImg {
-        width: 100%;
-        border: 1px solid $laranjaPrincipal;
-        border-radius: 50% 50% 0 0;
-        display: flex;
-        justify-content: center;
-
-        &___imgProduto {
-            width: 90%;
-            margin: 5%;
-            border-radius: 50% 50% 0 0;
-        }
     }
 
     &__botao {
@@ -91,7 +81,6 @@
         margin: 2.5% 0;
         height: 10vh;
         width: 100%;
-        font-weight: 900;
     }
 
 }

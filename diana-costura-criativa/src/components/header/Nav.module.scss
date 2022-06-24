@@ -4,6 +4,10 @@
 .navContainer {
     display: flex;
     justify-content: space-between;
+    //------------------------------------------
+    //margin somente para ajuste no mobile
+    margin-bottom: 10%;
+    //------------------------------------------
     
     &__navClose {
         padding-right: 5%;
@@ -68,5 +72,6 @@
 
 .logo {
     width: 40%;
+    margin: 5%;
 }
 
