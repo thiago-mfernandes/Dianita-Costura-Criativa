@@ -6,7 +6,47 @@
     padding: 5%;
 }
 
-.sectionContainer {
+.footerContainer {
     display: flex;
     flex-direction: column;
+
+    &__box {
+        margin-bottom: 5%;
+
+        //REFATORAR AQUI e criar um estilo padrao pro logo do header e do footer
+        &___logo {
+            width: 40%;
+        }
+
+        &___content {
+            font-size: 1rem;
+            color: white;
+            margin: 5% 0;
+        }
+    }
+
+    &__icontainer {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+
+        &___icon {
+            font-size: 2rem;
+            color: $rosaPadrao;
+            transition: color .25s;
+            &:hover {
+                color: $linkHover;
+                transition: color .25s;
+            }
+            &:active {
+                color: $linkActive;
+                transition: color .25s;
+            }
+            &visited {
+                color: $linkVisited;
+                transition: color .25s;
+            }
+        }
+    }
+
 }

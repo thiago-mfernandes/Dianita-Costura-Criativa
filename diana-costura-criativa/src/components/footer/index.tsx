@@ -1,20 +1,29 @@
 import styles from "./Footer.module.scss";
+import { ReactComponent as Logo } from "assets/logo-branco.svg";
+import { MdFacebook } from "react-icons/md";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <>
       <section className={styles.section}>
-        <div className={styles.sectionContainer}>
-
-          <div>
-            <img src="" alt="logotipo" />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
-              eligendi ullam provident.
+        <div className={styles.footerContainer}>
+          <div className={styles.footerContainer__box}>
+            <Logo className={styles.footerContainer__box___logo} />
+            <p className={styles.footerContainer__box___content}>
+              Peças com personalidade e originalidade você encontra aqui.
             </p>
-            <p>facebook</p>
-            <p>instagram</p>
-            <p>whats</p>
+            <div className={styles.footerContainer__icontainer}>
+              <MdFacebook
+                className={styles.footerContainer__icontainer___icon}
+              />
+              <FaInstagram
+                className={styles.footerContainer__icontainer___icon}
+              />
+              <FaWhatsapp
+                className={styles.footerContainer__icontainer___icon}
+              />
+            </div>
           </div>
 
           <address>
@@ -42,11 +51,21 @@ export default function Footer() {
           <hr />
           <div>
             <p>
-              &copy; <span>dianitacosturacriativa.com.br<br/></span> Todos os
-              direitos Reservados.
+              &copy;{" "}
+              <span>
+                dianitacosturacriativa.com.br
+                <br />
+              </span>{" "}
+              Todos os direitos Reservados.
             </p>
             <p>
-              Designed by <a href="https://www.instagram.com/thiago_mfernandes/" target="_blank">Thiago Fernandes</a>
+              Designed by{" "}
+              <a
+                href="https://www.instagram.com/thiago_mfernandes/"
+                target="_blank"
+              >
+                Thiago Fernandes
+              </a>
             </p>
           </div>
         </div>
