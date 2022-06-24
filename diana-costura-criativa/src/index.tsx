@@ -22,7 +22,9 @@ root.render(
     <Products />
     <Location />
     <Depoiments />
-    <Contact />
+    {
+      /* <Contact /> */
+    }
     <Footer />
   </React.StrictMode>
 );

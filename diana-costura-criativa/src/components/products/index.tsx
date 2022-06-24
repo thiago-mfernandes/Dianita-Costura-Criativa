@@ -10,8 +10,10 @@ export default function Products() {
         <div className={styles.produtosHeader}>
           <h2 className={styles.produtosHeader__title}>Meus Produtos</h2>
           <p className={styles.produtosHeader__content}>
-            O que os meus produtos oferecem de beneficios para os meus clientes?
-            Porque devo comprá-los?
+            A marca Dianita costura criativa, é especialista em oferecer
+            produtos para a organização e praticidade ao seu dia a dia no
+            trabalho e/ou lazer, aliada a muito estilo e bom gosto. E aquele
+            acabamento perfeito com detalhes que você só encontra em um produto artesanal.
           </p>
         </div>
 
