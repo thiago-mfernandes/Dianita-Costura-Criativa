@@ -90,6 +90,34 @@
       "preco": "R$39.90",
       "description": "1 - Necessàire + 1 - Porta-Moedas. Material externo nylon e interno plástico impermeável.",
       "photo": "assets/produtos/kit-porta-moedas/porta-moedas-3.jpeg"
+    },
+    {
+      "id": 14,
+      "title": "Porta Higiene Bucal Star Wars",
+      "preco": "R$18.00",
+      "description": "Em material de tecido gabardine e plástico impermeável.",
+      "photo": "assets/produtos/porta-higiene-bucal/porta-higiene-bucal-1.jpeg"
+    },
+    {
+      "id": 15,
+      "title": "Estojo Escolar",
+      "preco": "R$18.00",
+      "description": "Em material de tecido sintético.",
+      "photo": "assets/produtos/estojo-escolar/estojo-escolar-1.jpeg"
+    },
+    {
+      "id": 16,
+      "title": "Porta Fone de Ouvido e Carregador",
+      "preco": "R$10.00",
+      "description": "Tecido 100% algodão externo e interno em nylon.",
+      "photo": "assets/produtos/fone-carregador/fone-carregador-1.jpeg"
+    },
+    {
+      "id": 17,
+      "title": "Porta Talheres e Jogo Americano 2 em 1",
+      "preco": "R$30.00",
+      "description": "Tecido 100% algodão com fechamento em elástico. Espaço para 03 talheres",
+      "photo": "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.jpeg"
     }
   ]
 }
