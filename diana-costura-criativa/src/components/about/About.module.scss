@@ -1,7 +1,4 @@
-@import "../../scss/variables/variables.scss",
-  "../../scss/components/title/Title.module.scss",
-  "../../scss/components/button/saiba-mais.module.scss",
-  "../../scss/components/content/content.module.scss";
+@import '../../scss/styles.scss';
 
 .about {
   &__container {
