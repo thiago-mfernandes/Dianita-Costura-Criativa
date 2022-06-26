@@ -1,8 +1,7 @@
 @import '../../scss/styles.scss';
 
 .icone {
-  font-size: 1rem;
-  color: $marromTipo;
+  @include color-fontSize(1rem, $marromTipo);
   margin: 0 8px;
   max-width: 0px;
 }
@@ -14,64 +13,58 @@
   height: 100vh;
 
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 7.5%;
+    @include display-flexDirection(flex);
+    @include alignItens-justifyContent(center, space-between);
     max-height: 0; //mobile-only
+    padding: 0 7.5%;
 
     // - inserir esta propriedade no tablet e desktop
     //border-bottom: 1px solid $laranjaPrincipal;
   }
 
   &__box {
-    display: flex;
-    align-items: center;
+    @include display-flexDirection(flex);
+    @include alignItens-justifyContent(center);
     visibility: hidden; //mobile-only
   }
 
   &__containerContent {
-    //padding: 0 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(null, space-between);
+
     //------------------------------------------
     //margim para ajuste apenas no mobile
     margin-bottom: 75%;
     //------------------------------------------
 
     &___title {
-      width: 100%;
-      text-align: center;
-      margin: 0;
-      font-size: 3rem;
-      color: $marromTipo;
+      @include color-fontSize($marromTipo, 3rem);
       font-family: $fonteTitulo;
+      margin: 0;
+      text-align: center;
       text-transform: uppercase;
+      width: 100%;
     }
 
     &___subtitle {
-      width: 100%;
-      text-align: center;
+      @include color-fontSize($marromTipo, 1rem);
       margin: 0;
-      font-size: 1rem;
-      color: $marromTipo;
+      text-align: center;
       text-transform: uppercase;
+      width: 100%;
     }
 
     &___box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include display-flexDirection(flex, column);
+      @include alignItens-justifyContent(null, center);
       padding: 0 5%;
     }
 
     &___content {
-      width: 100%;
-      text-align: center;
-      font-size: 1rem;
-      color: $marromTipo;
+      @include color-fontSize($marromTipo, 1rem);
       margin: 5% 0 0 0;
+      text-align: center;
+      width: 100%;
     }
   }
 

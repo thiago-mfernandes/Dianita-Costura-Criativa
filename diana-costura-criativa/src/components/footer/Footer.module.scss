@@ -1,14 +1,13 @@
 @import '../../scss/styles.scss';
 
 .section {
-    width: 100%;
     background-color: $bgFooter;
     padding: 5%;
+    width: 100%;
 }
 
 .footerContainer {
-    display: flex;
-    flex-direction: column;
+    @include display-flexDirection(flex, column);
 
     &__box {
         margin-bottom: 5%;
@@ -19,20 +18,18 @@
         }
 
         &___content {
-            font-size: 1rem;
-            color: white;
+            @include color-fontSize(white, 1rem);
             margin: 5% 0;
         }
     }
 
     &__icontainer {
-        display: flex;
-        justify-content: space-between;
+        @include display-flexDirection(flex);
+        @include alignItens-justifyContent(null, space-between);
         width: 50%;
 
         &___icon {
-            font-size: 2rem;
-            color: $rosaPadrao;
+            @include color-fontSize($rosaPadrao, 2rem);
             transition: color .25s;
             &:hover {
                 color: $linkHover;
@@ -50,26 +47,23 @@
     }
 
     &__address {
-        display: flex;
-        flex-direction: column;
+        @include display-flexDirection(flex, column);
         margin: 10% 0;
 
         &___title {
             @extend .title;
-            text-align: left;
             color: $rosaPadrao;
+            text-align: left;
         }
 
         &___box {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            @include display-flexDirection(flex, row);
+            @include alignItens-justifyContent(center);
             margin: 0;
 
             &____icon {
-                color: white;
+                @include color-fontSize(white, 0.9rem);
                 margin: 0 5% 0 0;
-                font-size: 0.9rem;
             }
 
             &____content {
@@ -81,14 +75,13 @@
     }
 
     &__links {
-        display: flex;
-        flex-direction: column;
+        @include display-flexDirection(flex, column);
         margin: 10% 0;
 
         &___title {
             @extend .title;
-            text-align: left;
             color: $rosaPadrao;
+            text-align: left;
         }
 
         &___content {
@@ -98,14 +91,13 @@
     }
 
     &__newsletter {
-        display: flex;
-        flex-direction: column;
+        @include display-flexDirection(flex, column);
         margin: 10% 0;
 
         &___title {
             @extend .title;
-            text-align: left;
             color: $rosaPadrao;
+            text-align: left;
         }
 
         &___content {
@@ -114,12 +106,12 @@
         }
 
         &___input {
+            background-color: transparent;
             border: none;
             border-bottom: 1px solid white;
-            background-color: transparent;
-            padding: 2%;
-            margin-bottom: 5%;
             height: 7.5vh;
+            margin-bottom: 5%;
+            padding: 2%;
             width: 100%;
             &:active {
                 color: $rosaPadrao;
@@ -127,38 +119,32 @@
         }
 
         &___button {
-            border: none;
+            @include color-fontSize($marromTipo, 1.25rem);
             background-color: $rosaPadrao;
-            padding: 2%;
+            border: none;
             height: 7.5vh;
+            padding: 2%;
+            transition: all 0.25s;
             width: 100%;
-            font-size: 1.25rem;
-            color: $marromTipo;
-            transition: background-color 0.25s;
-            transition: color 0.25s;
-            transition: border .25s;
 
             &:hover {
                 background-color: $linkHover;
                 color: white;
-                transition: background-color 0.25s;
-                transition: color 0.25s;
+                transition: all 0.25s;
             }
             &:active {
                 border: 1px solid $linkActive;
-                transition: border .25s;
                 color: $bgFooter;
+                transition: all 0.25s;
             }
         }
     }
 
     &__copyright {
-        display: flex;
-        flex-direction: column;
+        @include display-flexDirection(flex, column);
 
         & p {
-            color: $marromAcinzentado;
-            font-size: .65rem;
+            @include color-fontSize($marromAcinzentado, 0.65rem);
             margin: 2% 0;
 
             & span {
@@ -170,8 +156,5 @@
                 text-decoration: none;
             }
         }
-
-
     }
-
 }

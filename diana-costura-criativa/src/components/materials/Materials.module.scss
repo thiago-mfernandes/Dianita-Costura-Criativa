@@ -1,16 +1,15 @@
 @import "../../scss/styles.scss";
 
 .materials {
-  padding: 0 5%;
   background-image: url("../../assets/bg2.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0 5%;
 
   //trecho de codigo repetido
   &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(center);
     margin-bottom: 10%;
   }
 
@@ -22,29 +21,28 @@
     @extend .content;
 
     & span {
-      text-transform: uppercase;
       font-weight: bold;
+      text-transform: uppercase;
     }
   }
 
   &__card {
+    @include alignItens-justifyContent(center);
+    @include display-flexDirection(flex, column);
     background-color: white;
-    box-shadow: 4px 4px 4px 0 rgba($color: #000000, $alpha: 8%);
     border: 1px solid $laranjaPrincipal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-shadow: 4px 4px 4px 0 rgba($color: #000000, $alpha: 8%);
     margin-bottom: 15%;
 
     &___icon {
-      width: 30%;
       padding: 5% 0;
+      width: 30%;
     }
 
     &___title {
       @extend .title;
-      border-top: 1px solid $laranjaPrincipal;
       border-bottom: 1px solid $laranjaPrincipal;
+      border-top: 1px solid $laranjaPrincipal;
       padding: 2.5% 0;
     }
 

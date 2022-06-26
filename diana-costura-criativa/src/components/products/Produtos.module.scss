@@ -1,16 +1,14 @@
 @import "../../scss/styles.scss";
 
 .container {
+  @include alignItens-justifyContent(center);
+  @include display-flexDirection(flex, column);
   padding: 0 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .produtosHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include alignItens-justifyContent(center);
+  @include display-flexDirection(flex, column);
 
   &__title {
     @extend .title;
@@ -22,53 +20,47 @@
 }
 
 .produtosFilter {
-  display: flex;
-  flex-direction: row;
+  @include alignItens-justifyContent(null, space-between);
+  @include display-flexDirection(flex, row);
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 5%;
   margin-bottom: 15%;
+  padding: 5%;
 
   &__button {
-    width: 47.5%;
-    margin: 2.5% 0;
-    font-size: 1.25rem;
-    color: $marromTipo;
+    @include color-fontSize($marromTipo, 1.25rem);
     background-color: transparent;
     border: 1px solid $laranjaPrincipal;
     height: 10vh;
-    transition: font-size 0.25s ease-in-out;
-    transition: background-color 0.25s ease-in-out;
+    margin: 2.5% 0;
+    transition: all 0.25s ease-in-out;
+    width: 47.5%;
 
     &:hover {
+      @include color-fontSize($white, 1.35rem);
       background-color: $bgBotao;
-      color: white;
       border: $bgBotao;
-      font-size: 1.35rem;
       font-weight: bold;
-      transition: font-size 0.25s ease-in-out;
-      transition: background-color 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
     }
   }
 }
 
 .produtosCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include alignItens-justifyContent(center);
+  @include display-flexDirection(flex, column);
   border: 1px solid $laranjaPrincipal;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 8%);
-  width: 90%;
   margin-bottom: 10%;
   overflow: hidden;
+  width: 90%;
 
   &__img {
-    width: 100%;
     border: 1px solid $laranjaPrincipal;
-    transition: 0.75s;
+    transition: all 0.75s;
+    width: 100%;
     &:hover {
       transform: scale(1.1);
-      transition: 0.75s;
+      transition: all 0.75s;
     }
   }
 
@@ -86,35 +78,31 @@
 
   &__content {
     @extend .content;
+    border-bottom: 1px solid $laranjaPrincipal;
     margin: 0;
     padding: 5%;
-    border-bottom: 1px solid $laranjaPrincipal;
   }
 }
 
 .produtosAction {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  @include alignItens-justifyContent(center, center);
+  @include display-flexDirection(flex, row);
   width: 100%;
 
   &__btn {
+    @include color-fontSize($marromTipo, 1.125rem);
     background-color: transparent;
     border: none;
     border-right: 1px solid $laranjaPrincipal;
-    text-align: center;
-    width: 100%;
+    font-weight: 700;
     height: 7.5vh;
     padding: 5%;
-    color: $marromTipo;
+    text-align: center;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.125rem;
     transition: all 0.25s;
+    width: 100%;
     &:hover {
-      color: $laranjaPrincipal;
-      font-size: 1.175rem;
+      @include color-fontSize($laranjaPrincipal, 1.175rem);
       transition: all 0.25s;
     }
     &:active {
@@ -129,11 +117,9 @@
     border: none;    
 
     &___icon {
-      color: $marromTipo;
-      font-size: 1.25rem;
+      @include color-fontSize($marromTipo, 1.25rem);
       &:hover {
-        color: $laranjaPrincipal;
-        font-size: 1.175rem;
+        @include color-fontSize($laranjaPrincipal, 1.175rem);
         transition: all 0.25s;
       }
       &:active {

@@ -1,8 +1,8 @@
 @import '../../scss/styles.scss';
 
 .navContainer {
-    display: flex;
-    justify-content: space-between;
+    @include display-flexDirection(flex);
+    @include alignItens-justifyContent(null, space-between);
     //------------------------------------------
     //margin somente para ajuste no mobile
     margin-bottom: 10%;
@@ -19,22 +19,21 @@
     }
 
     &__hamburguer {
-        position: absolute;
-            top: 5.5%;
-            right: 5%;
-        width: 15%;
-        height: 7.5%;
+        @include alignItens-justifyContent(null, space-between);
+        @include display-flexDirection(flex, column);
         background-color: transparent;
         border: 3px solid $marromTipo;
+        height: 7.5%;
+        position: absolute;
+            right: 5%;
+            top: 5.5%;
         padding: 2.5% 2%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 15%;
 
         &___line {
-            width: 100%;
-            height: 3px;
             background-color: $marromTipo;
+            height: 3px;
+            width: 100%;
         }
     }
 
@@ -44,23 +43,22 @@
     }
 
     &__ulOpen {
-        list-style: none;
-        background-color: #fff;
-        position: absolute;
-            top: 80px;
-            left: 0;
-        width: 100%;
-        height: 36%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 7.5%;
+        @include alignItens-justifyContent(flex-end);
+        @include display-flexDirection(flex, column);
         animation: fadeIn 0.95s ease-in-out;
+        background-color: #fff;
+        height: 36%;
+        list-style: none;
+        padding: 7.5%;
+        position: absolute;
+            left: 0;
+            top: 80px;
+        width: 100%;
 
         & li {
+            animation: fadeIn 0.95s ease-in-out;
             font-size: 1.5rem;
             padding: 2.5% 0;
-            animation: fadeIn 0.95s ease-in-out;
 
             &:hover {
                 font-weight: bold;
@@ -70,7 +68,7 @@
 }
 
 .logo {
-    width: 40%;
     margin: 5%;
+    width: 40%;
 }
 

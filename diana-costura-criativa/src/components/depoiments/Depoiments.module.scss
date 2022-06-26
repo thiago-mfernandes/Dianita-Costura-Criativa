@@ -13,61 +13,57 @@
 }
 
 .cardDepoiments {
-    margin: 10% 0;
+    @include display-flexDirection(flex, column);
     border: 1px solid $laranjaPrincipal;
-    display: flex;
-    flex-direction: column;
+    margin: 10% 0;
 
     &__content {
         @extend .content;
+        border-bottom: 1px solid $laranjaPrincipal;
         font-style: italic;
-        width: 100%;
+        margin: 0;
         min-height: 30vh;
         padding: 5%;
-        margin: 0;
-        border-bottom: 1px solid $laranjaPrincipal;
+        width: 100%;
     }    
 
     &__author {
-        font-size: 1rem;
-        line-height: 24px;
         color: $marromTipo;
-        margin: 0;
+        font-size: 1rem;
         font-weight: 900;
-        padding: 0 5%;
+        line-height: 24px;
+        margin: 0;
         margin-top: 5%;
+        padding: 0 5%;
         text-align: center;
     }
 
     &__authorSubtitle {
-        font-size: .85rem;
-        line-height: 24px;
         color: $marromTipo;
+        font-size: 0.85rem;
+        line-height: 24px;
         margin: 0;
-        padding: 0 5%;
         margin-bottom: 5%;
+        padding: 0 5%;
         text-align: center;
     }
 }
 
 .controllerContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(center, center);
     width: 100%;
 
     &__controller {
-        font-size: 1.25rem;
-        color: $marromTipo;
+        @include color-fontSize(1.25rem, $marromTipo);
+        @include display-flexDirection(flex, column);
+        @include alignItens-justifyContent(center, center);
         background-color: $bgBotao;
         border: none;
-        margin: 0 2.5%;
-        height: 5vh;
-        width: 10%;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 5vh;
+        margin: 0 2.5%;
+        width: 10%;
 
         & span {
             font-size: 1.25rem;
