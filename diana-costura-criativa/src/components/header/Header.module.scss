@@ -1,5 +1,5 @@
-@import '../../scss/variables.scss', 
-        '../../scss/mixins.scss'; 
+@import '../../scss/variables/variables.scss', 
+        '../../scss/mixins/mixins.scss'; 
 
 .icone {
     font-size: 1rem;
@@ -39,7 +39,7 @@
         justify-content: space-between;
         //------------------------------------------
         //margim para ajuste apenas no mobile
-        margin-bottom: 80%;
+        margin-bottom: 75%;
         //------------------------------------------
 
         &___title {
@@ -60,7 +60,14 @@
             color: $marromTipo;
             text-transform: uppercase;
         }
-
+        
+        &___box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 5%;
+        }
+        
         &___content {
             width: 100%;
             text-align: center;

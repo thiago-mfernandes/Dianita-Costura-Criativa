@@ -1,4 +1,5 @@
-@import "../../scss//variables.scss";
+@import "../../scss/variables/variables.scss", 
+"../../scss/components/title/Title.module.scss";
 
 .about {
   padding: 0 5%;
@@ -10,11 +11,7 @@
   }
 
   &__title {
-    font-family: $fonteTitulo;
-    font-size: 1.75rem;
-    margin: 5% 0 15% 0;
-    color: $marromTipo;
-    //titulo repetido  - REFATORAR - 
+    @extend .title
   }
 
   &__img {

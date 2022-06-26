@@ -78,7 +78,7 @@ export default function Header() {
 
         <div className={styles.header__containerContent}>
           {/*container do titulo principal e botao */}
-          <div>
+          <div >
             <div>
               <h2 className={styles.header__containerContent___subtitle}>
                 Feitos à mão com
@@ -87,7 +87,7 @@ export default function Header() {
                 Paixão
               </h1>
             </div>
-            <div>
+            <div className={styles.header__containerContent___box}>
               <p className={styles.header__containerContent___content}>
                 Peças com personalidade e originalidade você encontra aqui.
               </p>

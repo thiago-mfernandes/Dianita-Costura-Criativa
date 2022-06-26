@@ -1,4 +1,5 @@
-@import "../../scss/variables.scss";
+@import "../../scss/variables/variables.scss",
+"../../scss/components/title/Title.module.scss";
 
 .container {
   padding: 0 5%;
@@ -14,10 +15,7 @@
 
   // REFATORAR AQUI
   &__title {
-    font-family: "Abril Fatface", serif;
-    font-size: 1.75rem;
-    margin: 5% 0 5% 0;
-    color: $marromTipo;
+    @extend .title;
   }
 
   // REFATORAR AQUI
@@ -82,13 +80,7 @@
 
   // REFATORAR AQUI
   &__title {
-    font-family: "Abril Fatface", serif;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    font-size: 1.25rem;
-    color: $marromTipo;
-    padding: 5% 0;
+    @extend .title;
     border-bottom: 1px solid $laranjaPrincipal;
 
         & span {
@@ -133,13 +125,9 @@
         background-color: transparent;
         border: none;
 
-        & span {
+        &___icon {
             color: $marromTipo;
-
+          font-size: 1.25rem;
         }
     }
-}
-
-.scale {
-    transition: scale 1s;
 }

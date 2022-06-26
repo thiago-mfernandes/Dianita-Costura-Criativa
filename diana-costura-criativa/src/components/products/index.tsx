@@ -1,5 +1,6 @@
 import styles from "./Produtos.module.scss";
 import necessTrad1 from "assets/produtos/necessaire-tradicional/neces-trad-1.jpeg";
+import { IoIosAdd } from "react-icons/io";
 import data from "./products.json";
 
 export default function Products() {
@@ -13,7 +14,8 @@ export default function Products() {
             A marca Dianita costura criativa, é especialista em oferecer
             produtos para a organização e praticidade ao seu dia a dia no
             trabalho e/ou lazer, aliada a muito estilo e bom gosto. E aquele
-            acabamento perfeito com detalhes que você só encontra em um produto artesanal.
+            acabamento perfeito com detalhes que você só encontra em um produto
+            artesanal.
           </p>
         </div>
 
@@ -48,7 +50,7 @@ export default function Products() {
             <div className={styles.produtosAction}>
               <button className={styles.produtosAction__btn}>Comprar</button>
               <button className={styles.produtosAction__btnDetails}>
-                <span className="material-symbols-outlined">info</span>
+                <IoIosAdd className={styles.produtosAction__btnDetails___icon}/>
               </button>
             </div>
           </div>
