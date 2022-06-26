@@ -1,4 +1,5 @@
-@import "../../variables/variables.scss";
+@import "../../variables/variables.scss", "../../mixins/mixins.scss";
+
 
 .botaoSaibaMais {
     background-color: $bgBotao;
@@ -23,5 +24,10 @@
         font-size: 1.35rem;
         transition: color 0.25s;
         transition: background-color 0.25s;
+    }
+
+    @include tablet {
+        margin: 0 auto;
+        width: 75%;
     }
 }

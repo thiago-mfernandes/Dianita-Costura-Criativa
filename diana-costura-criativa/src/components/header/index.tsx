@@ -3,7 +3,6 @@ import styles from "./Header.module.scss";
 import style from "./Nav.module.scss";
 import { FaMapPin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdFacebook } from "react-icons/md";
-import Produto from "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-1.3.jpeg";
 
 import { useState } from "react";
 /* 
