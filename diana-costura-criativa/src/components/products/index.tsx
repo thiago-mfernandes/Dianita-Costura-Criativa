@@ -1,5 +1,4 @@
 import styles from "./Produtos.module.scss";
-import necessTrad1 from "assets/produtos/necessaire-tradicional/neces-trad-1.jpeg";
 import { IoIosAdd } from "react-icons/io";
 import data from "./products.json";
 

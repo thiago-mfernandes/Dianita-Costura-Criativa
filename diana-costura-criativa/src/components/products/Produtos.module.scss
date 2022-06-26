@@ -36,7 +36,7 @@
     width: 47.5%;
 
     &:hover {
-      @include color-fontSize($white, 1.35rem);
+      @include color-fontSize(white, 1.35rem);
       background-color: $bgBotao;
       border: $bgBotao;
       font-weight: bold;
