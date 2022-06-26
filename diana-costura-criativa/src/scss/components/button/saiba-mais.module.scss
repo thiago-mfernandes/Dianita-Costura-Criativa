@@ -2,28 +2,22 @@
 
 
 .botaoSaibaMais {
+    @include color-fontSize($marromTipo, 1.25rem);
     background-color: $bgBotao;
     border: none;
-    color: $marromTipo;
-    font-size: 1.25rem;
     height: 10vh;
     margin: 2.5% 0;
     text-transform: uppercase;
     width: 100%;
-    transition: color 0.25s;
-    transition: font-size 0.25s;
+    transition: all 0.25s;
     &:hover {
-        color:white;
-        font-size: 1.35rem;
-        transition: color 0.25s;
-        transition: font-size 0.25s;
+        @include color-fontSize(white, 1.35rem);
+        transition: all 0.25s;
     }
     &:active {
-        color:$laranjaPrincipal;
+        @include color-fontSize($laranjaPrincipal, 1.35rem);
         background-color: $marromAcinzentado;
-        font-size: 1.35rem;
-        transition: color 0.25s;
-        transition: background-color 0.25s;
+        transition: all 0.25s;
     }
 
     @include tablet {
