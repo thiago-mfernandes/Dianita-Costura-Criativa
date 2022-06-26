@@ -32,7 +32,7 @@ export default function About() {
               <br />
               DIANA(Dianita costura criativa).
             </p>
-            <button className={styles.about__button}>Saiba Mais</button>
+            <button className={styles.about__botaoSaibaMais}>Saiba Mais</button>
           </div>
         </div>
       </section>

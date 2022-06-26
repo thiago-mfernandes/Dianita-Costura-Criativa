@@ -1,95 +1,81 @@
-@import '../../scss/variables/variables.scss', 
-        '../../scss/mixins/mixins.scss'; 
+@import "../../scss/variables/variables.scss", "../../scss/mixins/mixins.scss", "../../scss/components/button/saiba-mais.module.scss";
 
 .icone {
-    font-size: 1rem;
-    color: $marromTipo;
-    margin: 0 8px;
-    max-width: 0px;
+  font-size: 1rem;
+  color: $marromTipo;
+  margin: 0 8px;
+  max-width: 0px;
 }
 
 .header {
-    background-image: url("../../assets/bg1.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+  background-image: url("../../assets/bg1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 7.5%;        
-        max-height: 0; //mobile-only
-        
-        // - inserir esta propriedade no tablet e desktop
-        //border-bottom: 1px solid $laranjaPrincipal;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7.5%;
+    max-height: 0; //mobile-only
 
+    // - inserir esta propriedade no tablet e desktop
+    //border-bottom: 1px solid $laranjaPrincipal;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    visibility: hidden; //mobile-only
+  }
+
+  &__containerContent {
+    //padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //------------------------------------------
+    //margim para ajuste apenas no mobile
+    margin-bottom: 75%;
+    //------------------------------------------
+
+    &___title {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      font-size: 3rem;
+      color: $marromTipo;
+      font-family: $fonteTitulo;
+      text-transform: uppercase;
     }
 
-    &__box {
-        display: flex;
-        align-items: center;
-        visibility: hidden; //mobile-only
+    &___subtitle {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      font-size: 1rem;
+      color: $marromTipo;
+      text-transform: uppercase;
     }
 
-    &__containerContent {
-        //padding: 0 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        //------------------------------------------
-        //margim para ajuste apenas no mobile
-        margin-bottom: 75%;
-        //------------------------------------------
-
-        &___title {
-            width: 100%;
-            text-align: center;
-            margin: 0;
-            font-size: 3rem;
-            color: $marromTipo;
-            font-family: $fonteTitulo;
-            text-transform: uppercase;
-        }
-
-        &___subtitle {
-            width: 100%;
-            text-align: center;
-            margin: 0;
-            font-size: 1rem;
-            color: $marromTipo;
-            text-transform: uppercase;
-        }
-        
-        &___box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 5%;
-        }
-        
-        &___content {
-            width: 100%;
-            text-align: center;
-            font-size: 1rem;
-            color: $marromTipo; 
-            margin: 5% 0 0 0;           
-        }
-
-        
+    &___box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5%;
     }
 
-    &__botao {
-        text-transform: uppercase;
-        font-size: 1.25rem;
-        color: $marromTipo;
-        background-color: $bgBotao;
-        border: none;
-        margin: 2.5% 0;
-        height: 10vh;
-        width: 100%;
+    &___content {
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+      color: $marromTipo;
+      margin: 5% 0 0 0;
     }
+  }
 
+  &__botao {
+    @extend .botaoSaibaMais;
+  }
 }
-
-

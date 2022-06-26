@@ -1,5 +1,6 @@
 @import "../../scss/variables/variables.scss",
-"../../scss/components/title/Title.module.scss";
+  "../../scss/components/title/Title.module.scss",
+  "../../scss/components/content/content.module.scss";
 
 .container {
   padding: 0 5%;
@@ -13,17 +14,12 @@
   flex-direction: column;
   align-items: center;
 
-  // REFATORAR AQUI
   &__title {
     @extend .title;
   }
 
-  // REFATORAR AQUI
   &__content {
-    font-size: 1rem;
-    line-height: 24px;
-    text-align: center;
-    color: $marromTipo;
+    @extend .content;
   }
 }
 
@@ -71,63 +67,82 @@
   &__img {
     width: 100%;
     border: 1px solid $laranjaPrincipal;
-    transition: .75s;
+    transition: 0.75s;
     &:hover {
-        transform: scale(1.1);
-        transition: .75s;
+      transform: scale(1.1);
+      transition: 0.75s;
     }
   }
 
-  // REFATORAR AQUI
   &__title {
     @extend .title;
     border-bottom: 1px solid $laranjaPrincipal;
+    margin: 0;
+    padding: 2.5%;
 
-        & span {
-            font-size: 0.9rem;
-            font-weight: lighter;
-        }
+    & span {
+      font-size: 0.9rem;
+      font-weight: lighter;
     }
+  }
 
-    &__content {
-        font-size: 1rem;
-        line-height: 24px;
-        text-align: center;
-        color: $marromTipo;
-        margin: 0;
-        padding: 5%;
-        border-bottom: 1px solid $laranjaPrincipal;
-    }
+  &__content {
+    @extend .content;
+    margin: 0;
+    padding: 5%;
+    border-bottom: 1px solid $laranjaPrincipal;
+  }
 }
 
-.produtosAction{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.produtosAction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid $laranjaPrincipal;
+    text-align: center;
     width: 100%;
-
-    &__btn {
-        background-color: transparent;
-        border: none;
-        border-right: 1px solid $laranjaPrincipal;
-        text-align: center;
-        width: 100%;
-        height: 7.5vh;
-        padding: 5%;
-        color: $marromTipo;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.125rem;
+    height: 7.5vh;
+    padding: 5%;
+    color: $marromTipo;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: all 0.25s;
+    &:hover {
+      color: $laranjaPrincipal;
+      font-size: 1.175rem;
+      transition: all 0.25s;
     }
-
-    &__btnDetails{
-        background-color: transparent;
-        border: none;
-
-        &___icon {
-            color: $marromTipo;
-          font-size: 1.25rem;
-        }
+    &:active {
+      background-color: $laranjaPrincipal;
+      color: $marromAcinzentado;
+      transition: all 0.25s;
     }
+  }
+
+  &__btnDetails {
+    background-color: transparent;
+    border: none;    
+
+    &___icon {
+      color: $marromTipo;
+      font-size: 1.25rem;
+      &:hover {
+        color: $laranjaPrincipal;
+        font-size: 1.175rem;
+        transition: all 0.25s;
+      }
+      &:active {
+        background-color: $laranjaPrincipal;
+        color: $marromAcinzentado;
+        transition: all 0.25s;
+      }
+    }
+  }
 }

@@ -1,5 +1,6 @@
 @import "../../scss/variables/variables.scss",
-"../../scss/components/title/Title.module.scss";
+  "../../scss/components/title/Title.module.scss",
+  "../../scss/components/content/content.module.scss";
 
 .materials {
   padding: 0 5%;
@@ -20,10 +21,7 @@
   }
 
   &__content {
-    font-size: 1rem;
-    line-height: 24px;
-    text-align: center;
-    color: #57504b;
+    @extend .content;
 
     & span {
       text-transform: uppercase;
@@ -53,10 +51,7 @@
     }
 
     &___content {
-      font-size: 1rem;
-      line-height: 24px;
-      text-align: center;
-      color: #57504b;
+      @extend .content;
       padding: 5%;
     }
   }
