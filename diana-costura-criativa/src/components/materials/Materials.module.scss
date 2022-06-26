@@ -6,11 +6,15 @@
   background-size: cover;
   padding: 0 5%;
 
-  //trecho de codigo repetido
   &__container {
     @include display-flexDirection(flex, column);
     @include alignItens-justifyContent(center);
     margin-bottom: 10%;
+    @include tablet {
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(center, space-between);
+      flex-wrap: wrap;
+    }
   }
 
   &__title {
@@ -33,6 +37,11 @@
     border: 1px solid $laranjaPrincipal;
     box-shadow: 4px 4px 4px 0 rgba($color: #000000, $alpha: 8%);
     margin-bottom: 15%;
+    @include tablet {
+      width: 47.5%;
+      min-height: 60vh;
+      margin-bottom: 5%;
+    }
 
     &___icon {
       padding: 5% 0;

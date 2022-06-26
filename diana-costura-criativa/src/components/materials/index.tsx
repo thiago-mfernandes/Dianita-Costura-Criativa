@@ -26,7 +26,7 @@ export default function Materials() {
               alt="Ilustração de Linhas"
               className={styles.materials__card___icon}
             />
-            <h3 className={styles.materials__card___title}>Linhas Premium</h3>
+            <h3 className={styles.materials__card___title}>Linhas de Poliamida</h3>
             <p className={styles.materials__card___content}>
               Linha de costura não é tudo igual! Cada linha tem a sua indicação
               de uso. Linhas de algodão utilizadas para tecidos de fibras
@@ -46,6 +46,42 @@ export default function Materials() {
             </h3>
             <p className={styles.materials__card___content}>
             Conforto nos dias mais quentes, versatilidade de cores e formas e maior durabilidade são alguns dos motivos para o sucesso do algodão.
+            </p>
+          </div>
+
+          <div className={styles.materials__card}>
+            <img
+              src={Botao}
+              alt="Botões de Plástico de Metal"
+              className={styles.materials__card___icon}
+            />
+            <h3 className={styles.materials__card___title}>Botões de Plástico de Metal</h3>
+            <p className={styles.materials__card___content}>
+              Feitos de Resina plastica altamente durável ou ligas metálicas que evitam a oxidação, um problema muito inconveniente.
+            </p>
+          </div>
+
+          <div className={styles.materials__card}>
+            <img
+              src={Botao}
+              alt="Botões de Plástico de Metal"
+              className={styles.materials__card___icon}
+            />
+            <h3 className={styles.materials__card___title}>Botões de Plástico de Metal</h3>
+            <p className={styles.materials__card___content}>
+              Feitos de Resina plastica altamente durável ou ligas metálicas que evitam a oxidação, um problema muito inconveniente.
+            </p>
+          </div>
+
+          <div className={styles.materials__card}>
+            <img
+              src={Botao}
+              alt="Botões de Plástico de Metal"
+              className={styles.materials__card___icon}
+            />
+            <h3 className={styles.materials__card___title}>Botões de Plástico de Metal</h3>
+            <p className={styles.materials__card___content}>
+              Feitos de Resina plastica altamente durável ou ligas metálicas que evitam a oxidação, um problema muito inconveniente.
             </p>
           </div>
 
