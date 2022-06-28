@@ -32,7 +32,7 @@ export default function Header() {
           </div>
 
           <div className={styles.header__box}>
-            <p className="header__content">Redes Sociais:</p>
+            <p className={styles.header__container}>Redes Sociais:</p>
             <MdFacebook className={styles.icone} />
             <FaInstagram className={styles.icone} />
             <FaWhatsapp className={styles.icone} />
