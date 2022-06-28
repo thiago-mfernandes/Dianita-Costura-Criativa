@@ -1,19 +1,25 @@
-@import '../../scss/styles.scss';
+@import "../../scss/styles.scss";
 
 .about {
   @include desktop {
     @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(center, space-between);
     flex-wrap: wrap;
+    padding: 0 7.5%;
+    width: 100%;
   }
 
   &__container {
     @include alignItens-justifyContent(center);
     @include display-flexDirection(flex, column);
-    
+
     @include desktop {
       @include alignItens-justifyContent(flex-start, center);
       @include display-flexDirection(flex, row);
       flex-wrap: wrap;
+      &:last-of-type {
+        width: 75%;
+      }
     }
   }
 
@@ -23,7 +29,7 @@
       margin: 5% 0;
     }
     @include desktop {
-      width: 50%;
+      width: 100%;
       margin: 5% 0;
       font-size: 3.5rem;
     }
@@ -39,9 +45,9 @@
       margin: 2.5% auto;
     }
     @include desktop {
-      width: 50%;
+      width: 25%;
       margin-bottom: 0;
-      margin-top: 5%
+      margin-top: 0;
     }
   }
 

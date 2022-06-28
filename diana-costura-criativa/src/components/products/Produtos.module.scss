@@ -4,6 +4,9 @@
   @include alignItens-justifyContent(center);
   @include display-flexDirection(flex, column);
   padding: 0 5%;
+  @include desktop {
+    padding: 0 7.5%;
+  }
 }
 
 .produtosHeader {
@@ -27,9 +30,7 @@
   padding: 5%;
   width: 100%;
   
-  @include desktop {
-
-  }
+  
 
 
   &__button {

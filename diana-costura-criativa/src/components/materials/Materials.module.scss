@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 5%;
+  @include desktop {
+    padding: 0 7.5%;
+  }
 
   &__container {
     @include display-flexDirection(flex, column);
