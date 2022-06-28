@@ -31,29 +31,31 @@ export default function Products() {
         </div>
 
         {/* card produto */}
+        <div className={styles.produtosContainerCard}>
         {data.produtcs.map((product) => (
-          <div className={styles.produtosCard} key={product.id}>
-            <img
-              className={styles.produtosCard__img}
-              src={`${product.photo}`}
-              alt={product.title}
-            />
-            <h3 className={styles.produtosCard__title}>
-              {product.title}
-              <br />
-              <span>{product.preco}</span>
-            </h3>
-            <p className={styles.produtosCard__content}>
-              {product.description}
-            </p>
-            <div className={styles.produtosAction}>
-              <button className={styles.produtosAction__btn}>Comprar</button>
-              <button className={styles.produtosAction__btnDetails}>
-                <IoIosAdd className={styles.produtosAction__btnDetails___icon}/>
-              </button>
+            <div className={styles.produtosCard} key={product.id}>
+              <img
+                className={styles.produtosCard__img}
+                src={`${product.photo}`}
+                alt={product.title}
+              />
+              <h3 className={styles.produtosCard__title}>
+                {product.title}
+                <br />
+                <span>{product.preco}</span>
+              </h3>
+              <p className={styles.produtosCard__content}>
+                {product.description}
+              </p>
+              <div className={styles.produtosAction}>
+                <button className={styles.produtosAction__btn}>Comprar</button>
+                <button className={styles.produtosAction__btnDetails}>
+                  <IoIosAdd className={styles.produtosAction__btnDetails___icon}/>
+                </button>
+              </div>
             </div>
-          </div>
         ))}
+        </div>
       </section>
     </>
   );
