@@ -11,6 +11,10 @@
     @include tablet {
         margin-bottom: 25%;
     }
+
+    @include desktop {
+        margin-bottom: 20%;
+    }
     
     &__navClose {
         padding-right: 5%;
@@ -40,6 +44,9 @@
             padding: 1.15%;
             right: 5%;
             top: 3.5%;
+        }
+        @include desktop {
+            display: none;
         }
 
         &___line {
@@ -89,6 +96,9 @@
     @include tablet {
         margin: 2.5% 2.5% 0;
         width: 30%;
+    }
+    @include desktop {
+        margin: 0;
     }
 }
 

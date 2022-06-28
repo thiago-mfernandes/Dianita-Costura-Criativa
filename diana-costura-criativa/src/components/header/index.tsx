@@ -26,9 +26,9 @@ export default function Header() {
         <div className={styles.header__container}>
           <div className={styles.header__box}>
             <FaMapPin className={styles.icone} />
-            <p className="header__content">Piracicaba - São Paulo, Brazil</p>
+            <p className={styles.header__box___content}>Piracicaba - São Paulo, Brazil</p>
             <MdEmail className={styles.icone} />
-            <p className="header__content">info@example.com</p>
+            <p className={styles.header__box___content}>info@example.com</p>
           </div>
 
           <div className={styles.header__box}>

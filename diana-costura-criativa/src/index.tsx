@@ -20,7 +20,7 @@ root.render(
     <About />
     <Materials />
     <Products />
-    <Location />
+    {/*<Location />*/}
     <Depoiments />
     {
       /* <Contact /> */

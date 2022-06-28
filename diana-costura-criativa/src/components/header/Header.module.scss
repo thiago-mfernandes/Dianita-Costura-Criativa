@@ -1,17 +1,27 @@
-@import '../../scss/styles.scss';
+@import "../../scss/styles.scss";
 
 .icone {
   @include color-fontSize(1rem, $marromTipo);
   margin: 0 8px;
   max-width: 0px;
+  @include desktop {
+    max-width: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    color: $marromTipo;
+    margin: 0 1.5%;
+  }
 }
 
 .header {
+  @include display-flexDirection(flex, column);
   background-image: url("../../assets/bg1.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  @include display-flexDirection(flex, column);
+  @include desktop {
+    padding: 0 7.5%;
+  }
 
   &__container {
     @include display-flexDirection(flex);
@@ -20,13 +30,28 @@
     padding: 0 7.5%;
 
     // - inserir esta propriedade no tablet e desktop
-    //border-bottom: 1px solid $laranjaPrincipal;
+
+    @include desktop {
+      max-height: none;
+      padding: 0;
+      margin-bottom: 2.5%;
+      white-space: nowrap;
+    }
   }
 
   &__box {
     @include display-flexDirection(flex);
     @include alignItens-justifyContent(center);
     visibility: hidden; //mobile-only
+    @include desktop {
+      visibility: visible;
+    }
+    &___content {
+      @include desktop {
+        font-size: 1rem;
+        white-space: nowrap;
+      }
+    }
   }
 
   &__containerContent {
@@ -39,6 +64,9 @@
     @include tablet {
       margin-bottom: 55%;
     }
+    @include desktop {
+      margin-bottom: 50%;
+    }
 
     &___title {
       @include color-fontSize($marromTipo, 3rem);
@@ -50,6 +78,9 @@
       @include tablet {
         @include color-fontSize($marromTipo, 3.75rem);
       }
+      @include desktop {
+        @include color-fontSize($marromTipo, 6rem);
+      }
     }
 
     &___subtitle {
@@ -60,6 +91,9 @@
       width: 100%;
       @include tablet {
         @include color-fontSize($marromTipo, 1.35rem);
+      }
+      @include desktop {
+        @include color-fontSize($marromTipo, 2.25rem);
       }
     }
 
@@ -80,7 +114,10 @@
       @include tablet {
         @include color-fontSize($marromTipo, 1.35rem);
         width: 75%;
-        margin:2.5% auto;
+        margin: 2.5% auto;
+      }
+      @include desktop {
+        font-size: 1.5rem;
       }
     }
   }

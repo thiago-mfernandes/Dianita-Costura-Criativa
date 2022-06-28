@@ -24,4 +24,19 @@
         margin: 2.5% auto;
         width: 75%;
     }
+
+    @include desktop {
+        @include color-fontSize($laranjaPrincipal, 1.75rem);
+        margin: auto;
+        width: 45%;
+        &:hover {
+            @include color-fontSize(white, 1.85rem);
+            transition: all 0.25s;
+        }
+        &:active {
+            @include color-fontSize($laranjaPrincipal, 1.85rem);
+            background-color: $marromAcinzentado;
+            transition: all 0.25s;
+        }
+    }
 }

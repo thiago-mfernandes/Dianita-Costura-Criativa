@@ -98,7 +98,7 @@ export default function Footer() {
               Designed by{" "}
               <a
                 href="https://www.instagram.com/thiago_mfernandes/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 Thiago Fernandes
               </a>
