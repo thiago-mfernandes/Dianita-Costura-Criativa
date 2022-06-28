@@ -26,6 +26,10 @@
   margin-bottom: 15%;
   padding: 5%;
   width: 100%;
+  
+  @include desktop {
+
+  }
 
 
   &__button {
@@ -38,6 +42,10 @@
     width: 47.5%;
     
     @include tablet {
+      width: 30%;
+    }
+
+    @include desktop {
       width: 30%;
     }
 
@@ -58,6 +66,12 @@
     @include alignItens-justifyContent(stretch, space-between);
     flex-wrap: wrap;
   }
+
+  @include desktop {
+    @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(stretch, space-between);
+    flex-wrap: wrap;
+  }
 }
 
 .produtosCard {
@@ -71,6 +85,10 @@
 
   @include tablet {
     width: 47.5%;
+  }
+
+  @include desktop {
+    width: 30%;
   }
 
   &__img {

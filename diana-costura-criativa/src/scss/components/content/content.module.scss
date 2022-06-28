@@ -8,4 +8,8 @@
         @include color-fontSize($marromTipo, 1.25rem);
         padding: 2.5% 0;
     }
+    @include desktop {
+        @include color-fontSize($marromTipo, 1.5rem);
+        line-height: 32px;
+    }
 }

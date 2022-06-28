@@ -1,15 +1,31 @@
 @import '../../scss/styles.scss';
 
 .about {
+  @include desktop {
+    @include display-flexDirection(flex, row);
+    flex-wrap: wrap;
+  }
+
   &__container {
     @include alignItens-justifyContent(center);
     @include display-flexDirection(flex, column);
+    
+    @include desktop {
+      @include alignItens-justifyContent(flex-start, center);
+      @include display-flexDirection(flex, row);
+      flex-wrap: wrap;
+    }
   }
 
   &__title {
     @extend .title;
     @include tablet {
       margin: 5% 0;
+    }
+    @include desktop {
+      width: 50%;
+      margin: 5% 0;
+      font-size: 3.5rem;
     }
   }
 
@@ -21,6 +37,11 @@
     @include tablet {
       width: 50%;
       margin: 2.5% auto;
+    }
+    @include desktop {
+      width: 50%;
+      margin-bottom: 0;
+      margin-top: 5%
     }
   }
 

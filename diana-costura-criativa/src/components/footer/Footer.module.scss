@@ -1,202 +1,246 @@
-@import '../../scss/styles.scss';
+@import "../../scss/styles.scss";
 
 .section {
-    background-color: $bgFooter;
-    padding: 5%;
-    width: 100%;
+  background-color: $bgFooter;
+  padding: 5%;
+  width: 100%;
 }
 
 .footerContainer {
+  @include display-flexDirection(flex, column);
+
+  @include tablet {
+    @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(center, space-between);
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(center, space-between);
+    flex-wrap: wrap;
+  }
+
+  &__section {
+    @include tablet {
+      @include display-flexDirection(flex, row);
+      margin-bottom: 1.5%;
+    }
+    @include desktop {
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(flex-start, space-between);
+
+      width: 100%;
+    }
+  }
+
+  &__box {
+    margin-bottom: 5%;
+    @include tablet {
+      width: 47.5%;
+    }
+
+    &___logo {
+      width: 40%;
+    }
+
+    &___content {
+      @include color-fontSize(white, 1rem);
+      margin: 5% 0;
+    }
+  }
+
+  &__icontainer {
+    @include display-flexDirection(flex);
+    @include alignItens-justifyContent(null, space-between);
+    width: 50%;
+
+    &___icon {
+      @include color-fontSize($rosaPadrao, 2rem);
+      transition: color 0.25s;
+      &:hover {
+        color: $linkHover;
+        transition: color 0.25s;
+      }
+      &:active {
+        color: $linkActive;
+        transition: color 0.25s;
+      }
+      &visited {
+        color: $linkVisited;
+        transition: color 0.25s;
+      }
+    }
+  }
+
+  &__address {
+    @include display-flexDirection(flex, column);
+    margin: 10% 0;
+    @include tablet {
+      margin: 0;
+      margin-bottom: 5%;
+      width: 47.5%;
+    }
+    @include desktop {
+      margin: 0;
+      margin-bottom: 5%;
+      width: 47.5%;
+    }
+
+    &___title {
+      @extend .title;
+      color: $rosaPadrao;
+      text-align: left;
+    }
+
+    &___box {
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(center);
+      margin: 0;
+
+      &____icon {
+        @include color-fontSize(white, 0.9rem);
+        margin: 0 5% 0 0;
+      }
+
+      &____content {
+        color: white;
+        margin: 2% 0;
+      }
+    }
+  }
+
+  &__links {
+    @include display-flexDirection(flex, column);
+    margin: 10% 0;
+
+    @include tablet {
+      margin: 2.5% 2.5% 0 0;
+      width: 47.5%;
+    }
+
+    @include desktop {
+      margin: 0 2.5%;
+      width: 47.5%;
+    }
+
+    &___title {
+      @extend .title;
+      color: $rosaPadrao;
+      text-align: left;
+      @include desktop {
+        margin: 5% 0;
+      }
+    }
+
+    &___content {
+      color: white;
+      margin: 2% 0;
+    }
+  }
+
+  &__newsletter {
+    @include display-flexDirection(flex, column);
+    margin: 10% 0;
+
+    @include tablet {
+      width: 47.5%;
+      margin: 2.5% 2.5% 0 0;
+    }
+
+    @include desktop {
+      margin: 0;
+      width: 47.5%;
+    }
+
+    &___title {
+      @extend .title;
+      color: $rosaPadrao;
+      text-align: left;
+      @include desktop {
+        margin: 5% 0;
+      }
+    }
+
+    &___content {
+      color: white;
+      margin: 0 0 5% 0;
+    }
+
+    &___input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      height: 7.5vh;
+      margin-bottom: 5%;
+      padding: 2%;
+      width: 100%;
+      &:active {
+        color: $rosaPadrao;
+      }
+    }
+
+    &___button {
+      @include color-fontSize($marromTipo, 1.25rem);
+      background-color: $rosaPadrao;
+      border: none;
+      height: 7.5vh;
+      padding: 2%;
+      transition: all 0.25s;
+      width: 100%;
+
+      &:hover {
+        background-color: $linkHover;
+        color: white;
+        transition: all 0.25s;
+      }
+      &:active {
+        border: 1px solid $linkActive;
+        color: $bgFooter;
+        transition: all 0.25s;
+      }
+    }
+  }
+
+  &__copyright {
     @include display-flexDirection(flex, column);
 
     @include tablet {
-        @include display-flexDirection(flex, row);
-        @include alignItens-justifyContent(center, space-between);
-        flex-wrap: wrap;
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(center, space-between);
+      width: 100%;
     }
 
-    &__section {
-
-        @include tablet {
-            @include display-flexDirection(flex, row);
-            margin-bottom: 1.5%;
-        }
+    @include desktop {
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(center, space-between);
+      width: 100%;
     }
 
-    &__box {
-        margin-bottom: 5%;
-        @include tablet {
-            width: 47.5%;
-        }
+    & p {
+      @include color-fontSize($marromAcinzentado, 0.65rem);
+      margin: 2% 0;
 
-        &___logo {
-            width: 40%;
-        }
+      @include tablet {
+        @include color-fontSize($marromAcinzentado, 0.75rem);
+        text-align: center;
+        width: 35%;
+      }
 
-        &___content {
-            @include color-fontSize(white, 1rem);
-            margin: 5% 0;
-        }
+      @include desktop {
+        @include color-fontSize($marromAcinzentado, 0.85rem);
+        text-align: center;
+        width: 40%;
+      }
+
+      & span {
+        font-weight: bold;
+      }
+
+      & a {
+        color: $laranjaPrincipal;
+        text-decoration: none;
+      }
     }
-
-    &__icontainer {
-        @include display-flexDirection(flex);
-        @include alignItens-justifyContent(null, space-between);
-        width: 50%;
-
-        &___icon {
-            @include color-fontSize($rosaPadrao, 2rem);
-            transition: color .25s;
-            &:hover {
-                color: $linkHover;
-                transition: color .25s;
-            }
-            &:active {
-                color: $linkActive;
-                transition: color .25s;
-            }
-            &visited {
-                color: $linkVisited;
-                transition: color .25s;
-            }
-        }
-    }
-
-    &__address {
-        @include display-flexDirection(flex, column);
-        margin: 10% 0;
-        @include tablet {
-            width: 47.5%;
-            margin: 0;
-            margin-bottom: 5%;
-        }
-
-        &___title {
-            @extend .title;
-            color: $rosaPadrao;
-            text-align: left;
-        }
-
-        &___box {
-            @include display-flexDirection(flex, row);
-            @include alignItens-justifyContent(center);
-            margin: 0;
-
-            &____icon {
-                @include color-fontSize(white, 0.9rem);
-                margin: 0 5% 0 0;
-            }
-
-            &____content {
-                color: white;
-                margin: 2% 0;
-            }
-        }
-
-    }
-
-    &__links {
-        @include display-flexDirection(flex, column);
-        margin: 10% 0;
-
-        @include tablet {
-            width: 47.5%;
-            margin: 2.5% 2.5% 0 0;
-        }
-
-        &___title {
-            @extend .title;
-            color: $rosaPadrao;
-            text-align: left;
-        }
-
-        &___content {
-            color: white;
-            margin: 2% 0;
-        }
-    }
-
-    &__newsletter {
-        @include display-flexDirection(flex, column);
-        margin: 10% 0;
-
-        @include tablet {
-            width: 47.5%;
-            margin: 2.5% 2.5% 0 0;
-        }
-
-        &___title {
-            @extend .title;
-            color: $rosaPadrao;
-            text-align: left;
-        }
-
-        &___content {
-            color: white;
-            margin: 0 0 5% 0;
-        }
-
-        &___input {
-            background-color: transparent;
-            border: none;
-            border-bottom: 1px solid white;
-            height: 7.5vh;
-            margin-bottom: 5%;
-            padding: 2%;
-            width: 100%;
-            &:active {
-                color: $rosaPadrao;
-            }
-        }
-
-        &___button {
-            @include color-fontSize($marromTipo, 1.25rem);
-            background-color: $rosaPadrao;
-            border: none;
-            height: 7.5vh;
-            padding: 2%;
-            transition: all 0.25s;
-            width: 100%;
-
-            &:hover {
-                background-color: $linkHover;
-                color: white;
-                transition: all 0.25s;
-            }
-            &:active {
-                border: 1px solid $linkActive;
-                color: $bgFooter;
-                transition: all 0.25s;
-            }
-        }
-    }
-
-    &__copyright {
-        @include display-flexDirection(flex, column);
-
-        @include tablet {
-            @include display-flexDirection(flex, row);
-            @include alignItens-justifyContent(center, space-between);
-            width: 100%;
-        }
-
-        & p {
-            @include color-fontSize($marromAcinzentado, 0.65rem);
-            margin: 2% 0;
-            
-            @include tablet {
-                text-align: center;
-                width: 35%;
-            }
-
-            & span {
-                font-weight: bold;
-            }
-
-            & a {
-                color: $laranjaPrincipal;
-                text-decoration: none;
-            }
-        }
-    }
+  }
 }
