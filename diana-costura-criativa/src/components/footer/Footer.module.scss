@@ -9,10 +9,26 @@
 .footerContainer {
     @include display-flexDirection(flex, column);
 
+    @include tablet {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, space-between);
+        flex-wrap: wrap;
+    }
+
+    &__section {
+
+        @include tablet {
+            @include display-flexDirection(flex, row);
+            margin-bottom: 1.5%;
+        }
+    }
+
     &__box {
         margin-bottom: 5%;
+        @include tablet {
+            width: 47.5%;
+        }
 
-        //REFATORAR AQUI e criar um estilo padrao pro logo do header e do footer
         &___logo {
             width: 40%;
         }
@@ -49,6 +65,11 @@
     &__address {
         @include display-flexDirection(flex, column);
         margin: 10% 0;
+        @include tablet {
+            width: 47.5%;
+            margin: 0;
+            margin-bottom: 5%;
+        }
 
         &___title {
             @extend .title;
@@ -78,6 +99,11 @@
         @include display-flexDirection(flex, column);
         margin: 10% 0;
 
+        @include tablet {
+            width: 47.5%;
+            margin: 2.5% 2.5% 0 0;
+        }
+
         &___title {
             @extend .title;
             color: $rosaPadrao;
@@ -93,6 +119,11 @@
     &__newsletter {
         @include display-flexDirection(flex, column);
         margin: 10% 0;
+
+        @include tablet {
+            width: 47.5%;
+            margin: 2.5% 2.5% 0 0;
+        }
 
         &___title {
             @extend .title;
@@ -143,9 +174,20 @@
     &__copyright {
         @include display-flexDirection(flex, column);
 
+        @include tablet {
+            @include display-flexDirection(flex, row);
+            @include alignItens-justifyContent(center, space-between);
+            width: 100%;
+        }
+
         & p {
             @include color-fontSize($marromAcinzentado, 0.65rem);
             margin: 2% 0;
+            
+            @include tablet {
+                text-align: center;
+                width: 35%;
+            }
 
             & span {
                 font-weight: bold;

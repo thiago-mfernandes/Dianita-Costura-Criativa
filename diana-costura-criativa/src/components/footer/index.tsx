@@ -9,77 +9,80 @@ export default function Footer() {
     <>
       <section className={styles.section}>
         <div className={styles.footerContainer}>
-          <div className={styles.footerContainer__box}>
-            <Logo className={styles.footerContainer__box___logo} />
-            <p className={styles.footerContainer__box___content}>
-              Peças com personalidade e originalidade você encontra aqui.
-            </p>
-            <div className={styles.footerContainer__icontainer}>
-              <MdFacebook
-                className={styles.footerContainer__icontainer___icon}
-              />
-              <FaInstagram
-                className={styles.footerContainer__icontainer___icon}
-              />
-              <FaWhatsapp
-                className={styles.footerContainer__icontainer___icon}
-              />
+
+          <div className={styles.footerContainer__section}>
+            <div className={styles.footerContainer__box}>
+              <Logo className={styles.footerContainer__box___logo} />
+              <p className={styles.footerContainer__box___content}>
+                Peças com personalidade e originalidade você encontra aqui.
+              </p>
+              <div className={styles.footerContainer__icontainer}>
+                <MdFacebook
+                  className={styles.footerContainer__icontainer___icon}
+                />
+                <FaInstagram
+                  className={styles.footerContainer__icontainer___icon}
+                />
+                <FaWhatsapp
+                  className={styles.footerContainer__icontainer___icon}
+                />
+              </div>
             </div>
+            <article className={styles.footerContainer__address}>
+              <h2 className={styles.footerContainer__address___title}>
+                Localização
+              </h2>
+              <address className={styles.footerContainer__address___box}>
+                <FiMapPin
+                  className={styles.footerContainer__address___box____icon}
+                />
+                <p className={styles.footerContainer__address___box____content}>
+                  Piracicaba - São Paulo - Brasil
+                </p>
+              </address>
+              <address className={styles.footerContainer__address___box}>
+                <FiPhone
+                  className={styles.footerContainer__address___box____icon}
+                />
+                <p className={styles.footerContainer__address___box____content}>
+                  +55 19 983561522
+                </p>
+              </address>
+              <address className={styles.footerContainer__address___box}>
+                <FiMail
+                  className={styles.footerContainer__address___box____icon}
+                />
+                <p className={styles.footerContainer__address___box____content}>
+                  info@example.com
+                </p>
+              </address>
+            </article>
           </div>
 
-          <article className={styles.footerContainer__address}>
-            <h2 className={styles.footerContainer__address___title}>
-              Localização
-            </h2>
-            <address className={styles.footerContainer__address___box}>
-              <FiMapPin
-                className={styles.footerContainer__address___box____icon}
-              />
-              <p className={styles.footerContainer__address___box____content}>
-                Piracicaba - São Paulo - Brasil
+          <div className={styles.footerContainer__section}>
+            <div className={styles.footerContainer__links}>
+              <h2 className={styles.footerContainer__links___title}>
+                Link's Rápidos
+              </h2>
+              <p className={styles.footerContainer__links___content}>&gt; Home</p>
+              <p className={styles.footerContainer__links___content}>
+                &gt; Sobre
               </p>
-            </address>
-            <address className={styles.footerContainer__address___box}>
-              <FiPhone
-                className={styles.footerContainer__address___box____icon}
-              />
-              <p className={styles.footerContainer__address___box____content}>
-                +55 19 983561522
+              <p className={styles.footerContainer__links___content}>
+                &gt; Produtos
               </p>
-            </address>
-            <address className={styles.footerContainer__address___box}>
-              <FiMail
-                className={styles.footerContainer__address___box____icon}
-              />
-              <p className={styles.footerContainer__address___box____content}>
-                info@example.com
+              <p className={styles.footerContainer__links___content}>
+                &gt; Contato
               </p>
-            </address>
-          </article>
-
-          <div className={styles.footerContainer__links}>
-            <h2 className={styles.footerContainer__links___title}>
-              Link's Rápidos
-            </h2>
-            <p className={styles.footerContainer__links___content}>&gt; Home</p>
-            <p className={styles.footerContainer__links___content}>
-              &gt; Sobre
-            </p>
-            <p className={styles.footerContainer__links___content}>
-              &gt; Produtos
-            </p>
-            <p className={styles.footerContainer__links___content}>
-              &gt; Contato
-            </p>
-          </div>
-
-          <div className={styles.footerContainer__newsletter}>
-            <h2 className={styles.footerContainer__newsletter___title}>Novidades</h2>
-            <p className={styles.footerContainer__newsletter___content}>
-              Cadastre seu email para receber notificações de novos produtos
-            </p>
-            <input className={styles.footerContainer__newsletter___input} type="text" placeholder="info@example.com" />
-            <button className={styles.footerContainer__newsletter___button}>Assinar</button>
+            </div>
+            <div className={styles.footerContainer__newsletter}>
+              <h2 className={styles.footerContainer__newsletter___title}>Novidades</h2>
+              <p className={styles.footerContainer__newsletter___content}>
+                Cadastre seu email para receber notificações de novos produtos
+              </p>
+              <input className={styles.footerContainer__newsletter___input} type="text" placeholder="info@example.com" />
+              <button className={styles.footerContainer__newsletter___button}>Assinar</button>
+            </div>
           </div>
           
           <div className={styles.footerContainer__copyright}>
