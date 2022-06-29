@@ -3,7 +3,7 @@
 .about {
   @include desktop {
     @include display-flexDirection(flex, row);
-    @include alignItens-justifyContent(center, space-between);
+    @include alignItens-justifyContent(center, center);
     flex-wrap: wrap;
     padding: 0 7.5%;
     width: 100%;
@@ -14,10 +14,11 @@
     @include display-flexDirection(flex, column);
 
     @include desktop {
-      @include alignItens-justifyContent(flex-start, center);
+      width: 100%;
+      @include alignItens-justifyContent(center, space-between);
       @include display-flexDirection(flex, row);
       flex-wrap: wrap;
-      &:last-of-type {
+      &:last-child {
         width: 75%;
       }
     }
@@ -30,7 +31,7 @@
     }
     @include desktop {
       width: 100%;
-      margin: 5% 0;
+      margin: 2.5% 0;
       font-size: 3.5rem;
     }
   }

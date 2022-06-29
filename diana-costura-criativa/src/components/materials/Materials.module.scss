@@ -21,6 +21,7 @@
     }
 
     @include desktop {
+      margin-bottom: 2%;
       &:last-of-type{
         @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(stretch, space-between);
@@ -58,12 +59,15 @@
 
     @include desktop {
       margin-bottom: 5%;
-      width: 30%;
+      width: 22.5%;
     }
 
     &___icon {
       padding: 5% 0;
       width: 30%;
+      @include desktop {
+        width: 25%;
+      }
     }
 
     &___title {
@@ -71,11 +75,18 @@
       border-bottom: 1px solid $laranjaPrincipal;
       border-top: 1px solid $laranjaPrincipal;
       padding: 2.5% 0;
+      @include desktop {
+        font-size: 1.25rem;
+      }
     }
 
     &___content {
       @extend .content;
       padding: 5%;
+      @include desktop {
+        font-size: 1rem;
+        line-height: 30px;
+      }
     }
   }
 }

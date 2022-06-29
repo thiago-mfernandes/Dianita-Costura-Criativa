@@ -29,9 +29,16 @@
   margin-bottom: 15%;
   padding: 5%;
   width: 100%;
-  
-  
 
+  @include desktop {
+    padding: 2.5% 0;
+    margin-bottom: 2.5%;
+
+    & > p {
+      margin: 1.5% 0;
+      width: 100%;
+    }
+  }
 
   &__button {
     @include color-fontSize($marromTipo, 1.25rem);
@@ -47,7 +54,8 @@
     }
 
     @include desktop {
-      width: 30%;
+      height: 7.5vh;
+      width: 15%;
     }
 
     &:hover {
@@ -89,7 +97,12 @@
   }
 
   @include desktop {
-    width: 30%;
+    width: 22.5%;
+    margin-bottom: 5%;
+    & .produtosAction {
+      justify-content: flex-end;
+      background-color: aqua;
+    }
   }
 
   &__img {
@@ -107,10 +120,16 @@
     border-bottom: 1px solid $laranjaPrincipal;
     margin: 0;
     padding: 2.5%;
+    @include desktop {
+      font-size: 1.5rem;
+    }
 
     & span {
       font-size: 0.9rem;
       font-weight: lighter;
+      @include desktop {
+        font-size: 1.1rem;
+      }
     }
   }
 
@@ -120,6 +139,9 @@
     margin: 0;
     padding: 5%;
     height: max-content;
+    @include desktop {
+      font-size: 1.25rem;
+    }
   }
 }
 
@@ -127,7 +149,9 @@
   @include alignItens-justifyContent(center, center);
   @include display-flexDirection(flex, row);
   width: 100%; 
-
+  @include desktop {
+    justify-content: flex-end;
+  }
 
   &__btn {
     @include color-fontSize($marromTipo, 1.125rem);

@@ -20,6 +20,7 @@ export default function Products() {
 
         {/* produtos filtros */}
         <div className={styles.produtosFilter}>
+          <p className={styles.produtosHeader__content}>Selecione seu tipo preferido:</p>
           <button className={styles.produtosFilter__button}>Necessàire</button>
           <button className={styles.produtosFilter__button}>
             Porta-Óculos

@@ -9,6 +9,9 @@
 
   &__content {
     @extend .content;
+    @include desktop {
+        text-align: center;
+    }
   }
 }
 
