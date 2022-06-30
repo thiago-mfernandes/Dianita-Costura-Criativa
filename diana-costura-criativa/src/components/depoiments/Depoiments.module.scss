@@ -1,4 +1,4 @@
-@import '../../scss/styles.scss';
+@import "scss/styles";
 
 .depoiments {
   padding: 0 5%;
@@ -10,66 +10,66 @@
   &__content {
     @extend .content;
     @include desktop {
-        text-align: center;
+      text-align: center;
     }
   }
 }
 
 .cardDepoiments {
-    @include display-flexDirection(flex, column);
-    border: 1px solid $laranjaPrincipal;
-    margin: 10% 0;
+  @include display-flexDirection(flex, column);
+  border: 1px solid $laranjaPrincipal;
+  margin: 10% 0;
 
-    &__content {
-        @extend .content;
-        border-bottom: 1px solid $laranjaPrincipal;
-        font-style: italic;
-        margin: 0;
-        min-height: 30vh;
-        padding: 5%;
-        width: 100%;
-    }    
+  &__content {
+    @extend .content;
+    border-bottom: 1px solid $laranjaPrincipal;
+    font-style: italic;
+    margin: 0;
+    min-height: 30vh;
+    padding: 5%;
+    width: 100%;
+  }
 
-    &__author {
-        color: $marromTipo;
-        font-size: 1rem;
-        font-weight: 900;
-        line-height: 24px;
-        margin: 0;
-        margin-top: 5%;
-        padding: 0 5%;
-        text-align: center;
-    }
+  &__author {
+    color: $marromTipo;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0 5%;
+    text-align: center;
+  }
 
-    &__authorSubtitle {
-        color: $marromTipo;
-        font-size: 0.85rem;
-        line-height: 24px;
-        margin: 0;
-        margin-bottom: 5%;
-        padding: 0 5%;
-        text-align: center;
-    }
+  &__authorSubtitle {
+    color: $marromTipo;
+    font-size: 0.85rem;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 0 5%;
+    text-align: center;
+  }
 }
 
 .controllerContainer {
+  @include display-flexDirection(flex, column);
+  @include alignItens-justifyContent(center, center);
+  width: 100%;
+
+  &__controller {
+    @include color-fontSize(1.25rem, $marromTipo);
     @include display-flexDirection(flex, column);
     @include alignItens-justifyContent(center, center);
-    width: 100%;
+    background-color: $bgBotao;
+    border: none;
+    border-radius: 50%;
+    height: 5vh;
+    margin: 0 2.5%;
+    width: 10%;
 
-    &__controller {
-        @include color-fontSize(1.25rem, $marromTipo);
-        @include display-flexDirection(flex, column);
-        @include alignItens-justifyContent(center, center);
-        background-color: $bgBotao;
-        border: none;
-        border-radius: 50%;
-        height: 5vh;
-        margin: 0 2.5%;
-        width: 10%;
-
-        & span {
-            font-size: 1.25rem;
-        }
+    & span {
+      font-size: 1.25rem;
     }
+  }
 }

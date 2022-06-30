@@ -1,4 +1,4 @@
-@import "../../scss/styles.scss";
+@import "scss/styles";
 
 .section {
   background-color: $bgFooter;
@@ -22,7 +22,6 @@
     @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(flex-start, flex-start);
     flex-wrap: wrap;
-    
   }
 
   &__section {
@@ -53,8 +52,6 @@
       @include color-fontSize(white, 1rem);
       margin: 5% 0;
     }
-
-    
   }
 
   &__icontainer {

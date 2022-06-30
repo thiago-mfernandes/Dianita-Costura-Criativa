@@ -1,8 +1,8 @@
-import Home from "pages/Home";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "normalize.css";
 import "./index.css";
+import Home from "pages/Home";
 import About from "components/about";
 import Materials from "components/materials";
 import Products from "components/products";
@@ -20,11 +20,9 @@ root.render(
     <About />
     <Materials />
     <Products />
-    {/*<Location />*/}
+    <Location />
     <Depoiments />
-    {
-      /* <Contact /> */
-    }
+    <Contact />
     <Footer />
   </React.StrictMode>
 );

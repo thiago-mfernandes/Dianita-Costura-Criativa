@@ -1,4 +1,4 @@
-@import "../../scss/styles.scss";
+@import "scss/styles";
 
 .materials {
   background-image: url("../../assets/bg2.svg");
@@ -13,7 +13,7 @@
     @include display-flexDirection(flex, column);
     @include alignItens-justifyContent(center);
     margin-bottom: 10%;
-    
+
     @include tablet {
       @include display-flexDirection(flex, row);
       @include alignItens-justifyContent(center, space-between);
@@ -22,7 +22,7 @@
 
     @include desktop {
       margin-bottom: 2%;
-      &:last-of-type{
+      &:last-of-type {
         @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(stretch, space-between);
         flex-wrap: wrap;
@@ -50,7 +50,7 @@
     border: 1px solid $laranjaPrincipal;
     box-shadow: 4px 4px 4px 0 rgba($color: #000000, $alpha: 8%);
     margin-bottom: 15%;
-    
+
     @include tablet {
       margin-bottom: 5%;
       min-height: 60vh;
