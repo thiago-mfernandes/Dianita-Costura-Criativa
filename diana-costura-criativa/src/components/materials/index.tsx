@@ -1,7 +1,8 @@
 import styles from "./Materials.module.scss";
 import Linhas from "assets/flaticon/yarn.svg";
 import Tecido from "assets/flaticon/tecido.svg";
-import Botao from  "assets/flaticon/botao.svg"
+import Botao from  "assets/flaticon/botao.svg";
+import Agulha from "assets/flaticon/agulha.svg";
 
 export default function Materials() {
   return (
@@ -63,63 +64,16 @@ export default function Materials() {
 
           <div className={styles.materials__card}>
             <img
-              src={Botao}
-              alt="Botões de Plástico de Metal"
+              src={Agulha}
+              alt="Material Sintético"
               className={styles.materials__card___icon}
             />
-            <h3 className={styles.materials__card___title}>Botões de Plástico de Metal</h3>
+            <h3 className={styles.materials__card___title}>Material Sintético</h3>
             <p className={styles.materials__card___content}>
-              Feitos de Resina plastica altamente durável ou ligas metálicas que evitam a oxidação, um problema muito inconveniente.
+            A produção de peças em material sintético é menos custosa do que as das criadas a partir do couro. Por isso, seu preço final (que chega até o consumidor) tende a ser mais barato. A textura das peças de material sintético é muito similar às de couro legítimo.
             </p>
           </div>
 
-          <div className={styles.materials__card}>
-            <img
-              src={Botao}
-              alt="Botões de Plástico de Metal"
-              className={styles.materials__card___icon}
-            />
-            <h3 className={styles.materials__card___title}>Botões de Plástico de Metal</h3>
-            <p className={styles.materials__card___content}>
-              Feitos de Resina plastica altamente durável ou ligas metálicas que evitam a oxidação, um problema muito inconveniente.
-            </p>
-          </div>
-
-          <div className={styles.materials__card}>
-            <img
-              src={Botao}
-              alt="Botões de Plástico de Metal"
-              className={styles.materials__card___icon}
-            />
-            <h3 className={styles.materials__card___title}>Botões de Plástico de Metal</h3>
-            <p className={styles.materials__card___content}>
-              Feitos de Resina plastica altamente durável ou ligas metálicas que evitam a oxidação, um problema muito inconveniente.
-            </p>
-          </div>
-
-          <div className={styles.materials__card}>
-            <img
-              src={Botao}
-              alt="Botões de Plástico de Metal"
-              className={styles.materials__card___icon}
-            />
-            <h3 className={styles.materials__card___title}>Botões de Plástico de Metal</h3>
-            <p className={styles.materials__card___content}>
-              Feitos de Resina plastica altamente durável ou ligas metálicas que evitam a oxidação, um problema muito inconveniente.
-            </p>
-          </div>
-
-          <div className={styles.materials__card}>
-            <img
-              src={Botao}
-              alt="Botões de Plástico de Metal"
-              className={styles.materials__card___icon}
-            />
-            <h3 className={styles.materials__card___title}>Botões de Plástico de Metal</h3>
-            <p className={styles.materials__card___content}>
-              Feitos de Resina plastica altamente durável ou ligas metálicas que evitam a oxidação, um problema muito inconveniente.
-            </p>
-          </div>
         </div>
       </section>
     </>

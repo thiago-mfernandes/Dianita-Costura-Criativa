@@ -21,6 +21,13 @@
       &:last-child {
         width: 75%;
       }
+
+      & > a {
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+        width: 100%;
+      }
     }
   }
 

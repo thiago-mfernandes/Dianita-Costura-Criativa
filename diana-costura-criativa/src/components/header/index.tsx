@@ -26,16 +26,30 @@ export default function Header() {
         <div className={styles.header__container}>
           <div className={styles.header__box}>
             <FaMapPin className={styles.icone} />
-            <p className={styles.header__box___content}>Piracicaba - São Paulo, Brazil</p>
+            <p className={styles.header__box___content}>
+              Piracicaba - São Paulo, Brazil
+            </p>
             <MdEmail className={styles.icone} />
             <p className={styles.header__box___content}>info@example.com</p>
           </div>
 
           <div className={styles.header__box}>
             <p className={styles.header__container}>Redes Sociais:</p>
-            <MdFacebook className={styles.icone} />
-            <FaInstagram className={styles.icone} />
-            <FaWhatsapp className={styles.icone} />
+            <a
+              href="https://www.facebook.com/profile.php?id=100063636849048"
+              target="_blank"
+            >
+              <MdFacebook className={styles.icone} />
+            </a>
+            <a
+              href="https://www.instagram.com/dianitacosturacriativa/"
+              target="_blank"
+            >
+              <FaInstagram className={styles.icone} />
+            </a>
+            <a href="https://wa.me/5519983561522">
+              <FaWhatsapp className={styles.icone} />
+            </a>
           </div>
         </div>
         {/* cabecalho */}
@@ -77,7 +91,7 @@ export default function Header() {
 
         <div className={styles.header__containerContent}>
           {/*container do titulo principal e botao */}
-          <div >
+          <div>
             <div>
               <h2 className={styles.header__containerContent___subtitle}>
                 Feitos à mão com
@@ -93,7 +107,9 @@ export default function Header() {
             </div>
           </div>
         </div>
+        <a href="https://wa.me/5519983561522">
           <button className={styles.header__botao}>Saiba Mais</button>
+        </a>
       </header>
     </>
   );

@@ -32,7 +32,11 @@ export default function About() {
               <br />
               DIANA(Dianita costura criativa).
             </p>
-            <button className={styles.about__botaoSaibaMais}>Saiba Mais</button>
+            <a href="https://wa.me/5519983561522" target="_blank">
+              <button className={styles.about__botaoSaibaMais}>
+                Saiba Mais
+              </button>
+            </a>
           </div>
         </div>
       </section>

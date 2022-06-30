@@ -9,12 +9,12 @@ export default function Footer() {
     <>
       <section className={styles.section}>
         <div className={styles.footerContainer}>
-
           <div className={styles.footerContainer__section}>
             <div className={styles.footerContainer__box}>
               <Logo className={styles.footerContainer__box___logo} />
               <p className={styles.footerContainer__box___content}>
-                Peças com personalidade e originalidade você encontra aqui.
+                Peças com personalidade e <br />
+                originalidade você encontra aqui.
               </p>
               <div className={styles.footerContainer__icontainer}>
                 <MdFacebook
@@ -61,10 +61,10 @@ export default function Footer() {
 
           <div className={styles.footerContainer__section}>
             <div className={styles.footerContainer__links}>
-              <h2 className={styles.footerContainer__links___title}>
-                Link's Rápidos
-              </h2>
-              <p className={styles.footerContainer__links___content}>&gt; Home</p>
+              <h2 className={styles.footerContainer__links___title}>Link's</h2>
+              <p className={styles.footerContainer__links___content}>
+                &gt; Home
+              </p>
               <p className={styles.footerContainer__links___content}>
                 &gt; Sobre
               </p>
@@ -76,15 +76,23 @@ export default function Footer() {
               </p>
             </div>
             <div className={styles.footerContainer__newsletter}>
-              <h2 className={styles.footerContainer__newsletter___title}>Novidades</h2>
+              <h2 className={styles.footerContainer__newsletter___title}>
+                Novidades
+              </h2>
               <p className={styles.footerContainer__newsletter___content}>
                 Cadastre seu email para receber notificações de novos produtos
               </p>
-              <input className={styles.footerContainer__newsletter___input} type="text" placeholder="info@example.com" />
-              <button className={styles.footerContainer__newsletter___button}>Assinar</button>
+              <input
+                className={styles.footerContainer__newsletter___input}
+                type="text"
+                placeholder="info@example.com"
+              />
+              <button className={styles.footerContainer__newsletter___button}>
+                Assinar
+              </button>
             </div>
           </div>
-          
+
           <div className={styles.footerContainer__copyright}>
             <p>
               &copy;{" "}
@@ -98,7 +106,8 @@ export default function Footer() {
               Designed by{" "}
               <a
                 href="https://www.instagram.com/thiago_mfernandes/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 Thiago Fernandes
               </a>

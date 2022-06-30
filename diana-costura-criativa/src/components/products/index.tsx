@@ -20,20 +20,21 @@ export default function Products() {
 
         {/* produtos filtros */}
         <div className={styles.produtosFilter}>
-          <p className={styles.produtosHeader__content}>Selecione seu tipo preferido:</p>
-          <button className={styles.produtosFilter__button}>Necessàire</button>
-          <button className={styles.produtosFilter__button}>
-            Porta-Óculos
-          </button>
-          <button className={styles.produtosFilter__button}>
-            Mini-Necessàire
-          </button>
-          <button className={styles.produtosFilter__button}>Kit</button>
+          <p className={styles.produtosHeader__content}>
+            Selecione seu tipo preferido:
+          </p>
+          {data.categories.map((item) => (
+            <a href="https://wa.me/5519983561522" target="_blank">
+              <button key={item.id} className={styles.produtosFilter__button}>
+                {item.type}
+              </button>
+            </a>
+          ))}
         </div>
 
         {/* card produto */}
         <div className={styles.produtosContainerCard}>
-        {data.produtcs.map((product) => (
+          {data.produtcs.map((product) => (
             <div className={styles.produtosCard} key={product.id}>
               <img
                 className={styles.produtosCard__img}
@@ -51,11 +52,13 @@ export default function Products() {
               <div className={styles.produtosAction}>
                 <button className={styles.produtosAction__btn}>Comprar</button>
                 <button className={styles.produtosAction__btnDetails}>
-                  <IoIosAdd className={styles.produtosAction__btnDetails___icon}/>
+                  <IoIosAdd
+                    className={styles.produtosAction__btnDetails___icon}
+                  />
                 </button>
               </div>
             </div>
-        ))}
+          ))}
         </div>
       </section>
     </>

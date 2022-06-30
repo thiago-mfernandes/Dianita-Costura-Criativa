@@ -1,4 +1,38 @@
 {
+  "categories": [
+    {
+      "id": 1,
+      "type": "Estojo Escolar"
+    },
+    {
+      "id": 2,
+      "type": "Fone / Carregador"
+    },
+    {
+      "id": 3,
+      "type": "Kit's"
+    },
+    {
+      "id": 4,
+      "type": "Mini Necessaire"
+    },
+    {
+      "id": 5,
+      "type": "Necessaire"
+    },
+    {
+      "id": 6,
+      "type": "Higiene Bucal"
+    },
+    {
+      "id": 7,
+      "type": "Porta Óculos"
+    },
+    {
+      "id": 9,
+      "type": "Porta Talheres"
+    }
+  ],
   "produtcs": [
     {
       "id": 1,
