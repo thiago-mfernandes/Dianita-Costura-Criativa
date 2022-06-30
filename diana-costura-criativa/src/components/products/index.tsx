@@ -1,8 +1,17 @@
 import styles from "./Produtos.module.scss";
 import { IoIosAdd } from "react-icons/io";
 import data from "./products.json";
+import Buscador from "./Buscador";
+import { useState } from "react";
+import Filtros from "./Filtros";
+
 
 export default function Products() {
+
+  //o estado do buscador fica um nivel acima dele mesmo
+  const [busca, setBusca] = useState("");
+  const [filtro, setFiltro] = useState<number | null>(null);
+
   return (
     <>
       {/* produtos header*/}
@@ -18,16 +27,17 @@ export default function Products() {
           </p>
         </div>
 
+        {/* produtos buscador */}
+        {/* buscador possui um atributo busca que eh o ESTADO de busca que esta no pai, e uma funcao de busca. Passar via props para ser renderizado no componente*/}
+        <Buscador busca={busca} setBusca={setBusca} />
+
         {/* produtos filtros */}
         <div className={styles.produtosFilter}>
           <p className={styles.produtosHeader__content}>
             Selecione seu tipo preferido:
           </p>
-          {data.categories.map((item) => (
-            <button key={item.id} className={styles.produtosFilter__button}>
-              {item.type}
-            </button>
-          ))}
+          {/* passo para o componente receber o estado e a funcao */}
+          <Filtros filtro={filtro} setFiltro={setFiltro}/>
         </div>
 
         {/* card produto */}
