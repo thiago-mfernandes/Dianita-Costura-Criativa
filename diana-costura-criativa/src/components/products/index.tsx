@@ -24,11 +24,9 @@ export default function Products() {
             Selecione seu tipo preferido:
           </p>
           {data.categories.map((item) => (
-            <a href="https://wa.me/5519983561522" target="_blank">
-              <button key={item.id} className={styles.produtosFilter__button}>
-                {item.type}
-              </button>
-            </a>
+            <button key={item.id} className={styles.produtosFilter__button}>
+              {item.type}
+            </button>
           ))}
         </div>
 
@@ -50,12 +48,14 @@ export default function Products() {
                 {product.description}
               </p>
               <div className={styles.produtosAction}>
-                <button className={styles.produtosAction__btn}>Comprar</button>
-                <button className={styles.produtosAction__btnDetails}>
-                  <IoIosAdd
-                    className={styles.produtosAction__btnDetails___icon}
-                  />
-                </button>
+                <a href="https://wa.me/5519983561522" target="_blank">
+                  <button className={styles.produtosAction__btn}>Comprar</button>
+                  <button className={styles.produtosAction__btnDetails}>
+                    <IoIosAdd
+                      className={styles.produtosAction__btnDetails___icon}
+                    />
+                  </button>
+                </a>
               </div>
             </div>
           ))}

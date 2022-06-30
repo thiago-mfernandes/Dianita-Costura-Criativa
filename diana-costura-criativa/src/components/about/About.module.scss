@@ -13,6 +13,21 @@
     @include alignItens-justifyContent(center);
     @include display-flexDirection(flex, column);
 
+    & > a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      width: 100%;
+    }
+    @include tablet {
+      & > a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        width: 100%;
+      }
+    }
+
     @include desktop {
       width: 100%;
       @include alignItens-justifyContent(center, space-between);

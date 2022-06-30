@@ -17,17 +17,30 @@ export default function Footer() {
                 originalidade você encontra aqui.
               </p>
               <div className={styles.footerContainer__icontainer}>
-                <MdFacebook
-                  className={styles.footerContainer__icontainer___icon}
-                />
-                <FaInstagram
-                  className={styles.footerContainer__icontainer___icon}
-                />
-                <FaWhatsapp
-                  className={styles.footerContainer__icontainer___icon}
-                />
+                <a
+                  className={styles.footerContainer__icontainer___link}
+                  href="https://www.facebook.com/profile.php?id=100063636849048"
+                  target="_blank"
+                >
+                  <MdFacebook className={styles.footerContainer__icontainer___icon} />
+                </a>
+                <a
+                  className={styles.footerContainer__icontainer___link}
+                  href="https://www.instagram.com/dianitacosturacriativa/"
+                  target="_blank"
+                >
+                  <FaInstagram className={styles.footerContainer__icontainer___icon} />
+                </a>
+                <a 
+                  className={styles.footerContainer__icontainer___link}
+                  href="https://wa.me/5519983561522" 
+                  target="_blank"
+                >
+                  <FaWhatsapp className={styles.footerContainer__icontainer___icon} />
+                </a>
               </div>
             </div>
+            
             <article className={styles.footerContainer__address}>
               <h2 className={styles.footerContainer__address___title}>
                 Localização
@@ -75,6 +88,7 @@ export default function Footer() {
                 &gt; Contato
               </p>
             </div>
+
             <div className={styles.footerContainer__newsletter}>
               <h2 className={styles.footerContainer__newsletter___title}>
                 Novidades

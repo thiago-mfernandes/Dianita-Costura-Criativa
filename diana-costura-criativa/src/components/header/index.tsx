@@ -47,7 +47,10 @@ export default function Header() {
             >
               <FaInstagram className={styles.icone} />
             </a>
-            <a href="https://wa.me/5519983561522">
+            <a 
+              href="https://wa.me/5519983561522" 
+              target="_blank"
+            >
               <FaWhatsapp className={styles.icone} />
             </a>
           </div>

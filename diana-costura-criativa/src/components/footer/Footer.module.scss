@@ -29,6 +29,7 @@
     @include tablet {
       @include display-flexDirection(flex, row);
       margin-bottom: 1.5%;
+      width: 100%;
     }
     @include desktop {
       @include display-flexDirection(flex, row);
@@ -52,12 +53,21 @@
       @include color-fontSize(white, 1rem);
       margin: 5% 0;
     }
+
+    
   }
 
   &__icontainer {
     @include display-flexDirection(flex);
     @include alignItens-justifyContent(null, space-between);
     width: 50%;
+
+    &___link {
+      @include desktop {
+        text-decoration: none;
+        width: 100%;
+      }
+    }
 
     &___icon {
       @include color-fontSize($rosaPadrao, 2rem);
