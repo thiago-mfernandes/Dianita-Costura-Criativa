@@ -2,8 +2,10 @@ import styles from "./Produtos.module.scss";
 import { IoIosAdd } from "react-icons/io";
 import data from "./products.json";
 import Buscador from "./Buscador";
-import { useState } from "react";
 import Filtros from "./Filtros";
+import { useState } from "react";
+import Ordenador from "./Ordenador";
+import Produtos from "pages/Produtos";
 
 
 export default function Products() {
@@ -11,6 +13,7 @@ export default function Products() {
   //o estado do buscador fica um nivel acima dele mesmo
   const [busca, setBusca] = useState("");
   const [filtro, setFiltro] = useState<number | null>(null);
+  const [ordenador, setOrdenador] = useState("");
 
   return (
     <>
@@ -29,7 +32,10 @@ export default function Products() {
 
         {/* produtos buscador */}
         {/* buscador possui um atributo busca que eh o ESTADO de busca que esta no pai, e uma funcao de busca. Passar via props para ser renderizado no componente*/}
-        <Buscador busca={busca} setBusca={setBusca} />
+        <div className={styles.produtosContainerBuscarOrdenar}>
+          <Buscador busca={busca} setBusca={setBusca} />
+          <Ordenador ordenador={ordenador} setOrdenador={setOrdenador}/>
+        </div>
 
         {/* produtos filtros */}
         <div className={styles.produtosFilter}>

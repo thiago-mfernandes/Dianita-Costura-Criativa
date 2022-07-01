@@ -22,6 +22,15 @@
   }
 }
 
+.produtosContainerBuscarOrdenar {
+
+  @include desktop {
+    @include alignItens-justifyContent(center, space-between);
+    @include display-flexDirection(flex, row);
+    width: 100%;
+  }
+}
+
 .produtosContainerCard {
   @include display-flexDirection(flex, column);
   @include alignItens-justifyContent(center, null);
