@@ -48,7 +48,7 @@ export default function Header() {
               <FaInstagram className={styles.icone} />
             </a>
             <a 
-              href="https://wa.me/5519983561522" 
+              href="https://wa.me/5519983723718" 
               target="_blank"
             >
               <FaWhatsapp className={styles.icone} />
@@ -110,7 +110,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <a href="https://wa.me/5519983561522">
+        <a href="https://wa.me/5519983723718">
           <button className={styles.header__botao}>Saiba Mais</button>
         </a>
       </header>

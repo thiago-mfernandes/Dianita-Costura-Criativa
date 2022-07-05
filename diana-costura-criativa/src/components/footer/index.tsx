@@ -33,7 +33,7 @@ export default function Footer() {
                 </a>
                 <a 
                   className={styles.footerContainer__icontainer___link}
-                  href="https://wa.me/5519983561522" 
+                  href="https://wa.me/5519983723718" 
                   target="_blank"
                 >
                   <FaWhatsapp className={styles.footerContainer__icontainer___icon} />
