@@ -1,37 +1,59 @@
+import data from "../products.json";
+import Item from "../Itens/Item/";
 import styles from "./Itens.module.scss";
-import { IoIosAdd } from "react-icons/io";
+import {useState, useEffect} from "react";
 
-interface Props {
-  id: number;
-  title: string;
-  preco: string;
-  description: string;
-  photo: string;
+{
+  /*
+    aqui eh onde estou fazendo o map dos itens, portanto aqui aplico o filtro:
+    1. crio um estado de uma lista, que comeca com o objeto data.products
+    2. aplico a lista no map, antes era data.produtcs.map
+    3. toda vez que um estado (busca, filtro ou ordenador mudar) um hoks precisa ser ativado pra lista ser re-renderizada
+    4. o primeiro parametro do useEffect eh uma arrow function e o segundo um array de dependencias[sempre que busca ou filtro atualizar, useEffect funciona]
+  */
 }
 
-export default function Item({ id, title, preco, description, photo }: Props) {
+
+interface Props {
+  busca: string;
+  filtro: number | null;
+  ordenador: string;
+}
+
+export default function Itens(props: Props) {
+  const {busca, filtro, ordenador} = props;
+  const [lista, setLista] = useState(data.produtcs);
+  console.log(lista)
+
+  useEffect(() => {
+    const novaLista = data.produtcs.filter(item => testaBusca(item.title) && testaFiltro(item.id));
+    setLista(ordenar(novaLista));
+  }, [busca, filtro, ordenador]);
+
+  function testaBusca(title: string) {
+    const regex = new RegExp(busca, 'i');
+    return regex.test(title);
+  }
+
+  function testaFiltro(id: number) {
+    //se existir um um filtro, retorna o id dele. Se nao for, retorna false e nao exibe nada.
+    if(filtro !== null) return filtro === id;
+    return true;
+  }
+
+  function ordenar(novaLista: typeof data) {
+    switch(ordenador) {
+      case 'Estojo EScolar':
+        return novaLista.sort((a, b) => a.)
+    }
+  }
+  
   return (
     <>
-      <div className={styles.produtosCard} key={id}>
-        <img
-          className={styles.produtosCard__img}
-          src={`${photo}`}
-          alt={title}
-        />
-        <h3 className={styles.produtosCard__title}>
-          {title}
-          <br />
-          <span>{preco}</span>
-        </h3>
-        <p className={styles.produtosCard__content}>{description}</p>
-        <div className={styles.produtosAction}>
-          <a href="https://wa.me/5519983723718" target="_blank">
-            <button className={styles.produtosAction__btn}>Comprar</button>
-            <button className={styles.produtosAction__btnDetails}>
-              <IoIosAdd className={styles.produtosAction__btnDetails___icon} />
-            </button>
-          </a>
-        </div>
+      <div className={styles.produtosContainerCard}>
+        {lista.map((product) => (
+          <Item key={product.id} {...product} />
+        ))}
       </div>
     </>
   );

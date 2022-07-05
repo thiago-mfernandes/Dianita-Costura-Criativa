@@ -1,4 +1,4 @@
-@import "scss/styles";
+@import "../../../scss/styles.scss";
 
 .produtosFilter {
   @include alignItens-justifyContent(null, space-between);

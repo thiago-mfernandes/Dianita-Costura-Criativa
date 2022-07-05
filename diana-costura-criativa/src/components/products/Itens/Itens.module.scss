@@ -1,121 +1,18 @@
 @import "../../../scss/styles.scss";
 
-
-.produtosCard {
-  @include alignItens-justifyContent(center, flex-start);
+.produtosContainerCard {
   @include display-flexDirection(flex, column);
-  border: 1px solid $laranjaPrincipal;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 8%);
-  margin-bottom: 10%;
-  overflow: hidden;
-  width: 90%;
+  @include alignItens-justifyContent(center, null);
 
   @include tablet {
-    width: 47.5%;
-  }
-
-  @include desktop {
-    width: 22.5%;
-    margin-bottom: 5%;
-  }
-
-  &__img {
-    border: 1px solid $laranjaPrincipal;
-    transition: all 0.75s;
-    width: 100%;
-    &:hover {
-      transform: scale(1.1);
-      transition: all 0.75s;
-    }
-  }
-
-  &__title {
-    @extend .title;
-    border-bottom: 1px solid $laranjaPrincipal;
-    margin: 0;
-    padding: 2.5%;
-    @include desktop {
-      font-size: 1.5rem;
-    }
-
-    & span {
-      font-size: 0.9rem;
-      font-weight: lighter;
-      @include desktop {
-        font-size: 1.1rem;
-      }
-    }
-  }
-
-  &__content {
-    @extend .content;
-    border-bottom: 1px solid $laranjaPrincipal;
-    margin: 0;
-    padding: 5%;
-    @include tablet {
-      flex-grow: 2;
-    }
-    @include desktop {
-      font-size: 1.25rem;
-      flex-grow: 2;
-    }
-  }
-}
-
-.produtosAction {
-  @include alignItens-justifyContent(center, center);
-  @include display-flexDirection(flex, row);
-  width: 100%;
-  @include desktop {
-    justify-content: flex-end;
-  }
-
-  & > a {
     @include display-flexDirection(flex, row);
-    @include alignItens-justifyContent(center, space-between);
-    text-decoration: none;
-    width: 100%;
+    @include alignItens-justifyContent(stretch, space-between);
+    flex-wrap: wrap;
   }
 
-  &__btn {
-    @include color-fontSize($marromTipo, 1.125rem);
-    background-color: transparent;
-    border: none;
-    border-right: 1px solid $laranjaPrincipal;
-    font-weight: 700;
-    height: 7.5vh;
-    padding: 5%;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all 0.25s;
-    width: 100%;
-    &:hover {
-      @include color-fontSize(white, 1.175rem);
-      background-color: $marromTipo;
-      transition: all 0.25s;
-    }
-    &:active {
-      background-color: $laranjaPrincipal;
-      color: $marromAcinzentado;
-      transition: all 0.25s;
-    }
-  }
-
-  &__btnDetails {
-    background-color: transparent;
-    border: none;
-
-    &___icon {
-      @include color-fontSize($marromTipo, 1.25rem);
-      &:hover {
-        @include color-fontSize($laranjaPrincipal, 1.175rem);
-        transition: all 0.25s;
-      }
-      &:active {
-        background-color: $laranjaPrincipal;
-        color: $marromAcinzentado;
-        transition: all 0.25s;
-      }
-    }
+  @include desktop {
+    @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(stretch, space-between);
+    flex-wrap: wrap;
   }
 }

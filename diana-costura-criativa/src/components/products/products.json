@@ -18,8 +18,7 @@
     },
     {
       "id": 5,
-      "type": "Necessaire",
-      "value": "necessaire"
+      "type": "Necessaire"
     },
     {
       "id": 6,
@@ -31,8 +30,7 @@
     },
     {
       "id": 9,
-      "type": "Porta Talheres",
-      "value": "porta_talheres"
+      "type": "Porta Talheres"
     }
   ],
   "produtcs": [
@@ -41,21 +39,21 @@
       "title": "Necessáire Tradicional",
       "preco": "R$30.00",
       "description": "Material externo nylon e forro 100% algodão.",
-      "photo": "/assets/produtos/necessaire-tradicional/neces-trad-1.jpeg"
+      "photo": "assets/produtos/necessaire-tradicional/neces-trad-1.jpeg"
     },
     {
       "id": 2,
       "title": "Necessáire Romântica",
       "preco": "R$33.00",
       "description": "Material externo e interno 100% algodão com alça removível de material sintético.",
-      "photo": "/assets/produtos/necessaire-romantica/neces-romantica-1.jpeg"
+      "photo": "assets/produtos/necessaire-romantica/neces-romantica-1.jpeg"
     },
     {
       "id": 3,
       "title": "Mini Necessáire Anne",
       "preco": "R$25.00",
       "description": "Material externo e interno 100% algodão com alça removível de material sintético.",
-      "photo": "assets/produtos/mini-necessaire ANNE/mini-necess-anne-1.jpeg"
+      "photo": "assets/produtos/mini-necessaire-anne/mini-necess-anne-1.jpeg"
     },
     {
       "id": 4,

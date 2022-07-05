@@ -1,10 +1,10 @@
 import styles from "./Produtos.module.scss";
-import data from "./products.json";
 import Buscador from "./Buscador";
 import Filtros from "./Filtros";
 import { useState } from "react";
 import Ordenador from "./Ordenador";
-import Item from "./Itens";
+import Itens from "./Itens";
+
 
 export default function Products() {
   //o estado do buscador fica um nivel acima dele mesmo
@@ -43,14 +43,9 @@ export default function Products() {
           <Filtros filtro={filtro} setFiltro={setFiltro} />
         </div>
 
-        {/* card produto */}
-        <div className={styles.produtosContainerCard}>
-          {data.produtcs.map((product) => (
-            <>
-              <Item key={product.id} {...product} />
-            </>
-          ))}
-        </div>
+        {/* itens */}
+
+        <Itens busca={busca} filtro={filtro} ordenador={ordenador}/>
       </section>
     </>
   );

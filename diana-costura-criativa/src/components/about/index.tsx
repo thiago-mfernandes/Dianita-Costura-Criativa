@@ -1,5 +1,5 @@
 import styles from "./About.module.scss";
-import ImgDiana from "assets/diana-perfil.png";
+import ImgDiana from "assets/about/about-1.jpeg";
 
 export default function About() {
   return (
