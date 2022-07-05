@@ -1,4 +1,4 @@
-@import "scss/styles";
+@import "../../scss/styles.scss";
 
 .navContainer {
   @include display-flexDirection(flex);
@@ -31,10 +31,10 @@
     @include display-flexDirection(flex, column);
     background-color: transparent;
     border: 3px solid $marromTipo;
-    height: 6.5%;
+    height: 7.5%;
     position: absolute;
-    right: 7.5%;
-    top: 4.5%;
+      right: 7.5%;
+      top: 5%;
     padding: 2.5% 2%;
     width: 15%;
 

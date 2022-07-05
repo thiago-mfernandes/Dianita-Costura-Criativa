@@ -1,4 +1,4 @@
-@import "scss/styles";
+@import "../../scss/styles.scss";
 
 .materials {
   background-image: url("../../assets/bg2.svg");
@@ -49,7 +49,8 @@
     background-color: white;
     border: 1px solid $laranjaPrincipal;
     box-shadow: 4px 4px 4px 0 rgba($color: #000000, $alpha: 8%);
-    margin-bottom: 15%;
+    margin-bottom: 5%;
+    width: 80%;
 
     @include tablet {
       margin-bottom: 5%;

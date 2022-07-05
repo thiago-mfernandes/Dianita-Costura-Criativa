@@ -23,7 +23,7 @@
 }
 
 .produtosContainerBuscarOrdenar {
-
+  width: 100%;
   @include desktop {
     @include alignItens-justifyContent(center, space-between);
     @include display-flexDirection(flex, row);

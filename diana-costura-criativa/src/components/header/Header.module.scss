@@ -1,4 +1,4 @@
-@import "scss/styles";
+@import "../../scss/styles.scss";
 
 .icone {
   @include color-fontSize(1rem, $marromTipo);
@@ -22,6 +22,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100%;
+
   @include desktop {
     padding: 0 7.5%;
   }
@@ -60,10 +62,7 @@
   &__containerContent {
     @include display-flexDirection(flex, column);
     @include alignItens-justifyContent(null, space-between);
-    //------------------------------------------
-    //margim para ajuste apenas no mobile
-    margin-bottom: 75%;
-    //------------------------------------------
+    margin-bottom: 60%;
     @include tablet {
       margin-bottom: 55%;
     }

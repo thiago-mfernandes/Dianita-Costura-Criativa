@@ -8,7 +8,7 @@ export default function Depoiments() {
 
   const settings: SliderProps = {
     spaceBetween: 50,
-    slidesPerView: windowWidth < 767 ? 1 : 2,
+    slidesPerView: windowWidth < 768 ? 1 : 2,
     navigation: data.testimonials.length >= 3,
     draggable: data.testimonials.length >= 3,
     loop: data.testimonials.length >= 1,
