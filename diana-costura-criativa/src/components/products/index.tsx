@@ -7,9 +7,9 @@ import Itens from "./Itens";
 
 
 export default function Products() {
-  //o estado do buscador fica um nivel acima dele mesmo
+  //o estado da busca e do filtro ficam um nivel acima dele mesmos, isto é, acima do componente:
   const [busca, setBusca] = useState("");
-  const [filtro, setFiltro] = useState<number | null>(null);
+  const [filtro, setFiltro] = useState<string | null>(null);
   const [ordenador, setOrdenador] = useState("");
 
   return (
@@ -31,7 +31,7 @@ export default function Products() {
         {/* buscador possui um atributo busca que eh o ESTADO de busca que esta no pai, e uma funcao de busca. Passar via props para ser renderizado no componente*/}
         <div className={styles.produtosContainerBuscarOrdenar}>
           <Buscador busca={busca} setBusca={setBusca} />
-          <Ordenador ordenador={ordenador} setOrdenador={setOrdenador} />
+          {/*<Ordenador ordenador={ordenador} setOrdenador={setOrdenador} />*/}
         </div>
 
         {/* produtos filtros */}
@@ -43,7 +43,7 @@ export default function Products() {
           <Filtros filtro={filtro} setFiltro={setFiltro} />
         </div>
 
-        {/* itens */}
+        {/* itens recebem os estados por props */}
 
         <Itens busca={busca} filtro={filtro} ordenador={ordenador}/>
       </section>

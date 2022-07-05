@@ -33,10 +33,11 @@
       "type": "Porta Talheres"
     }
   ],
-  "produtcs": [
+  "products": [
     {
       "id": 1,
       "title": "Necessáire Tradicional",
+      "type": "Necessaire",
       "preco": "R$30.00",
       "description": "Material externo nylon e forro 100% algodão.",
       "photo": "assets/produtos/necessaire-tradicional/neces-trad-1.jpeg"
@@ -44,6 +45,7 @@
     {
       "id": 2,
       "title": "Necessáire Romântica",
+      "type": "Necessaire",
       "preco": "R$33.00",
       "description": "Material externo e interno 100% algodão com alça removível de material sintético.",
       "photo": "assets/produtos/necessaire-romantica/neces-romantica-1.jpeg"
@@ -51,6 +53,7 @@
     {
       "id": 3,
       "title": "Mini Necessáire Anne",
+      "type": "Mini Necessaire",
       "preco": "R$25.00",
       "description": "Material externo e interno 100% algodão com alça removível de material sintético.",
       "photo": "assets/produtos/mini-necessaire-anne/mini-necess-anne-1.jpeg"
@@ -58,6 +61,7 @@
     {
       "id": 4,
       "title": "Porta-Óculos",
+      "type": "Porta Óculos",
       "preco": "R$22.00",
       "description": "Material externo e interno 100% algodão.",
       "photo": "assets/produtos/porta-oculos/porta-oculos-1.jpeg"
@@ -65,6 +69,7 @@
     {
       "id": 5,
       "title": "Porta-Óculos",
+      "type": "Porta Óculos",
       "preco": "R$22.00",
       "description": "Material externo e interno 100% algodão.",
       "photo": "assets/produtos/porta-oculos/porta-oculos-2.jpeg"
@@ -72,6 +77,7 @@
     {
       "id": 6,
       "title": "Porta-Óculos",
+      "type": "Porta Óculos",
       "preco": "R$22.00",
       "description": "Material externo e interno 100% algodão.",
       "photo": "assets/produtos/porta-oculos/porta-oculos-3.jpeg"
@@ -79,6 +85,7 @@
     {
       "id": 7,
       "title": "Kit Marcelle",
+      "type": "Kit's",
       "preco": "R$58.00",
       "description": "1 - Necessàire tradicional + 1 - Carteira Íntima. Material externo nylon/linho e forro com cetim; fechos de ambas em material sintético.",
       "photo": "assets/produtos/kit-marcelle/kit-marcelle-1.jpeg"
@@ -86,6 +93,7 @@
     {
       "id": 8,
       "title": "Kit Menininhas",
+      "type": "Kit's",
       "preco": "R$35.00",
       "description": "1 - Mini Necessàire + 1 - Porta-Moedas. Material externo nylon e interno 100% algodão.",
       "photo": "assets/produtos/kit-menininhas/kit-menininhas-1.jpeg"
@@ -93,6 +101,7 @@
     {
       "id": 9,
       "title": "Kit Menininhas",
+      "type": "Kit's",
       "preco": "R$35.00",
       "description": "1 - Mini Necessàire + 1 - Porta-Moedas. Material externo nylon e interno 100% algodão.",
       "photo": "assets/produtos/kit-menininhas/kit-menininhas-2.jpeg"
@@ -100,6 +109,7 @@
     {
       "id": 10,
       "title": "Kit Menininhas",
+      "type": "Kit's",
       "preco": "R$35.00",
       "description": "1 - Mini Necessàire + 1 - Porta-Moedas. Material externo nylon e interno 100% algodão.",
       "photo": "assets/produtos/kit-menininhas/kit-menininhas-3.jpeg"
@@ -107,6 +117,7 @@
     {
       "id": 11,
       "title": "Kit Porta-Esmalte + Porta-Alicate",
+      "type": "Kit's",
       "preco": "R$39.90",
       "description": "1 - Necessàire Porta-Esmalte + 1 - Porta-Alicate. Material externo nylon e interno 100% algodão.",
       "photo": "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-1.jpeg"
@@ -114,6 +125,7 @@
     {
       "id": 12,
       "title": "Kit Porta-Esmalte + Porta-Alicate",
+      "type": "Kit's",
       "preco": "R$39.90",
       "description": "1 - Necessàire Porta-Esmalte + 1 - Porta-Alicate. Material externo nylon e interno 100% algodão.",
       "photo": "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-2.jpeg"
@@ -121,6 +133,7 @@
     {
       "id": 13,
       "title": "Kit Necessàire + Porta-Moedas",
+      "type": "Kit's",
       "preco": "R$39.90",
       "description": "1 - Necessàire + 1 - Porta-Moedas. Material externo nylon e interno plástico impermeável.",
       "photo": "assets/produtos/kit-porta-moedas/porta-moedas-3.jpeg"
@@ -128,6 +141,7 @@
     {
       "id": 14,
       "title": "Porta Higiene Bucal Star Wars",
+      "type": "Higiene Bucal",
       "preco": "R$18.00",
       "description": "Em material de tecido gabardine e plástico impermeável.",
       "photo": "assets/produtos/porta-higiene-bucal/porta-higiene-bucal-1.jpeg"
@@ -135,6 +149,7 @@
     {
       "id": 15,
       "title": "Estojo Escolar",
+      "type": "Estojo Escolar",
       "preco": "R$18.00",
       "description": "Material externo em nylon e forro 100% algodão.",
       "photo": "assets/produtos/estojo-escolar/estojo-escolar-1.jpeg"
@@ -142,6 +157,7 @@
     {
       "id": 16,
       "title": "Porta Fone de Ouvido e Carregador",
+      "type": "Fone / Carregador",
       "preco": "R$10.00",
       "description": "Tecido 100% algodão externo e interno em nylon.",
       "photo": "assets/produtos/fone-carregador/fone-carregador-1.jpeg"
@@ -149,6 +165,7 @@
     {
       "id": 17,
       "title": "Porta Talheres e Jogo Americano 2 em 1",
+      "type": "Porta Talheres",
       "preco": "R$30.00",
       "description": "Tecido 100% algodão com fechamento em elástico. Espaço para 03 talheres",
       "photo": "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.jpeg"

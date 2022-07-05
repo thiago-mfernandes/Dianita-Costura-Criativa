@@ -24,14 +24,17 @@ interface Props {
 
 export default function Ordenador({ ordenador, setOrdenador }: Props) {
   const [aberto, setAberto] = useState(false);
-   {/* 
+  {
+    /* 
         9. nomeOrdenador recebe = 
         9.1. se o o estado possuir um valor ?
         9.2. entao percorro o objeto opcoes com o metodo find, passando cada opcao como parametro
         9.3.onde verifico se cada opcao.value eh igual ao ordenador. Aqui retorna o objeto que contem o mesmo valor, entao eu concateno a chave -- (opcao.value === ordenador).nome -- pra obter o valor do nome 
         9.4. aplico a variavel nomeOrdenador no span
-    */}
-  const nomeOrdenador = ordenador && opcoes.find(opcao => opcao.value === ordenador)?.nome;
+    */
+  }
+  const nomeOrdenador =
+    ordenador && opcoes.find((opcao) => opcao.value === ordenador)?.nome;
 
   return (
     <>
