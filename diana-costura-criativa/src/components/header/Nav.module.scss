@@ -73,15 +73,6 @@
       padding: 0;
       visibility: visible;
       width: 70%;
-
-      & > li {
-        @include color-fontSize($marromTipo, 1.25rem);
-        text-transform: uppercase;
-        font-weight: bold;
-        &:hover{
-          text-decoration: underline;
-        }
-      }
     }
   }
 
@@ -111,6 +102,19 @@
         font-weight: bold;
       }
     }
+  }
+}
+
+.item {
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }    
+  & > a {
+    @include color-fontSize($verdeTipo, 1.25rem);
+    text-decoration: none;
   }
 }
 

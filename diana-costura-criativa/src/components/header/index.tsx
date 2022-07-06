@@ -3,6 +3,7 @@ import styles from './Header.module.scss';
 import style from './Nav.module.scss';
 import { FaMapPin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { MdEmail, MdFacebook } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 import { useState } from 'react';
 /* 
@@ -12,10 +13,25 @@ comecando em false;
 */
 
 export default function Header() {
+
   const [active, setMode] = useState(false);
   const ToggleMode = () => {
     setMode(!active);
   };
+
+  const rotas = [{
+    label: 'Home', 
+    to: '/'
+  },{
+    label: 'Sobre', 
+    to: '/sobre'
+  },{
+    label: 'Produtos', 
+    to: '/produtos'
+  },{
+    label: 'Contato', 
+    to: '/contato'
+  }];
 
   return (
     <>
@@ -84,10 +100,15 @@ export default function Header() {
                   : style.navContainer__ulClose
               }
             >
-              <li className={styles.navContainer__ulOpen___item}>Home</li>
-              <li className={styles.navContainer__ulOpen___item}>Sobre</li>
-              <li className={styles.navContainer__ulOpen___item}>Produtos</li>
-              <li className={styles.navContainer__ulOpen___item}>Contato</li>
+              {
+                rotas.map((rota, index) => (
+                  <li key={index} className={style.item}>
+                    <Link to={rota.to}>
+                      {rota.label}
+                    </Link>
+                  </li>
+                ))
+              }
             </ul>
           </nav>
         </div>
