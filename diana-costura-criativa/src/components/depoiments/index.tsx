@@ -1,6 +1,6 @@
 import styles from './Depoiments.module.scss';
 import { Slider, SliderProps, Slide } from './slider';
-import data from './testimonials.json';
+import data from 'data/testimonials.json';
 
 export default function Depoiments() {
   

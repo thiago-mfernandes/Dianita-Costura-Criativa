@@ -1,4 +1,4 @@
-import data from '../products.json';
+import data from 'data/products.json';
 import Item from '../Itens/Item/';
 import styles from './Itens.module.scss';
 import { useState, useEffect } from 'react';

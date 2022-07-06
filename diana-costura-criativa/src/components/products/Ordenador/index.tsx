@@ -1,5 +1,5 @@
 import styles from './Ordenador.module.scss';
-import opcoes from './opcoes.json';
+import opcoes from 'data/opcoes.json';
 import { useState } from 'react';
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 

@@ -2,7 +2,6 @@ import styles from './Produtos.module.scss';
 import Buscador from './Buscador';
 import Filtros from './Filtros';
 import { useState } from 'react';
-import Ordenador from './Ordenador';
 import Itens from './Itens';
 
 
