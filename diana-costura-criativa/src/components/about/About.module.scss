@@ -19,6 +19,13 @@
       text-decoration: none;
       width: 100%;
     }
+
+    &___contentBox {
+      @include desktop {
+        width: 50%;
+      }
+    }
+
     @include tablet {
       & > a {
         display: flex;
@@ -81,5 +88,9 @@
 
   &__botaoSaibaMais {
     @extend .botaoSaibaMais;
+    @include desktop {
+      width: 50%;
+      margin: 1.5% auto;
+    }
   }
 }
