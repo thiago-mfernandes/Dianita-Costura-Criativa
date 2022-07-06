@@ -1,16 +1,16 @@
-import styles from "./Produtos.module.scss";
-import Buscador from "./Buscador";
-import Filtros from "./Filtros";
-import { useState } from "react";
-import Ordenador from "./Ordenador";
-import Itens from "./Itens";
+import styles from './Produtos.module.scss';
+import Buscador from './Buscador';
+import Filtros from './Filtros';
+import { useState } from 'react';
+import Ordenador from './Ordenador';
+import Itens from './Itens';
 
 
 export default function Products() {
   //o estado da busca e do filtro ficam um nivel acima dele mesmos, isto é, acima do componente:
-  const [busca, setBusca] = useState("");
+  const [busca, setBusca] = useState('');
   const [filtro, setFiltro] = useState<string | null>(null);
-  const [ordenador, setOrdenador] = useState("");
+  const [ordenador, setOrdenador] = useState('');
 
   return (
     <>

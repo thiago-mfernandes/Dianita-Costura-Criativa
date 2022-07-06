@@ -1,8 +1,8 @@
-import styles from "./Footer.module.scss";
-import { ReactComponent as Logo } from "assets/logo-branco.svg";
-import { MdFacebook } from "react-icons/md";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import styles from './Footer.module.scss';
+import { ReactComponent as Logo } from 'assets/logo-branco.svg';
+import { MdFacebook } from 'react-icons/md';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
 
 export default function Footer() {
   return (
@@ -20,21 +20,21 @@ export default function Footer() {
                 <a
                   className={styles.footerContainer__icontainer___link}
                   href="https://www.facebook.com/profile.php?id=100063636849048"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   <MdFacebook className={styles.footerContainer__icontainer___icon} />
                 </a>
                 <a
                   className={styles.footerContainer__icontainer___link}
                   href="https://www.instagram.com/dianitacosturacriativa/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   <FaInstagram className={styles.footerContainer__icontainer___icon} />
                 </a>
                 <a 
                   className={styles.footerContainer__icontainer___link}
                   href="https://wa.me/5519983723718" 
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   <FaWhatsapp className={styles.footerContainer__icontainer___icon} />
                 </a>
@@ -74,18 +74,18 @@ export default function Footer() {
 
           <div className={styles.footerContainer__section}>
             <div className={styles.footerContainer__links}>
-              <h2 className={styles.footerContainer__links___title}>Link's</h2>
+              <h2 className={styles.footerContainer__links___title}>Links</h2>
               <p className={styles.footerContainer__links___content}>
-                &gt; Home
+                Home
               </p>
               <p className={styles.footerContainer__links___content}>
-                &gt; Sobre
+                Sobre
               </p>
               <p className={styles.footerContainer__links___content}>
-                &gt; Produtos
+                Produtos
               </p>
               <p className={styles.footerContainer__links___content}>
-                &gt; Contato
+                Contato
               </p>
             </div>
 
@@ -109,15 +109,15 @@ export default function Footer() {
 
           <div className={styles.footerContainer__copyright}>
             <p>
-              &copy;{" "}
+              &copy;{' '}
               <span>
                 dianitacosturacriativa.com.br
                 <br />
-              </span>{" "}
+              </span>{' '}
               Todos os direitos Reservados.
             </p>
             <p>
-              Designed by{" "}
+              Designed by{' '}
               <a
                 href="https://www.instagram.com/thiago_mfernandes/"
                 target="_blank"

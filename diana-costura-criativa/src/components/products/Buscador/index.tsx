@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Buscador.module.scss";
+import React from 'react';
+import styles from './Buscador.module.scss';
 
 interface Props {
   busca: string;

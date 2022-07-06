@@ -1,8 +1,8 @@
-import styles from "./Materials.module.scss";
-import Linhas from "assets/flaticon/yarn.svg";
-import Tecido from "assets/flaticon/tecido.svg";
-import Botao from  "assets/flaticon/botao.svg";
-import Agulha from "assets/flaticon/agulha.svg";
+import styles from './Materials.module.scss';
+import Linhas from 'assets/flaticon/yarn.svg';
+import Tecido from 'assets/flaticon/tecido.svg';
+import Botao from  'assets/flaticon/botao.svg';
+import Agulha from 'assets/flaticon/agulha.svg';
 
 export default function Materials() {
   return (

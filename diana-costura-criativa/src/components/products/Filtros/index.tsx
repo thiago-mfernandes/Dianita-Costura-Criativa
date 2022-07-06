@@ -1,6 +1,6 @@
-import React from "react";
-import data from "../products.json";
-import styles from "./Filtro.module.scss";
+import React from 'react';
+import data from '../products.json';
+import styles from './Filtro.module.scss';
 
 {/*
 1. o estado do filtro esta no pai - produtos
@@ -44,7 +44,7 @@ export default function Filtros({ filtro, setFiltro }: Props) {
         <button
           key={item.id}
           onClick={() => selecionarFiltro(item)}
-          className={`${styles.produtosFilter__button} ${filtro === item.type ? styles["button--active"] : ""}`}
+          className={`${styles.produtosFilter__button} ${filtro === item.type ? styles['button--active'] : ''}`}
         >
           {item.type}
         </button>

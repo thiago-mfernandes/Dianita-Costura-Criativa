@@ -1,5 +1,5 @@
-import styles from "./About.module.scss";
-import ImgDiana from "assets/about/about-1.jpeg";
+import styles from './About.module.scss';
+import ImgDiana from 'assets/about/about-1.jpeg';
 
 export default function About() {
   return (
@@ -13,8 +13,8 @@ export default function About() {
               Oi, deixa eu me apresentar...
               <br />
               <br />
-              Meu nome é Diana, a artesã do ateliê{" "}
-              <span>"DIANITA COSTURA CRIATIVA"</span>.
+              Meu nome é Diana, a artesã do ateliê
+              <span>`${'DIANITA COSTURA CRIATIVA'}`</span>.
               <br />
               Sou técnica de enfermagem e instrumentadora cirúrgica de formação,
               porém, o artesanal sempre fez parte da minha vida, nas mais
@@ -32,7 +32,7 @@ export default function About() {
               <br />
               DIANA(Dianita costura criativa).
             </p>
-            <a href="https://wa.me/5519983723718" target="_blank">
+            <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer">
               <button className={styles.about__botaoSaibaMais}>
                 Saiba Mais
               </button>

@@ -1,5 +1,5 @@
-import styles from "./Item.module.scss";
-import { IoIosAdd } from "react-icons/io";
+import styles from './Item.module.scss';
+import { IoIosAdd } from 'react-icons/io';
 
 interface Props {
   id: number;
@@ -33,7 +33,7 @@ export default function Item({ id, title, preco, description, photo }: Props) {
         </h3>
         <p className={styles.produtosCard__content}>{description}</p>
         <div className={styles.produtosAction}>
-          <a href="https://wa.me/5519983723718" target="_blank">
+          <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer">
             <button className={styles.produtosAction__btn}>Comprar</button>
             <button className={styles.produtosAction__btnDetails}>
               <IoIosAdd className={styles.produtosAction__btnDetails___icon} />

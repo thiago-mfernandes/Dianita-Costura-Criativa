@@ -1,9 +1,9 @@
 
 
 export default function Sobre() {
-    return (
-        <>
+  return (
+    <>
         
-        </>
-    )
+    </>
+  );
 }

@@ -1,7 +1,7 @@
-import data from "../products.json";
-import Item from "../Itens/Item/";
-import styles from "./Itens.module.scss";
-import { useState, useEffect } from "react";
+import data from '../products.json';
+import Item from '../Itens/Item/';
+import styles from './Itens.module.scss';
+import { useState, useEffect } from 'react';
 
 {
   /*
@@ -31,7 +31,7 @@ export default function Itens(props: Props) {
   }, [busca, filtro]);
 
   function testaBusca(title: string) {
-    const regex = new RegExp(busca, "i");
+    const regex = new RegExp(busca, 'i');
     return regex.test(title);
   }
 

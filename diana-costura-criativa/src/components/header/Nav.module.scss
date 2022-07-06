@@ -4,22 +4,29 @@
   @include display-flexDirection(flex);
   @include alignItens-justifyContent(null, space-between);
   width: 100%;
-  //------------------------------------------
-  //margin somente para ajuste no mobile
   margin-bottom: 10%;
-  //------------------------------------------
   @include tablet {
     margin-bottom: 25%;
   }
-
   @include desktop {
-    margin-bottom: 2.5%;
+    @include alignItens-justifyContent(null, space-between);
+    @include display-flexDirection(flex, row);
+    margin-bottom: 5%;
   }
 
   &__navClose {
     padding-right: 5%;
     max-width: 0px; //mobile-only
     max-height: 0px; //mobile-only
+
+    @include desktop {
+      padding-right: 0;
+      max-width: none;
+      max-height: none;
+      width: 75%;
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(flex-start, flex-end);
+    }
   }
 
   &__navOpen {
@@ -59,6 +66,23 @@
   &__ulClose {
     list-style: none;
     visibility: collapse;
+    @include desktop {
+      @include alignItens-justifyContent(center, space-between);
+      @include display-flexDirection(flex, row);
+      margin: 0;
+      padding: 0;
+      visibility: visible;
+      width: 70%;
+
+      & > li {
+        @include color-fontSize($marromTipo, 1.25rem);
+        text-transform: uppercase;
+        font-weight: bold;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   &__ulOpen {
@@ -99,5 +123,6 @@
   }
   @include desktop {
     margin: 0;
+    width: 25%;
   }
 }

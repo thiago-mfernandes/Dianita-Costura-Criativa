@@ -1,4 +1,4 @@
-import styles from "./Location.module.scss";
+import styles from './Location.module.scss';
 
 export default function Location() {
   return (

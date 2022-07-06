@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
-import { A11y, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperProps } from "swiper/react";
-import "swiper/scss";
-import "swiper/scss/navigation";
-import "swiper/scss/pagination";
+import { ReactNode } from 'react';
+import { A11y, Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperProps } from 'swiper/react';
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
 import './Slider.css';
 
 interface SliderProps {

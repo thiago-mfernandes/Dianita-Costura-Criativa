@@ -1,10 +1,10 @@
-import styles from "./Depoiments.module.scss";
-import { Slider, SliderProps, Slide } from "./slider";
-import data from "./testimonials.json";
+import styles from './Depoiments.module.scss';
+import { Slider, SliderProps, Slide } from './slider';
+import data from './testimonials.json';
 
 export default function Depoiments() {
   
-  let windowWidth = window.screen.width;
+  const windowWidth = window.screen.width;
 
   const settings: SliderProps = {
     spaceBetween: 50,
