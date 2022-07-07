@@ -1,5 +1,6 @@
 import styles from './Item.module.scss';
 import { IoIosAdd } from 'react-icons/io';
+import { Link } from 'react-router-dom'
 
 interface Props {
   id: number;
@@ -35,9 +36,11 @@ export default function Item({ id, title, preco, description, photo }: Props) {
         <div className={styles.produtosAction}>
           <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer">
             <button className={styles.produtosAction__btn}>Comprar</button>
-            <button className={styles.produtosAction__btnDetails}>
-              <IoIosAdd className={styles.produtosAction__btnDetails___icon} />
-            </button>
+            <Link to=''>
+              <button className={styles.produtosAction__btnDetails}>
+                <IoIosAdd className={styles.produtosAction__btnDetails___icon} />
+              </button>
+            </Link>
           </a>
         </div>
       </div>

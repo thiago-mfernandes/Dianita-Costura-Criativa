@@ -7,6 +7,12 @@ import Header from 'components/header';
 import Footer from 'components/footer';
 import NotFound from 'pages/NotFound';
 import DefaultPage from 'components/DefaultPage';
+import VerMais from 'components/products/Itens/VerMais';
+
+{/* 
+  1. dentro do defaultPage vai um outlet 
+  2. a rota de home eh relativa a rota atual, ou seja, ao / entao nao precisa ser /home..
+*/}
 
 export default function AppRouter() {
   return (
@@ -15,15 +21,12 @@ export default function AppRouter() {
         <Header />
         <Routes>
           <Route path='/' element={<DefaultPage />}>
-            {/* 
-              1. dentro do defaultPage vai um outlet 
-              2. a rota de home eh relativa a rota atual, ou seja, ao / entao nao precisa ser /home..
-            */}
             <Route index path='home' element={<Home />} />
             <Route path='sobre' element={<Sobre />} />
             <Route path='produtos' element={<Produtos />} />
             <Route path='contato' element={<Contato />} />
           </Route>
+          <Route path='produto/:id' element={<VerMais />}/>
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />
