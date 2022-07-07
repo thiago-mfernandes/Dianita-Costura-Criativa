@@ -23,10 +23,11 @@ export default function AppRouter() {
           <Route path='/' element={<DefaultPage />}>
             <Route index path='home' element={<Home />} />
             <Route path='sobre' element={<Sobre />} />
-            <Route path='produtos' element={<Produtos />} />
+            <Route path='produtos' element={<Produtos />}>
+            </Route>
             <Route path='contato' element={<Contato />} />
           </Route>
-          <Route path='produto/:id' element={<VerMais />}/>
+          <Route path='verMais' element={<VerMais />}/>
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />

@@ -1,6 +1,7 @@
 import styles from './Item.module.scss';
 import { IoIosAdd } from 'react-icons/io';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
   id: number;
@@ -23,6 +24,31 @@ interface Props {
 }
 
 export default function Item({ id, title, preco, description, photo }: Props) {
+  
+  const productVerMais = {
+    id: id, 
+    title: title, 
+    preco: preco, 
+    description: description, 
+    photo: photo
+  };
+
+  const rota = {
+    label: 'Ver Mais',
+    to: '/verMais'
+  };
+
+  {/*
+    1. crio esta funcao para passar por parametro o objeto que esta sendo visto com mais detalhes para o componente Ver Mais
+    2. import useNavigate;
+    3. const navigate = useNavigate();
+  */}
+
+  const navigate = useNavigate();
+  function redirecionarParaVerMais(productVerMais: Props) {
+    navigate(`/verMais/${productVerMais.id}`, {state: {...productVerMais}});
+  }
+
   return (
     <>
       <div className={styles.produtosCard} key={id}>
@@ -34,14 +60,18 @@ export default function Item({ id, title, preco, description, photo }: Props) {
         </h3>
         <p className={styles.produtosCard__content}>{description}</p>
         <div className={styles.produtosAction}>
-          <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer">
-            <button className={styles.produtosAction__btn}>Comprar</button>
-            <Link to=''>
-              <button className={styles.produtosAction__btnDetails}>
-                <IoIosAdd className={styles.produtosAction__btnDetails___icon} />
-              </button>
-            </Link>
-          </a>
+          <button className={styles.produtosAction__btn}>
+            Comprar
+            <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer"></a>
+          </button>
+          <Link to='/verMais'>
+            <button 
+              className={styles.produtosAction__btnDetails}
+              onClick={() => redirecionarParaVerMais(productVerMais)}
+            >
+              <IoIosAdd className={styles.produtosAction__btnDetails___icon} />
+            </button>
+          </Link>
         </div>
       </div>
     </>
