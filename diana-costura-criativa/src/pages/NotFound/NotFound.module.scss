@@ -1,0 +1,19 @@
+@import '../../scss/styles.scss';
+
+.notFound {
+  & svg {
+    width: 100%;
+  }
+}
+
+.botao {
+  @extend .botaoSaibaMais;
+  
+  @include desktop {
+    width: 15%;
+    position: relative;
+      top: 520px;
+      left: 530px;
+    background-color: transparent;
+  }
+}

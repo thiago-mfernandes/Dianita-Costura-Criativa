@@ -21,7 +21,7 @@ export default function Header() {
 
   const rotas = [{
     label: 'Home', 
-    to: '/'
+    to: '/home'
   },{
     label: 'Sobre', 
     to: '/sobre'
