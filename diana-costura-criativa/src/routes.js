@@ -7,7 +7,6 @@ import Header from 'components/header';
 import Footer from 'components/footer';
 import NotFound from 'pages/NotFound';
 import DefaultPage from 'components/DefaultPage';
-import VerMais from 'components/products/Itens/VerMais';
 
 {/* 
   1. dentro do defaultPage vai um outlet 
@@ -23,11 +22,9 @@ export default function AppRouter() {
           <Route path='/' element={<DefaultPage />}>
             <Route index path='home' element={<Home />} />
             <Route path='sobre' element={<Sobre />} />
-            <Route path='produtos' element={<Produtos />}>
-            </Route>
+            <Route path='produtos' element={<Produtos />} />
             <Route path='contato' element={<Contato />} />
           </Route>
-          <Route path='verMais' element={<VerMais />}/>
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />

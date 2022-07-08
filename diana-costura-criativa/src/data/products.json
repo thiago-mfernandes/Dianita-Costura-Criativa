@@ -40,7 +40,14 @@
       "type": "Necessaire",
       "preco": "R$30.00",
       "description": "Material externo nylon e forro 100% algodão.",
-      "photo": "assets/produtos/necessaire-tradicional/neces-trad-1.jpeg"
+      "photo": "assets/produtos/necessaire-tradicional/neces-trad-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/necessaire-tradicional/neces-trad-1.jpeg",
+        "assets/produtos/necessaire-tradicional/neces-trad-1.2.jpeg",
+        "assets/produtos/necessaire-tradicional/neces-trad-1.3.jpeg",
+        "assets/produtos/necessaire-tradicional/neces-trad-1.4.jpeg",
+        "assets/produtos/necessaire-tradicional/neces-trad-1.5.jpeg"
+      ]
     },
     {
       "id": 2,
@@ -48,7 +55,12 @@
       "type": "Necessaire",
       "preco": "R$33.00",
       "description": "Material externo e interno 100% algodão com alça removível de material sintético.",
-      "photo": "assets/produtos/necessaire-romantica/neces-romantica-1.jpeg"
+      "photo": "assets/produtos/necessaire-romantica/neces-romantica-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/necessaire-romantica/neces-romantica-1.jpeg",
+        "assets/produtos/necessaire-romantica/neces-romantica-1.1.jpeg",
+        "assets/produtos/necessaire-romantica/neces-romantica-1.2.jpeg"
+      ]
     },
     {
       "id": 3,
@@ -56,7 +68,14 @@
       "type": "Mini Necessaire",
       "preco": "R$25.00",
       "description": "Material externo e interno 100% algodão com alça removível de material sintético.",
-      "photo": "assets/produtos/mini-necessaire-anne/mini-necess-anne-1.jpeg"
+      "photo": "assets/produtos/mini-necessaire-anne/mini-necess-anne-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/mini-necessaire-anne/mini-necess-anne-1.jpeg",
+        "assets/produtos/mini-necessaire-anne/mini-necess-anne-1.1.jpeg",
+        "assets/produtos/mini-necessaire-anne/mini-necess-anne-1.2.jpeg",
+        "assets/produtos/mini-necessaire-anne/mini-necess-anne-1.3.jpeg",
+        "assets/produtos/mini-necessaire-anne/mini-necess-anne-1.4.jpeg"
+      ]
     },
     {
       "id": 4,
@@ -64,7 +83,13 @@
       "type": "Porta Óculos",
       "preco": "R$22.00",
       "description": "Material externo e interno 100% algodão.",
-      "photo": "assets/produtos/porta-oculos/porta-oculos-1.jpeg"
+      "photo": "assets/produtos/porta-oculos/porta-oculos-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/porta-oculos/porta-oculos-1.jpeg",
+        "assets/produtos/porta-oculos/porta-oculos-1.1.jpeg",
+        "assets/produtos/porta-oculos/porta-oculos-1.3.jpeg",
+        "assets/produtos/porta-oculos/porta-oculos-1.4.jpeg"
+      ]
     },
     {
       "id": 5,
@@ -72,7 +97,10 @@
       "type": "Porta Óculos",
       "preco": "R$22.00",
       "description": "Material externo e interno 100% algodão.",
-      "photo": "assets/produtos/porta-oculos/porta-oculos-2.jpeg"
+      "photo": "assets/produtos/porta-oculos/porta-oculos-2.jpeg",
+      "photoSlider": [
+        
+      ]
     },
     {
       "id": 6,
@@ -80,7 +108,10 @@
       "type": "Porta Óculos",
       "preco": "R$22.00",
       "description": "Material externo e interno 100% algodão.",
-      "photo": "assets/produtos/porta-oculos/porta-oculos-3.jpeg"
+      "photo": "assets/produtos/porta-oculos/porta-oculos-3.jpeg",
+      "photoSlider": [
+        
+      ]
     },
     {
       "id": 7,
@@ -88,7 +119,18 @@
       "type": "Kit's",
       "preco": "R$58.00",
       "description": "1 - Necessàire tradicional + 1 - Carteira Íntima. Material externo nylon/linho e forro com cetim; fechos de ambas em material sintético.",
-      "photo": "assets/produtos/kit-marcelle/kit-marcelle-1.jpeg"
+      "photo": "assets/produtos/kit-marcelle/kit-marcelle-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/kit-marcelle/kit-marcelle-1.jpeg",
+        "assets/produtos/kit-marcelle/mini-necess-anne-1.1.jpeg",
+        "assets/produtos/kit-marcelle/mini-necess-anne-1.2.jpeg",
+        "assets/produtos/kit-marcelle/mini-necess-anne-1.3.jpeg",
+        "assets/produtos/kit-marcelle/mini-necess-anne-1.4.jpeg",
+        "assets/produtos/kit-marcelle/mini-necess-anne-1.5.jpeg",
+        "assets/produtos/kit-marcelle/mini-necess-anne-1.6.jpeg",
+        "assets/produtos/kit-marcelle/mini-necess-anne-1.7.jpeg",
+        "assets/produtos/kit-marcelle/mini-necess-anne-1.8.jpeg"
+      ]
     },
     {
       "id": 8,
@@ -96,7 +138,11 @@
       "type": "Kit's",
       "preco": "R$35.00",
       "description": "1 - Mini Necessàire + 1 - Porta-Moedas. Material externo nylon e interno 100% algodão.",
-      "photo": "assets/produtos/kit-menininhas/kit-menininhas-1.jpeg"
+      "photo": "assets/produtos/kit-menininhas/kit-menininhas-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/kit-menininhas/kit-menininhas-1.jpeg",
+        "assets/produtos/kit-menininhas/kit-menininhas-1.1.jpeg"
+      ]
     },
     {
       "id": 9,
@@ -104,7 +150,11 @@
       "type": "Kit's",
       "preco": "R$35.00",
       "description": "1 - Mini Necessàire + 1 - Porta-Moedas. Material externo nylon e interno 100% algodão.",
-      "photo": "assets/produtos/kit-menininhas/kit-menininhas-2.jpeg"
+      "photo": "assets/produtos/kit-menininhas/kit-menininhas-2.jpeg",
+      "photoSlider": [
+        "assets/produtos/kit-menininhas/kit-menininhas-2.jpeg",
+        "assets/produtos/kit-menininhas/kit-menininhas-2.1.jpeg"
+      ]
     },
     {
       "id": 10,
@@ -112,7 +162,11 @@
       "type": "Kit's",
       "preco": "R$35.00",
       "description": "1 - Mini Necessàire + 1 - Porta-Moedas. Material externo nylon e interno 100% algodão.",
-      "photo": "assets/produtos/kit-menininhas/kit-menininhas-3.jpeg"
+      "photo": "assets/produtos/kit-menininhas/kit-menininhas-3.jpeg",
+      "photoSlider": [
+        "assets/produtos/kit-menininhas/kit-menininhas-3.jpeg",
+        "assets/produtos/kit-menininhas/kit-menininhas-3.1.jpeg"
+      ]
     },
     {
       "id": 11,
@@ -120,7 +174,13 @@
       "type": "Kit's",
       "preco": "R$39.90",
       "description": "1 - Necessàire Porta-Esmalte + 1 - Porta-Alicate. Material externo nylon e interno 100% algodão.",
-      "photo": "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-1.jpeg"
+      "photo": "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-1.jpeg",
+        "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-1.1.jpeg",
+        "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-1.2.jpeg",
+        "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-1.3.jpeg"
+      ]
     },
     {
       "id": 12,
@@ -128,7 +188,13 @@
       "type": "Kit's",
       "preco": "R$39.90",
       "description": "1 - Necessàire Porta-Esmalte + 1 - Porta-Alicate. Material externo nylon e interno 100% algodão.",
-      "photo": "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-2.jpeg"
+      "photo": "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-2.jpeg",
+      "photoSlider": [
+        "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-2.jpeg",
+        "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-2.1.jpeg",
+        "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-2.2.jpeg",
+        "assets/produtos/kit-necessaire-porta-esmalte+porta-alicate/porta-esmalte-2.3.jpeg"
+      ]
     },
     {
       "id": 13,
@@ -136,7 +202,14 @@
       "type": "Kit's",
       "preco": "R$39.90",
       "description": "1 - Necessàire + 1 - Porta-Moedas. Material externo nylon e interno plástico impermeável.",
-      "photo": "assets/produtos/kit-porta-moedas/porta-moedas-3.jpeg"
+      "photo": "assets/produtos/kit-porta-moedas/porta-moedas-3.jpeg",
+      "photoSlider": [
+        "assets/produtos/kit-porta-moedas/porta-moedas-3.jpeg",
+        "assets/produtos/kit-porta-moedas/porta-moedas-3.1.jpeg",
+        "assets/produtos/kit-porta-moedas/porta-moedas-3.2.jpeg",
+        "assets/produtos/kit-porta-moedas/porta-moedas-3.3.jpeg",
+        "assets/produtos/kit-porta-moedas/porta-moedas-3.4.jpeg"
+      ]
     },
     {
       "id": 14,
@@ -144,7 +217,15 @@
       "type": "Higiene Bucal",
       "preco": "R$18.00",
       "description": "Em material de tecido gabardine e plástico impermeável.",
-      "photo": "assets/produtos/porta-higiene-bucal/porta-higiene-bucal-1.jpeg"
+      "photo": "assets/produtos/porta-higiene-bucal/porta-higiene-bucal-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/porta-higiene-bucal/porta-higiene-bucal-1.jpeg",
+        "assets/produtos/porta-higiene-bucal/porta-higiene-bucal-1.1.jpeg",
+        "assets/produtos/porta-higiene-bucal/porta-higiene-bucal-1.2.jpeg",
+        "assets/produtos/porta-higiene-bucal/porta-higiene-bucal-1.3.jpeg",
+        "assets/produtos/porta-higiene-bucal/porta-higiene-bucal-1.4.jpeg",
+        "assets/produtos/porta-higiene-bucal/porta-higiene-bucal-1.5.jpeg"
+      ]
     },
     {
       "id": 15,
@@ -152,7 +233,14 @@
       "type": "Estojo Escolar",
       "preco": "R$18.00",
       "description": "Material externo em nylon e forro 100% algodão.",
-      "photo": "assets/produtos/estojo-escolar/estojo-escolar-1.jpeg"
+      "photo": "assets/produtos/estojo-escolar/estojo-escolar-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/estojo-escolar/estojo-escolar-1.jpeg",
+        "assets/produtos/estojo-escolar/estojo-escolar-1.1.jpeg",
+        "assets/produtos/estojo-escolar/estojo-escolar-1.2.jpeg",
+        "assets/produtos/estojo-escolar/estojo-escolar-1.3.jpeg",
+        "assets/produtos/estojo-escolar/estojo-escolar-1.4.jpeg"
+      ]
     },
     {
       "id": 16,
@@ -160,7 +248,11 @@
       "type": "Fone / Carregador",
       "preco": "R$10.00",
       "description": "Tecido 100% algodão externo e interno em nylon.",
-      "photo": "assets/produtos/fone-carregador/fone-carregador-1.jpeg"
+      "photo": "assets/produtos/fone-carregador/fone-carregador-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/fone-carregador/fone-carregador-1.jpeg",
+        "assets/produtos/fone-carregador/fone-carregador-1.1.jpeg"
+      ]
     },
     {
       "id": 17,
@@ -168,7 +260,19 @@
       "type": "Porta Talheres",
       "preco": "R$30.00",
       "description": "Tecido 100% algodão com fechamento em elástico. Espaço para 03 talheres",
-      "photo": "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.jpeg"
+      "photo": "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.jpeg",
+      "photoSlider": [
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.jpeg",
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.1.jpeg",
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.2.jpeg",
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.3.jpeg",
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.4.jpeg",
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.5.jpeg",
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.6.jpeg",
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.7.jpeg",
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.8.jpeg",
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.9.jpeg"
+      ]
     }
   ]
 }

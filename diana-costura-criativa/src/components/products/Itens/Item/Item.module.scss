@@ -1,6 +1,7 @@
 @import "../../../../scss/styles.scss";
 
 .produtosCard {
+  visibility: visible;
   @include alignItens-justifyContent(center, flex-start);
   @include display-flexDirection(flex, column);
   border: 1px solid $laranjaPrincipal;

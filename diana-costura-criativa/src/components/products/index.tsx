@@ -44,7 +44,7 @@ export default function Products() {
 
         {/* itens recebem os estados por props */}
 
-        <Itens busca={busca} filtro={filtro} ordenador={ordenador}/>
+        <Itens busca={busca} filtro={filtro} ordenador={ordenador} />
       </section>
     </>
   );
