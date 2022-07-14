@@ -67,6 +67,7 @@ export default function Itens(props: Props) {
   return (
     <>
       <div className={styles.produtosContainerCard}>
+        {/* a prop key */}
         {lista.map((product) => (
           <Item key={product.id} {...product} />
         ))}

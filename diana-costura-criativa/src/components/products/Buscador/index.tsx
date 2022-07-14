@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './Buscador.module.scss';
 
 interface Props {
@@ -6,7 +6,7 @@ interface Props {
   setBusca: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export default function Buscador({ busca, setBusca }: Props) {
+function Buscador({ busca, setBusca }: Props) {
   return (
     <>
       <input
@@ -19,3 +19,5 @@ export default function Buscador({ busca, setBusca }: Props) {
     </>
   );
 }
+
+export default memo(Buscador);

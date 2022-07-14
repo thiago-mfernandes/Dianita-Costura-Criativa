@@ -39,7 +39,8 @@ export default function Header() {
 
       {/* pré cabecalho */}
       <header className={styles.header}>
-        <div className={styles.header__container}>
+        {/*
+          <div className={styles.header__container}>
           <div className={styles.header__box}>
             <FaMapPin className={styles.icone} />
             <p className={styles.header__box___content}>
@@ -71,7 +72,7 @@ export default function Header() {
             </a>
           </div>
         </div>
-        {/* cabecalho */}
+        
         <div className={style.navContainer}>
           <Logo className={style.logo} />
 
@@ -82,7 +83,7 @@ export default function Header() {
                 : style.navContainer__navClose
             }
           >
-            {/* menu hamburguer mobile */}
+            
             <button
               className={style.navContainer__hamburguer}
               onClick={ToggleMode}
@@ -92,7 +93,7 @@ export default function Header() {
               <div className={style.navContainer__hamburguer___line}></div>
             </button>
 
-            {/* a ul recebe uma classe aberto ou fechado */}
+            
             <ul
               className={
                 active
@@ -112,6 +113,9 @@ export default function Header() {
             </ul>
           </nav>
         </div>
+        
+        */}
+        
 
         <div className={styles.header__containerContent}>
           {/*container do titulo principal e botao */}

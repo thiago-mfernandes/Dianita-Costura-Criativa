@@ -1,7 +1,5 @@
 import styles from './Item.module.scss';
-import { IoIosAdd } from 'react-icons/io';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { memo } from 'react';
 
 interface Props {
   id: number;
@@ -24,10 +22,10 @@ interface Props {
     */
 }
 
-export default function Item({ id, title, preco, description, photo}: Props) {
+function Item({ id, title, preco, description, photo}: Props) {
   
   const rota = [{to: 'produto'}];
-
+  //id === 1 && console.log(title);
   return (
     <>
       <div className={styles.produtosCard} key={id}>
@@ -48,3 +46,5 @@ export default function Item({ id, title, preco, description, photo}: Props) {
     </>
   );
 }
+
+export default memo(Item);

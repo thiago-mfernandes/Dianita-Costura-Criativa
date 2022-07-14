@@ -1,0 +1,51 @@
+@import '../../scss/styles.scss';
+
+.menu {
+
+	&__container {
+		@include display-flexDirection(flex);
+		@include alignItens-justifyContent(center, space-between);
+		max-height: 0; //mobile-only
+		padding: 0 7.5%;
+
+		// - inserir esta propriedade no tablet e desktop
+
+		@include desktop {
+			max-height: none;
+			padding: 0;
+			margin-bottom: 1.5%;
+			white-space: nowrap;
+		}
+	}
+
+	&__box {
+    @include display-flexDirection(flex);
+    @include alignItens-justifyContent(center);
+    visibility: hidden; //mobile-only
+    @include desktop {
+      visibility: visible;
+    }
+    &___content {
+      @include desktop {
+        font-size: 1rem;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.icone {
+  @include color-fontSize(1rem, $marromTipo);
+  margin: 0 8px;
+  max-width: 0px;
+  @include desktop {
+    max-width: none;
+    width: 2.75rem;
+    height: 1.75rem;
+    color: $marromTipo;
+    margin: 0 2.5%;
+    &:hover {
+      color: $laranjaPrincipal;
+    }
+  }
+}
