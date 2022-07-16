@@ -9,10 +9,7 @@ import style from './Nav.module.scss';
 
 export default function Menu() {
 
-  const [active, setMode] = useState(false);
-  const ToggleMode = () => {
-    setMode(!active);
-  };
+  const [mobileMenu, setState] = useState(false);
 
   const rotas = [{
     label: 'Home', 
@@ -68,29 +65,31 @@ export default function Menu() {
       <div className={style.navContainer}>
         <Logo className={style.logo} />
 
+        <button
+          className={style.navContainer__hamburguer}
+          onClick={() => setState(!mobileMenu)}
+        >
+          <div className={style.navContainer__hamburguer___line}></div>
+          <div className={style.navContainer__hamburguer___line}></div>
+          <div className={style.navContainer__hamburguer___line}></div>
+        </button>
+
         <nav
           className={
-            active
-              ? style.navContainer__navOpen
-              : style.navContainer__navClose
+            mobileMenu 
+              ? `${style.navContainer__navOpen}` 
+              : `${style.navContainer__navClose}`
           }
         >
           {/* menu hamburguer mobile */}
-          <button
-            className={style.navContainer__hamburguer}
-            onClick={ToggleMode}
-          >
-            <div className={style.navContainer__hamburguer___line}></div>
-            <div className={style.navContainer__hamburguer___line}></div>
-            <div className={style.navContainer__hamburguer___line}></div>
-          </button>
+          
 
           {/* a ul recebe uma classe aberto ou fechado */}
           <ul
             className={
-              active
-                ? style.navContainer__ulOpen
-                : style.navContainer__ulClose
+              mobileMenu
+                ? `${style.navContainer__ulOpen}`
+                : `${style.navContainer__ulClose}`
             }
           >
             {
