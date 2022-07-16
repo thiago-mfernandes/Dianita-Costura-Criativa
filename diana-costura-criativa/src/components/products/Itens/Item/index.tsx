@@ -28,7 +28,7 @@ function Item({ id, title, preco, description, photo}: Props) {
   //id === 1 && console.log(title);
   return (
     <>
-      <div className={styles.produtosCard} key={id}>
+      <div className={styles.produtosCard} key={id} data-testid="produto" role='product_Item'>
         <img src={`${photo}`} alt={title} className={styles.produtosCard__img}/>
         <h3 className={styles.produtosCard__title}>
           {title}

@@ -1,0 +1,19 @@
+@import '../../../../scss/styles.scss';
+
+.itemNotFound {
+
+    @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(center, center);
+    @include height-width(100px, 90%);
+    background-color: transparent;
+    border: 1px solid rgba(255,0,0,20%);
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,4%);
+    padding: 2.5%;
+
+    &__content {
+        @include color-fontSize(red, 1rem);
+        margin: 0;
+        text-align: center;
+    }
+}

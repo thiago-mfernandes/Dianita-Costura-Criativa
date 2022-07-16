@@ -2,6 +2,7 @@ import data from 'data/products.json';
 import Item from '../Itens/Item/';
 import styles from './Itens.module.scss';
 import { useState, useEffect } from 'react';
+import ItemNotFound from './ItemNotFound';
 
 {
   /*
@@ -22,7 +23,7 @@ interface Props {
 export default function Itens(props: Props) {
   const { busca, filtro } = props;
   const [lista, setLista] = useState(data.products);
-
+  
   useEffect(() => {
     const novaLista = data.products.filter(
       (item) => testaBusca(item.title) && testaFiltro(item.type)
@@ -67,10 +68,10 @@ export default function Itens(props: Props) {
   return (
     <>
       <div className={styles.produtosContainerCard}>
-        {/* a prop key */}
-        {lista.map((product) => (
-          <Item key={product.id} {...product} />
-        ))}
+        {lista.length < 1 ? <ItemNotFound /> : 
+          lista.map((product) => (
+            <Item key={product.id} {...product} />
+          ))}
       </div>
     </>
   );
