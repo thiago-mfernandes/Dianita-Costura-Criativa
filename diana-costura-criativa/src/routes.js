@@ -17,7 +17,7 @@ export default function AppRouter() {
         <Menu />
         <Suspense fallback={<p> Carregando... </p>}>
           <Routes>
-            <Route index path='/home' element={<Home />} />
+            <Route path='home' element={<Home />} />
             <Route path='sobre' element={<Sobre />} />
             <Route path='produtos' element={<Produtos />} />
             <Route path='contato' element={<Contato />} />            

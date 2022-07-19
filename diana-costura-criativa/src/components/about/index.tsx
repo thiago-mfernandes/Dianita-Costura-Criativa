@@ -7,7 +7,7 @@ export default function About() {
       <section className={styles.about}>
         <div className={styles.about__container}>
           <h2 className={styles.about__title}>Quem Sou</h2>
-          <img className={styles.about__img} src={ImgDiana} alt="Foto Diana" />
+          <div className={styles.about__imgDiv}><img className={styles.about__img} src={ImgDiana} alt="Foto Diana" /></div>
           <div className={styles.about__container___contentBox}>
             <p className={styles.about__content}>
               Oi, deixa eu me apresentar...

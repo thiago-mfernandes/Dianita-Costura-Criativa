@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { FaInstagram, FaMapPin, FaWhatsapp } from 'react-icons/fa';
 import { MdEmail, MdFacebook } from 'react-icons/md';
-import { ReactComponent as Logo } from 'assets/logo-preto.svg';
+import { ReactComponent as LogoPreto } from 'assets/logo-preto.svg';
+import { ReactComponent as LogoBranco } from 'assets/logo-branco.svg';
 import { Link } from 'react-router-dom';
 import styles from './Menu.module.scss';
 import style from './Nav.module.scss';
@@ -10,6 +11,18 @@ import style from './Nav.module.scss';
 export default function Menu() {
 
   const [mobileMenu, setState] = useState(false);
+  const [desktopMenu, setdesktopMenu] = useState(false);
+  console.log(desktopMenu);
+
+  function scrollPosition(){
+    if(scrollY > 64) {
+      setdesktopMenu(true);
+    } else {
+      setdesktopMenu(false);
+    }
+  }
+  window.addEventListener('scroll', scrollPosition);
+  
 
   const rotas = [{
     label: 'Home', 
@@ -39,7 +52,7 @@ export default function Menu() {
         </div>
 
         <div className={styles.menu__box}>
-          <p className={styles.menu__container}>Redes Sociais:</p>
+          <p className={styles.menu__content}>Redes Sociais:</p>
           <a
             href="https://www.facebook.com/profile.php?id=100063636849048"
             target="_blank" rel="noreferrer"
@@ -62,8 +75,14 @@ export default function Menu() {
       </div>
 
       {/* cabecalho */}
-      <div className={style.navContainer}>
-        <Logo className={style.logo} />
+      <div className={
+        desktopMenu 
+          ? `${style.desktopActive}` 
+          : `${style.navContainer}`}
+      >
+        {desktopMenu 
+          ? <LogoBranco className={style.logo} /> 
+          : <LogoPreto className={style.logo} />}
 
         <button
           className={style.navContainer__hamburguer}

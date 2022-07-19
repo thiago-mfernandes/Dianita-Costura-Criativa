@@ -1,5 +1,4 @@
 import About from 'components/about';
-import Contact from 'components/contact';
 import Depoiments from 'components/depoiments';
 import Materials from 'components/materials';
 import Products from 'components/products';
@@ -15,7 +14,6 @@ export default function Home() {
       <Products />
       <Location />
       <Depoiments />
-      <Contact />
     </>
   );
 }

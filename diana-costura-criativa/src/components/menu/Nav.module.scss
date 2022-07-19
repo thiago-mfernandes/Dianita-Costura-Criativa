@@ -3,10 +3,10 @@
 .navContainer {
   @include display-flexDirection(flex);
   @include alignItens-justifyContent(center, space-between);
+  @include height-width(80px, 100%);
   position: absolute;
   padding: 5%;
   top: 0;
-  width: 100%;
   
   @include tablet {
     margin-bottom: 25%;
@@ -15,16 +15,15 @@
   @include desktop {
     @include alignItens-justifyContent(center, space-between);
     @include display-flexDirection(flex, row);
-    margin-bottom: 5%;
+    padding: 0 7.5%;
     position: fixed;
-    top: 100px;
+    top: 50px;
+    transition: all .3s ease;
   }
 
   &__navClose {
-    //padding-right: 5%;
     display: none;
-    //max-width: 0px; //mobile-only
-   // max-height: 0px; //mobile-only
+    list-style: none;
 
     @include desktop {
       padding-right: 0;
@@ -37,18 +36,23 @@
   }
 
   &__navOpen {
+    visibility: visible;
     position: absolute;
     top: 80px;
     right: 0;
     @include height-width(100vh, 100vw);
+
+    @include tablet {
+      top: 120px;
+    }
   }
   
   
   &__hamburguer {
     @include alignItens-justifyContent(null, space-between);
     @include display-flexDirection(flex, column);
+    @include height-width(5vh, 12%);
     background-color: transparent;
-    //border: 2px solid $marromTipo;
     border: none;
     box-shadow: 4px 4px 4px rgba(0,0,0,8%);
     height: 5vh;
@@ -56,8 +60,7 @@
     width: 12%;
 
     @include tablet {
-      width: 8.5%;
-      height: 5%;
+      @include height-width(5vh, 8%);
       padding: 1.15%;
       right: 5%;
       top: 2.5%;
@@ -75,12 +78,7 @@
   }
 
   &__ulClose {
-    list-style: none;
     max-height: 0vh;
-    overflow: hidden;
-    visibility: collapse;
-    transition: max-height .3s ease-in-out;
-    //width: 0vw;
     
     @include desktop {
       @include alignItens-justifyContent(center, space-between);
@@ -100,16 +98,16 @@
     max-height: 40vh;
     padding: 7.5%;
     position: absolute;
-    transition: max-height .3s ease-in-out;
+    right: 0px;
     width: 100vw;
 
     @include tablet {
-      height: 30%;
+      margin: 0;
+      height: 45vh;
       padding: 5%;
     }
 
     & li {
-      animation: fadeIn 0.95s ease-in-out;
       font-size: 1.5rem;
       padding: 2.5% 0;
 
@@ -117,10 +115,15 @@
         font-weight: bold;
       }
     }
+
+    @include desktop {
+      list-style: none;
+    }
   }
 }
 
 .item {
+  list-style: none;
   text-transform: uppercase;
   font-weight: bold;
   &:hover{
@@ -130,6 +133,7 @@
   & > a {
     @include color-fontSize($verdeTipo, 1.25rem);
     text-decoration: none;
+    
   }
 }
 
@@ -138,11 +142,26 @@
   width: 30%;
 
   @include tablet {
-    margin: 2.5% 2.5% 0;
-    width: 30%;
+    width: 25%;
   }
   @include desktop {
     margin: 0;
+    padding: 1% 0;
     width: 25%;
+  }
+}
+
+.desktopActive {
+  @include alignItens-justifyContent(center, space-between);
+  @include display-flexDirection(flex, row);
+  @include height-width(80px, 100%);
+  padding: 0 7.5%;
+  position: fixed;
+  top: 0px;
+  background-color: $marromTipo;
+  transition: all .5s ease;
+
+  & nav ul li a {
+    color: white;
   }
 }

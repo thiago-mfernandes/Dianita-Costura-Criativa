@@ -3,25 +3,25 @@
 .menu {
 
 	&__container {
-		@include display-flexDirection(flex);
-		@include alignItens-justifyContent(center, space-between);
 		max-height: 0; //mobile-only
 		padding: 0 7.5%;
 
-		// - inserir esta propriedade no tablet e desktop
-
 		@include desktop {
+		  @include display-flexDirection(flex);
+		  @include alignItens-justifyContent(center, space-between);
 			max-height: none;
-			padding: 0;
-			margin-bottom: 1.5%;
+			padding: 0 7.5%;
+      position: absolute;
+      width: 100%;
 			white-space: nowrap;
 		}
 	}
 
 	&__box {
     @include display-flexDirection(flex);
-    @include alignItens-justifyContent(center);
+    @include alignItens-justifyContent(center, space-between);
     visibility: hidden; //mobile-only
+    
     @include desktop {
       visibility: visible;
     }
@@ -38,6 +38,7 @@
   @include color-fontSize(1rem, $marromTipo);
   margin: 0 8px;
   max-width: 0px;
+  
   @include desktop {
     max-width: none;
     width: 2.75rem;

@@ -27,11 +27,12 @@
 
     @include desktop {
         @include color-fontSize($laranjaPrincipal, 1.75rem);
-        //margin: auto;
         width: 75%;
         &:hover {
             @include color-fontSize(white, 1.85rem);
-            transition: all 0.25s;
+            box-shadow: 8px 8px 8px rgba(0,0,0,24%);
+            transform: translateY(-10px);
+            transition: all 0.3s;
         }
         &:active {
             @include color-fontSize($laranjaPrincipal, 1.85rem);

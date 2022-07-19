@@ -29,15 +29,15 @@ function Item({ id, title, preco, description, photo}: Props) {
   return (
     <>
       <div className={styles.produtosCard} key={id} data-testid="produto" role='product_Item'>
-        <img src={`${photo}`} alt={title} className={styles.produtosCard__img}/>
-        <h3 className={styles.produtosCard__title}>
+        <img src={`${photo}`} alt={title} className={styles.produtosCard__img} role='imagemDoProduto' />
+        <h3 className={styles.produtosCard__title} role='tituloDoProduto'>
           {title}
           <br />
-          <span>{preco}</span>
+          <span role='preçoDoProduto'>{preco}</span>
         </h3>
-        <p className={styles.produtosCard__content}>{description}</p>
+        <p className={styles.produtosCard__content} role='descriçãoDoProduto'>{description}</p>
         <div className={styles.produtosAction}>
-          <button className={styles.produtosAction__btn}>
+          <button aria-roledescription='botaoCompraProduto' className={styles.produtosAction__btn}>
             Comprar
             <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer"></a>
           </button> 

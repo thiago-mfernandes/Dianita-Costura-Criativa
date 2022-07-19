@@ -19,12 +19,7 @@
   &__containerContent {
     @include display-flexDirection(flex, column);
     @include alignItens-justifyContent(center, center);
-    //margin-top: 45%;
-    //margin-bottom: 60%;
     
-    @include tablet {
-      margin-bottom: 55%;
-    }
     @include desktop {
       margin: 15% 0;
     }
@@ -94,6 +89,7 @@
   &__botao {
     @extend .botaoSaibaMais;
     align-self: flex-end;
+    
     @include desktop {
       width: 50%;
     }
