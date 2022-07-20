@@ -9,13 +9,15 @@ import style from './Nav.module.scss';
 
 
 export default function Menu() {
-
+  
+  // --mobileMenu é referente a tag nav que contem a lista de links
   const [mobileMenu, setState] = useState(false);
+  // --desktopMenu é referente a o estado fixo do menu ao scrolar
   const [desktopMenu, setdesktopMenu] = useState(false);
-  console.log(desktopMenu);
+
 
   function scrollPosition(){
-    if(scrollY > 64) {
+    if(scrollY > 50) {
       setdesktopMenu(true);
     } else {
       setdesktopMenu(false);
@@ -82,15 +84,29 @@ export default function Menu() {
       >
         {desktopMenu 
           ? <LogoBranco className={style.logo} /> 
-          : <LogoPreto className={style.logo} />}
+          : <LogoPreto className={style.logo} />
+        }
 
         <button
           className={style.navContainer__hamburguer}
           onClick={() => setState(!mobileMenu)}
         >
-          <div className={style.navContainer__hamburguer___line}></div>
-          <div className={style.navContainer__hamburguer___line}></div>
-          <div className={style.navContainer__hamburguer___line}></div>
+          <div className={
+            //se o desktopMenu for false (position: none): icone marrom
+            //se o desktopMenu for true (position : sticky): icone branco
+            desktopMenu
+              ? `${style.navContainer__hamburguer___whiteLine}`
+              : `${style.navContainer__hamburguer___brownLine}`
+          }></div>
+          <div className={
+            desktopMenu
+              ? `${style.navContainer__hamburguer___whiteLine}`
+              : `${style.navContainer__hamburguer___brownLine}`
+          }></div><div className={
+            desktopMenu
+              ? `${style.navContainer__hamburguer___whiteLine}`
+              : `${style.navContainer__hamburguer___brownLine}`
+          }></div>
         </button>
 
         <nav

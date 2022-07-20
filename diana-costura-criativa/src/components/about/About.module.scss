@@ -83,11 +83,6 @@
     @include desktop {
       margin-bottom: 0;
       margin-top: 0;
-      transition: all .6s ease-in-out;
-      &:hover {
-        transform: scale(102.5%);
-        transition: all .6s ease-in-out;
-      }
     }
   }
 

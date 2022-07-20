@@ -22,8 +22,14 @@
   }
 
   &__navClose {
-    display: none;
-    list-style: none;
+    //display: none;
+    visibility: visible;
+    position: absolute;
+    transform: translate(100%);
+    transition: all .8s ease-in-out;
+    top: 80px;
+    right: 0;
+    @include height-width(45vh, 100vw);
 
     @include desktop {
       padding-right: 0;
@@ -38,9 +44,11 @@
   &__navOpen {
     visibility: visible;
     position: absolute;
+    transform: translate(0%);
+    transition: all .8s ease-in-out;
     top: 80px;
     right: 0;
-    @include height-width(100vh, 100vw);
+    @include height-width(45vh, 100vw);
 
     @include tablet {
       top: 120px;
@@ -55,9 +63,7 @@
     background-color: transparent;
     border: none;
     box-shadow: 4px 4px 4px rgba(0,0,0,8%);
-    height: 5vh;
     padding: 2%;
-    width: 12%;
 
     @include tablet {
       @include height-width(5vh, 8%);
@@ -69,16 +75,36 @@
       display: none;
     }
 
-    &___line {
+    &___brownLine {
       background-color: $marromTipo;
       height: 3px;
       width: 100%;
       border-radius: 8px;
+      transition: all .8s ease;
+    }
+
+    &___whiteLine {
+      background-color: #fff;
+      height: 3px;
+      width: 100%;
+      border-radius: 8px;
+      transition: all .8s ease;
     }
   }
 
   &__ulClose {
-    max-height: 0vh;
+    @include alignItens-justifyContent(flex-end);
+    @include display-flexDirection(flex, column);
+    @include height-width(45vh, 100vw);
+    background-color: #fff;
+    list-style: none;
+    padding: 7.5%;
+    position: absolute;
+    right: 0px;
+    transform: translate(100%);
+    transition: all .8s ease-in-out;
+    margin: 0;
+    
     
     @include desktop {
       @include alignItens-justifyContent(center, space-between);
@@ -93,13 +119,15 @@
   &__ulOpen {
     @include alignItens-justifyContent(flex-end);
     @include display-flexDirection(flex, column);
+    @include height-width(45vh, 100vw);
     background-color: #fff;
     list-style: none;
-    max-height: 40vh;
     padding: 7.5%;
     position: absolute;
     right: 0px;
-    width: 100vw;
+    transform: translate(0%);
+    transition: all .8s ease-in-out;
+    margin: 0;
 
     @include tablet {
       margin: 0;
@@ -124,6 +152,7 @@
 
 .item {
   list-style: none;
+  padding: 3.5%;
   text-transform: uppercase;
   font-weight: bold;
   &:hover{
@@ -158,10 +187,12 @@
   padding: 0 7.5%;
   position: fixed;
   top: 0px;
+  z-index: 10;
   background-color: $marromTipo;
   transition: all .5s ease;
 
-  & nav ul li a {
-    color: white;
-  }
+  //& nav ul li a {
+    //color: white;
+  //}
 }
+
