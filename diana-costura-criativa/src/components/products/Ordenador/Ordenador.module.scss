@@ -1,9 +1,9 @@
 @import "../../../scss/styles.scss";
 
 .ordenador {
-  @include display-flexDirection(flex, row);
   @include alignItens-justifyContent(center, space-between);
-  @include color-fontSize(white, 1.25rem);
+  @include color-fontSize($branco, 1.25rem);
+  @include display-flexDirection(flex, row);
   background-color: $marromTipo;
   border: none;
   border-top-left-radius: 4px;
@@ -18,10 +18,9 @@
   }
 
   &__opcoes {
-    display: none;
-    position: absolute;
+    @include display-flexDirection(none, column);
     left: 0;
-    flex-direction: column;
+    position: absolute;
     top: 100%;
     width: 100%;
     &--ativo {
@@ -31,13 +30,12 @@
 
   &__opcao {
     @include alignItens-justifyContent(center, flex-end);
+    @include display-flexDirection(flex, row);
+    @include height-width(6vh, inherit);
     background-color: $marromTipo;
-    border-top: 2px solid white;
-    color: white;
-    display: flex;
-    height: 6vh;
+    border-top: 2px solid $branco;
+    color: $branco;
     padding-right: 5%;
-    width: inherit;
     &:hover,
     &--ativo {
       background-color: $bgBotao;

@@ -1,15 +1,15 @@
 @import "../../variables/variables.scss", "../../mixins/mixins.scss";
 
 .content {
-    @include color-fontSize($marromTipo, 1rem);
-    line-height: 24px;
-    text-align: justify;
-    @include tablet {
-        @include color-fontSize($marromTipo, 1.25rem);
-        padding: 2.5% 0;
-    }
-    @include desktop {
-        @include color-fontSize($marromTipo, 1.5rem);
-        line-height: 32px;
-    }
+  @include color-fontSize($marromTipo, 1rem);
+  line-height: 24px;
+  text-align: justify;
+  @include tablet {
+    @include color-fontSize($marromTipo, 1.25rem);
+    padding: 2.5% 0;
+  }
+  @include desktop {
+    @include color-fontSize($marromTipo, 1.5rem);
+    line-height: 32px;
+  }
 }

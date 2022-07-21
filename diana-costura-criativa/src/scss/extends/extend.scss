@@ -1,0 +1,39 @@
+@import "../variables/variables.scss", "../mixins/mixins.scss";
+
+.hamburguerButtonColor {
+  @include height-width(3px, 100%);
+  border-radius: 8px;
+  transition: $transition;
+}
+
+.linkBotaoSaibaMais {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.divIconesSocialMedia {
+  @include color-fontSize($marromTipo, 2rem);
+  transition: $transition;
+  &:hover {
+    color: $linkHover;
+    transition: $transition;
+  }
+  &:active {
+    color: $linkActive;
+    transition: $transition;
+  }
+  &visited {
+    color: $linkVisited;
+    transition: $transition;
+  }
+}
+
+.depoimentsAuthors {
+  line-height: 24px;
+  margin: 0;
+  margin-top: 5%;
+  padding: 0 5%;
+  text-align: center;
+}

@@ -1,15 +1,25 @@
 //cores
-$marromTipo: #57504B;
+$marromTipo: #57504b;
 $marromLinha: rgba(87, 80, 75, 30%);
 $marromAcinzentado: #d3d1ce;
-$verdeTipo: #2F4C39;
+$verdeTipo: #2f4c39;
 $laranjaPrincipal: #9d4400;
 $bgBotao: #9d9285;
 $bgFooter: #3a3027;
-$rosaPadrao: #DEAC7F;
+$rosaPadrao: #deac7f;
 $linkHover: #be7735;
 $linkActive: #f6ddc6;
 $linkVisited: #9d4400;
+$branco: #fff;
 
 //familia tipografica dos titulos
-$fonteTitulo: 'Abril Fatface', serif;
+$fonteTitulo: "Abril Fatface", serif;
+
+$padding-lateral: 0 7.5%;
+
+$transition: all 0.8s ease-in-out;
+
+$boxShadow-8: 4px 4px 4px 0 rgba(0, 0, 0, 8%);
+$boxShadow-24: 8px 8px 8px rgba(0, 0, 0, 24%);
+
+$bordaCard: 1px solid $laranjaPrincipal;

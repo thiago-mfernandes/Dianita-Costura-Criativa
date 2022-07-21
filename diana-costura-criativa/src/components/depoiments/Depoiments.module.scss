@@ -17,12 +17,12 @@
 
 .cardDepoiments {
   @include display-flexDirection(flex, column);
-  border: 1px solid $laranjaPrincipal;
+  border: $bordaCard;
   margin: 10% 0;
 
   &__content {
     @extend .content;
-    border-bottom: 1px solid $laranjaPrincipal;
+    border-bottom: $bordaCard;
     font-style: italic;
     margin: 0;
     min-height: 30vh;
@@ -31,24 +31,14 @@
   }
 
   &__author {
-    color: $marromTipo;
-    font-size: 1rem;
+    @extend .depoimentsAuthors;
+    @include color-fontSize($marromTipo, 1rem);
     font-weight: 900;
-    line-height: 24px;
-    margin: 0;
-    margin-top: 5%;
-    padding: 0 5%;
-    text-align: center;
   }
 
   &__authorSubtitle {
-    color: $marromTipo;
-    font-size: 0.85rem;
-    line-height: 24px;
-    margin: 0;
-    margin-bottom: 5%;
-    padding: 0 5%;
-    text-align: center;
+    @extend .depoimentsAuthors;
+    @include color-fontSize($marromTipo, 0.85rem);
   }
 }
 
@@ -58,15 +48,14 @@
   width: 100%;
 
   &__controller {
+    @include alignItens-justifyContent(center, center);
     @include color-fontSize(1.25rem, $marromTipo);
     @include display-flexDirection(flex, column);
-    @include alignItens-justifyContent(center, center);
+    @include height-width(5vh, 10%);
     background-color: $bgBotao;
     border: none;
     border-radius: 50%;
-    height: 5vh;
     margin: 0 2.5%;
-    width: 10%;
 
     & span {
       font-size: 1.25rem;

@@ -1,10 +1,4 @@
-import { ReactComponent as Logo } from 'assets/logo-preto.svg';
 import styles from './Header.module.scss';
-import style from './Nav.module.scss';
-import { FaMapPin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import { MdEmail, MdFacebook } from 'react-icons/md';
-import { Link } from 'react-router-dom';
-
 import { useState } from 'react';
 /* 
 1.a constante active armazena o estado do menu entre aberto e fechado
@@ -35,90 +29,8 @@ export default function Header() {
 
   return (
     <>
-      {/* header */}
-
-      {/* pré cabecalho */}
-      <header className={styles.header}>
-        {/*
-          <div className={styles.header__container}>
-          <div className={styles.header__box}>
-            <FaMapPin className={styles.icone} />
-            <p className={styles.header__box___content}>
-              Piracicaba - São Paulo, Brazil
-            </p>
-            <MdEmail className={styles.icone} />
-            <p className={styles.header__box___content}>info@example.com</p>
-          </div>
-
-          <div className={styles.header__box}>
-            <p className={styles.header__container}>Redes Sociais:</p>
-            <a
-              href="https://www.facebook.com/profile.php?id=100063636849048"
-              target="_blank" rel="noreferrer"
-            >
-              <MdFacebook className={styles.icone} />
-            </a>
-            <a
-              href="https://www.instagram.com/dianitacosturacriativa/"
-              target="_blank" rel="noreferrer"
-            >
-              <FaInstagram className={styles.icone} />
-            </a>
-            <a 
-              href="https://wa.me/5519983723718" 
-              target="_blank" rel="noreferrer"
-            >
-              <FaWhatsapp className={styles.icone} />
-            </a>
-          </div>
-        </div>
-        
-        <div className={style.navContainer}>
-          <Logo className={style.logo} />
-
-          <nav
-            className={
-              active
-                ? style.navContainer__navOpen
-                : style.navContainer__navClose
-            }
-          >
-            
-            <button
-              className={style.navContainer__hamburguer}
-              onClick={ToggleMode}
-            >
-              <div className={style.navContainer__hamburguer___line}></div>
-              <div className={style.navContainer__hamburguer___line}></div>
-              <div className={style.navContainer__hamburguer___line}></div>
-            </button>
-
-            
-            <ul
-              className={
-                active
-                  ? style.navContainer__ulOpen
-                  : style.navContainer__ulClose
-              }
-            >
-              {
-                rotas.map((rota, index) => (
-                  <li key={index} className={style.item}>
-                    <Link to={rota.to}>
-                      {rota.label}
-                    </Link>
-                  </li>
-                ))
-              }
-            </ul>
-          </nav>
-        </div>
-        
-        */}
-        
-
+      <header className={styles.header}>        
         <div className={styles.header__containerContent}>
-          {/*container do titulo principal e botao */}
           <div>
             <div>
               <h2 className={styles.header__containerContent___subtitle}>

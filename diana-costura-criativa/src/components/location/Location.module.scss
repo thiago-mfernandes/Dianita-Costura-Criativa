@@ -1,4 +1,4 @@
-@import "scss/styles";
+@import "../../scss/styles.scss";
 
 .locale {
   @include display-flexDirection(flex, column);
@@ -9,8 +9,7 @@
   }
 
   &__mapa {
+    @include height-width(450px, 100%);
     border: none;
-    height: 450px;
-    width: 100%;
   }
 }

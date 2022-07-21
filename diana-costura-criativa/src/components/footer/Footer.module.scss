@@ -13,14 +13,14 @@
   @include display-flexDirection(flex, column);
 
   @include tablet {
-    @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(center, space-between);
+    @include display-flexDirection(flex, row);
     flex-wrap: wrap;
   }
 
   @include desktop {
-    @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(flex-start, flex-start);
+    @include display-flexDirection(flex, row);
     flex-wrap: wrap;
   }
 
@@ -31,8 +31,8 @@
       width: 100%;
     }
     @include desktop {
-      @include display-flexDirection(flex, row);
       @include alignItens-justifyContent(flex-start, space-between);
+      @include display-flexDirection(flex, row);
       margin: 0 1.5% 0 0;
       width: 48%;
     }
@@ -49,14 +49,14 @@
     }
 
     &___content {
-      @include color-fontSize(white, 1rem);
+      @include color-fontSize($branco, 1rem);
       margin: 5% 0;
     }
   }
 
   &__icontainer {
-    @include display-flexDirection(flex);
     @include alignItens-justifyContent(null, space-between);
+    @include display-flexDirection(flex);
     width: 50%;
 
     &___link {
@@ -67,26 +67,15 @@
     }
 
     &___icon {
-      @include color-fontSize($rosaPadrao, 2rem);
-      transition: color 0.25s;
-      &:hover {
-        color: $linkHover;
-        transition: color 0.25s;
-      }
-      &:active {
-        color: $linkActive;
-        transition: color 0.25s;
-      }
-      &visited {
-        color: $linkVisited;
-        transition: color 0.25s;
-      }
+      //div utilizada no formulario de contato e no footer
+      @extend .divIconesSocialMedia;
     }
   }
 
   &__address {
     @include display-flexDirection(flex, column);
     margin: 10% 0;
+
     @include tablet {
       margin: 0;
       margin-bottom: 5%;
@@ -105,17 +94,17 @@
     }
 
     &___box {
-      @include display-flexDirection(flex, row);
       @include alignItens-justifyContent(center);
+      @include display-flexDirection(flex, row);
       margin: 0;
 
       &____icon {
-        @include color-fontSize(white, 0.9rem);
+        @include color-fontSize($branco, 0.9rem);
         margin: 0 5% 0 0;
       }
 
       &____content {
-        color: white;
+        color: $branco;
         margin: 2% 0;
       }
     }
@@ -148,9 +137,9 @@
       margin: 2% 0;
 
       & > a {
-        color: white;
+        color: $branco;
         text-decoration: none;
-        &:hover{
+        &:hover {
           color: $linkHover;
         }
       }
@@ -162,8 +151,8 @@
     margin: 10% 0;
 
     @include tablet {
-      width: 47.5%;
       margin: 2.5% 2.5% 0 0;
+      width: 47.5%;
     }
 
     @include desktop {
@@ -181,45 +170,43 @@
     }
 
     &___content {
-      color: white;
+      color: $branco;
       margin: 0 0 5% 0;
     }
 
     //componentizar
     &___input {
+      @include height-width(7.5vh, 100%);
       background-color: transparent;
       border: none;
-      border-bottom: 1px solid white;
-      height: 7.5vh;
+      border-bottom: 1px solid $branco;
       margin-bottom: 5%;
       padding: 2%;
-      width: 100%;
       &:focus {
-        color: $marromTipo;
         background-color: $rosaPadrao;
+        color: $marromTipo;
         outline: 0;
       }
     }
 
     &___button {
       @include color-fontSize($marromTipo, 1.25rem);
+      @include height-width(7.5vh, 100%);
       background-color: $rosaPadrao;
       border: none;
       cursor: pointer;
-      height: 7.5vh;
       padding: 2%;
-      transition: all 0.25s;
-      width: 100%;
+      transition: $transition;
 
       &:hover {
         background-color: $linkHover;
-        color: white;
-        transition: all 0.25s;
+        color: $branco;
+        transition: $transition;
       }
       &:active {
         border: 1px solid $linkActive;
         color: $bgFooter;
-        transition: all 0.25s;
+        transition: $transition;
       }
     }
   }
@@ -228,14 +215,14 @@
     @include display-flexDirection(flex, column);
 
     @include tablet {
-      @include display-flexDirection(flex, row);
       @include alignItens-justifyContent(center, space-between);
+      @include display-flexDirection(flex, row);
       width: 100%;
     }
 
     @include desktop {
-      @include display-flexDirection(flex, row);
       @include alignItens-justifyContent(center, flex-start);
+      @include display-flexDirection(flex, row);
       width: 50%;
     }
 

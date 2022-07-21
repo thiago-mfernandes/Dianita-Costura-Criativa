@@ -25,12 +25,11 @@
 
   &__button {
     @include color-fontSize($marromTipo, 1.25rem);
+    @include height-width(10vh, 47.5%);
     background-color: transparent;
-    border: 1px solid $laranjaPrincipal;
-    height: 10vh;
+    border: $bordaCard;
     margin: 2.5% 0;
-    transition: all 0.25s ease-in-out;
-    width: 47.5%;
+    transition: $transition;
     &:hover {
       cursor: pointer;
     }
@@ -40,17 +39,20 @@
     }
 
     @include desktop {
-      height: 7.5vh;
+      @include height-width(7.5vh, 15%);
+      font-size: 1rem;
       margin: 0.5% 0;
-      width: 15%;
+      transition: $transition;
     }
 
     &:hover {
-      @include color-fontSize(white, 1.3rem);
+      @include color-fontSize($branco, 1.15rem);
       background-color: $bgBotao;
+      box-shadow: $boxShadow-24;
       border: $bgBotao;
       font-weight: bold;
-      transition: all 0.25s ease-in-out;
+      transform: translateY(-5px);
+      transition: $transition;
     }
   }
 }
@@ -60,5 +62,5 @@
   background-color: $bgBotao;
   border: $bgBotao;
   font-weight: bold;
-  transition: all 0.25s ease-in-out;
+  transition: $transition;
 }

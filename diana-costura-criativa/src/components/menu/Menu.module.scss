@@ -1,27 +1,26 @@
-@import '../../scss/styles.scss';
+@import "../../scss/styles.scss";
 
 .menu {
+  &__container {
+    max-height: 0;
+    padding: $padding-lateral;
 
-	&__container {
-		max-height: 0; //mobile-only
-		padding: 0 7.5%;
-
-		@include desktop {
-		  @include display-flexDirection(flex);
-		  @include alignItens-justifyContent(center, space-between);
-			max-height: none;
-			padding: 0 7.5%;
+    @include desktop {
+      @include alignItens-justifyContent(center, space-between);
+      @include display-flexDirection(flex);
+      max-height: none;
+      padding: $padding-lateral;
       position: absolute;
       width: 100%;
-			white-space: nowrap;
-		}
-	}
+      white-space: nowrap;
+    }
+  }
 
-	&__box {
+  &__box {
     @include display-flexDirection(flex);
     @include alignItens-justifyContent(center, space-between);
     visibility: hidden; //mobile-only
-    
+
     @include desktop {
       visibility: visible;
     }
@@ -38,13 +37,12 @@
   @include color-fontSize(1rem, $marromTipo);
   margin: 0 8px;
   max-width: 0px;
-  
+
   @include desktop {
-    max-width: none;
-    width: 2.75rem;
-    height: 1.75rem;
+    @include height-width(1.75rem, 2.75rem);
     color: $marromTipo;
     margin: 0 2.5%;
+    max-width: none;
     &:hover {
       color: $laranjaPrincipal;
     }

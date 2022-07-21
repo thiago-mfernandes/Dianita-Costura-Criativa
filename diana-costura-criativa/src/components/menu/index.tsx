@@ -14,14 +14,17 @@ export default function Menu() {
   // --mobileMenu é referente a tag nav que contem a lista de links
   const [mobileMenu, setState] = useState(false);
   // --desktopMenu é referente a o estado fixo do menu ao scrolar
-  const [desktopMenu, setdesktopMenu] = useState(false);
+  const [stickyMenu, setStickyMenu] = useState(false);
+
+  const width = window.innerWidth;
+   
 
 
   function scrollPosition(){
     if(scrollY > 50) {
-      setdesktopMenu(true);
+      setStickyMenu(true);
     } else {
-      setdesktopMenu(false);
+      setStickyMenu(false);
     }
   }
   window.addEventListener('scroll', scrollPosition);
@@ -51,7 +54,7 @@ export default function Menu() {
               Piracicaba - São Paulo, Brazil
           </p>
           <MdEmail className={styles.icone} />
-          <p className={styles.menu__box___content}>info@example.com</p>
+          <p className={styles.menu__box___content}>diana@costuracriativa.com</p>
         </div>
 
         <div className={styles.menu__box}>
@@ -79,11 +82,11 @@ export default function Menu() {
 
       {/* cabecalho */}
       <div className={
-        desktopMenu 
+        stickyMenu 
           ? `${style.desktopActive}` 
           : `${style.navContainer}`}
       >
-        {desktopMenu 
+        {stickyMenu 
           ? <LogoBranco className={style.logo} /> 
           : <LogoPreto className={style.logo} />
         }
@@ -93,18 +96,18 @@ export default function Menu() {
           onClick={() => setState(!mobileMenu)}
         >
           <div className={
-            //se o desktopMenu for false (position: none): icone marrom
-            //se o desktopMenu for true (position : sticky): icone branco
-            desktopMenu
+            //se o stickyMenu for false (position: none): icone marrom
+            //se o stickyMenu for true (position : sticky): icone branco
+            stickyMenu
               ? `${style.navContainer__hamburguer___whiteLine}`
               : `${style.navContainer__hamburguer___brownLine}`
           }></div>
           <div className={
-            desktopMenu
+            stickyMenu
               ? `${style.navContainer__hamburguer___whiteLine}`
               : `${style.navContainer__hamburguer___brownLine}`
           }></div><div className={
-            desktopMenu
+            stickyMenu
               ? `${style.navContainer__hamburguer___whiteLine}`
               : `${style.navContainer__hamburguer___brownLine}`
           }></div>
@@ -112,18 +115,18 @@ export default function Menu() {
 
         <nav
           className={
-            mobileMenu 
+            // se a medida da tela for MENOR que mil px e o mobileMenu true: a animacao da caixa lateral para mobile acontece
+            // se a medida da tela for MAIOR que mil px, nao tem animacao e o menu fica fixo
+            width < 1000 && mobileMenu 
               ? `${style.navContainer__navOpen}` 
               : `${style.navContainer__navClose}`
           }
         >
-          {/* menu hamburguer mobile */}
-          
-
-          {/* a ul recebe uma classe aberto ou fechado */}
           <ul
             className={
-              mobileMenu
+              // se a medida da tela for MENOR que mil px e o mobileMenu true: a animacao da caixa lateral para mobile acontece
+              // se a medida da tela for MAIOR que mil px, nao tem animacao e o menu fica fixo
+              width < 1000 && mobileMenu
                 ? `${style.navContainer__ulOpen}`
                 : `${style.navContainer__ulClose}`
             }

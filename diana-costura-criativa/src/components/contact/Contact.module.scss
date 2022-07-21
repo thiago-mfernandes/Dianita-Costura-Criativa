@@ -2,11 +2,17 @@
 
 .container {
   padding: 20% 5% 0;
+
+  @include desktop {
+    @include alignItens-justifyContent(flex-start, space-between);
+    @include display-flexDirection(flex, row);
+    flex-wrap: wrap;
+  }
 }
 
 .boxTitle {
-  @include display-flexDirection(flex, column);
   @include alignItens-justifyContent(center, center);
+  @include display-flexDirection(flex, column);
 
   &__title {
     @extend .title;
@@ -14,6 +20,10 @@
 
   &__content {
     @extend .content;
+
+    @include desktop {
+      margin-bottom: 7.5%;
+    }
   }
 }
 
@@ -21,6 +31,10 @@
   background-color: $rosaPadrao;
   padding: 5%;
   margin-bottom: 10%;
+
+  @include desktop {
+    width: 45%;
+  }
 
   &__title {
     @include color-fontSize($marromTipo, 1.25rem);
@@ -37,44 +51,35 @@
 }
 
 .boxSocialMedia {
-  @include display-flexDirection(flex, row);
   @include alignItens-justifyContent(center, space-around);
+  @include display-flexDirection(flex, row);
   width: 75%;
-  
+
   //componentizar
   &__link {
-    @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(center, flex-start);
+    @include display-flexDirection(flex, row);
     margin: 2.5% 0 10%;
     width: 100%;
   }
-  //componentizar
-  
+
   &__icon {
-    @include color-fontSize($marromTipo, 2rem);
-    transition: color 0.25s;
-    &:hover {
-      color: $linkHover;
-      transition: color 0.25s;
-    }
-    &:active {
-      color: $linkActive;
-      transition: color 0.25s;
-    }
-    &visited {
-      color: $linkVisited;
-      transition: color 0.25s;
-    }
+    //div utilizada no formulario de contato e no footer
+    @extend .divIconesSocialMedia;
   }
 }
 
 .form {
+  @include alignItens-justifyContent(flex-start, center);
   @include display-flexDirection(flex, column);
-  @include alignItens-justifyContent(flex-start,center);
   margin-bottom: 15%;
 
+  @include desktop {
+    width: 45%;
+  }
+
+  @include display-flexDirection(flex, column);
   &__box {
-    @include display-flexDirection(flex, column);
     @include alignItens-justifyContent(center, flex-start);
     width: 100%;
     &:last-of-type {
@@ -83,24 +88,32 @@
   }
 
   &__input {
+    @include height-width(7.5vh, 100%);
     background-color: transparent;
     border: 1px solid $marromLinha;
-    height: 7.5vh;
     margin-bottom: 5%;
     padding: 2%;
-    width: 100%;
     &:focus {
-      color: $marromTipo;
       background-color: $linkActive;
+      color: $marromTipo;
       outline: 0;
     }
   }
 
   &__input[name="message"] {
     height: 30vh;
+
+    @include desktop {
+      height: 37vh;
+    }
   }
 }
 
 .botao {
   @extend .botaoSaibaMais;
+
+  @include desktop {
+    align-self: flex-end;
+    margin: 0;
+  }
 }

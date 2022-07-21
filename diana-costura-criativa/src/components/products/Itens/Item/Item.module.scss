@@ -1,13 +1,13 @@
 @import "../../../../scss/styles.scss";
 
 .produtosCard {
-  visibility: visible;
   @include alignItens-justifyContent(center, flex-start);
   @include display-flexDirection(flex, column);
-  border: 1px solid $laranjaPrincipal;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 8%);
+  border: $bordaCard;
+  box-shadow: $boxShadow-8;
   margin-bottom: 10%;
   overflow: hidden;
+  visibility: visible;
   width: 90%;
 
   @include tablet {
@@ -15,29 +15,29 @@
   }
 
   @include desktop {
-    width: 22.5%;
     margin-bottom: 5%;
-    transition: all .3s ease-in-out;
+    transition: $transition;
+    width: 22.5%;
     &:hover {
-      box-shadow: 8px 8px 8px rgba(0,0,0,24%);
+      box-shadow: $boxShadow-24;
       transform: translateY(-10px);
-      transition: all .3s ease-in-out;
+      transition: $transition;
     }
   }
 
   &__img {
-    border: 1px solid $laranjaPrincipal;
-    transition: all 0.75s;
+    border: $bordaCard;
+    transition: $transition;
     width: 100%;
     &:hover {
       transform: scale(1.1);
-      transition: all 0.75s;
+      transition: $transition;
     }
   }
 
   &__title {
     @extend .title;
-    border-bottom: 1px solid $laranjaPrincipal;
+    border-bottom: $bordaCard;
     margin: 0;
     padding: 2.5%;
     @include desktop {
@@ -55,7 +55,7 @@
 
   &__content {
     @extend .content;
-    border-bottom: 1px solid $laranjaPrincipal;
+    border-bottom: $bordaCard;
     margin: 0;
     padding: 5%;
     @include tablet {
@@ -77,8 +77,8 @@
   }
 
   & > a {
-    @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(center, space-between);
+    @include display-flexDirection(flex, row);
     text-decoration: none;
     width: 100%;
   }
@@ -87,24 +87,22 @@
     @include color-fontSize($marromTipo, 1.125rem);
     background-color: transparent;
     border: none;
-    border-right: 1px solid $laranjaPrincipal;
     font-weight: 700;
     height: 7.5vh;
     padding: 5%;
     text-align: center;
     text-transform: uppercase;
-    transition: all 0.25s;
-    width: 100%;
+    transition: $transition;
     &:hover {
-      @include color-fontSize(white, 1.175rem);
+      @include color-fontSize($branco, 1.175rem);
       background-color: $marromTipo;
-      transition: all 0.25s;
+      transition: $transition;
       cursor: pointer;
     }
     &:active {
       background-color: $laranjaPrincipal;
       color: $marromAcinzentado;
-      transition: all 0.25s;
+      transition: $transition;
     }
   }
 
@@ -116,12 +114,12 @@
       @include color-fontSize($marromTipo, 1.25rem);
       &:hover {
         @include color-fontSize($laranjaPrincipal, 1.175rem);
-        transition: all 0.25s;
+        transition: $transition;
       }
       &:active {
         background-color: $laranjaPrincipal;
         color: $marromAcinzentado;
-        transition: all 0.25s;
+        transition: $transition;
       }
     }
   }

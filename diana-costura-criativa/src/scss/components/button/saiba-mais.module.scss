@@ -1,44 +1,42 @@
 @import "../../variables/variables.scss", "../../mixins/mixins.scss";
 
-
 .botaoSaibaMais {
-    @include color-fontSize($marromTipo, 1.25rem);
-    background-color: $bgBotao;
-    border: none;
-    height: 10vh;
-    margin: 2.5% 0;
-    text-transform: uppercase;
-    width: 100%;
-    transition: all 0.25s;
+  @include color-fontSize($marromTipo, 1.25rem);
+  @include height-width(10vh, 100%);
+  background-color: $bgBotao;
+  border: none;
+  margin: 2.5% 0;
+  text-transform: uppercase;
+  transition: $transition;
+  &:hover {
+    @include color-fontSize($branco, 1.35rem);
+    transition: $transition;
+    cursor: pointer;
+  }
+  &:active {
+    @include color-fontSize($laranjaPrincipal, 1.35rem);
+    background-color: $marromAcinzentado;
+    transition: $transition;
+  }
+
+  @include tablet {
+    margin: 2.5% auto;
+    width: 75%;
+  }
+
+  @include desktop {
+    @include color-fontSize($laranjaPrincipal, 1.75rem);
+    width: 75%;
     &:hover {
-        @include color-fontSize(white, 1.35rem);
-        transition: all 0.25s;
-        cursor: pointer;
+      @include color-fontSize($branco, 1.85rem);
+      box-shadow: $boxShadow-24;
+      transform: translateY(-10px);
+      transition: $transition;
     }
     &:active {
-        @include color-fontSize($laranjaPrincipal, 1.35rem);
-        background-color: $marromAcinzentado;
-        transition: all 0.25s;
+      @include color-fontSize($laranjaPrincipal, 1.85rem);
+      background-color: $marromAcinzentado;
+      transition: $transition;
     }
-
-    @include tablet {
-        margin: 2.5% auto;
-        width: 75%;
-    }
-
-    @include desktop {
-        @include color-fontSize($laranjaPrincipal, 1.75rem);
-        width: 75%;
-        &:hover {
-            @include color-fontSize(white, 1.85rem);
-            box-shadow: 8px 8px 8px rgba(0,0,0,24%);
-            transform: translateY(-10px);
-            transition: all 0.3s;
-        }
-        &:active {
-            @include color-fontSize($laranjaPrincipal, 1.85rem);
-            background-color: $marromAcinzentado;
-            transition: all 0.25s;
-        }
-    }
+  }
 }

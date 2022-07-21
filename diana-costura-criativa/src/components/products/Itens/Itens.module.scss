@@ -1,18 +1,18 @@
 @import "../../../scss/styles.scss";
 
 .produtosContainerCard {
-  @include display-flexDirection(flex, column);
   @include alignItens-justifyContent(center, null);
+  @include display-flexDirection(flex, column);
 
   @include tablet {
-    @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(stretch, space-between);
+    @include display-flexDirection(flex, row);
     flex-wrap: wrap;
   }
 
   @include desktop {
-    @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(stretch, space-between);
+    @include display-flexDirection(flex, row);
     flex-wrap: wrap;
   }
 }
