@@ -85,10 +85,10 @@
 
   &__btn {
     @include color-fontSize($marromTipo, 1.125rem);
+    @include height-width(7.5vh, 100%);
     background-color: transparent;
     border: none;
     font-weight: 700;
-    height: 7.5vh;
     padding: 5%;
     text-align: center;
     text-transform: uppercase;
