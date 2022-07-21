@@ -1,1 +1,68 @@
-@import "scss/styles";
+@import "../../scss/styles.scss";
+
+.container {
+  padding: 20% 5% 0;
+}
+
+.boxTitle {
+  @include display-flexDirection(flex, column);
+  @include alignItens-justifyContent(center, center);
+
+  &__title {
+    @extend .title;
+  }
+
+  &__content {
+    @extend .content;
+  }
+}
+
+.boxMyInfo {
+  background-color: $rosaPadrao;
+  padding: 5%;
+
+  &__title {
+    @include color-fontSize($marromTipo, 1.25rem);
+    margin: 0 0 2.5%;
+    &:first-of-type {
+      margin-top: 7.5%;
+    }
+  }
+
+  &__content {
+    @include color-fontSize($marromTipo, 1rem);
+    margin: 0 0 10%;
+  }
+}
+
+.boxSocialMedia {
+  @include display-flexDirection(flex, row);
+  @include alignItens-justifyContent(center, space-around);
+  width: 75%;
+  
+  //componentizar
+  &__link {
+    @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(center, flex-start);
+    margin: 2.5% 0 10%;
+    width: 100%;
+  }
+  //componentizar
+  
+  &__icon {
+    @include color-fontSize($marromTipo, 2rem);
+    transition: color 0.25s;
+    &:hover {
+      color: $linkHover;
+      transition: color 0.25s;
+    }
+    &:active {
+      color: $linkActive;
+      transition: color 0.25s;
+    }
+    &visited {
+      color: $linkVisited;
+      transition: color 0.25s;
+    }
+  }
+}
