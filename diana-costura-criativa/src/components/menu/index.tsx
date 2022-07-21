@@ -8,6 +8,7 @@ import styles from './Menu.module.scss';
 import style from './Nav.module.scss';
 
 
+
 export default function Menu() {
   
   // --mobileMenu é referente a tag nav que contem a lista de links
@@ -28,7 +29,7 @@ export default function Menu() {
 
   const rotas = [{
     label: 'Home', 
-    to: '/home'
+    to: '/'
   },{
     label: 'Sobre', 
     to: '/sobre'
@@ -129,7 +130,11 @@ export default function Menu() {
           >
             {
               rotas.map((rota, index) => (
-                <li key={index} className={style.item}>
+                <li 
+                  key={index} 
+                  className={style.item} 
+                  onClick={() => setState(!mobileMenu)}
+                >
                   <Link to={rota.to}>
                     {rota.label}
                   </Link>
@@ -142,3 +147,4 @@ export default function Menu() {
     </>
   );
 }
+

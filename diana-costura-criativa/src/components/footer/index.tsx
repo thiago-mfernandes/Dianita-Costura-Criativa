@@ -3,8 +3,24 @@ import { ReactComponent as Logo } from 'assets/logo-branco.svg';
 import { MdFacebook } from 'react-icons/md';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
+
+  const rotas = [{
+    label: 'Home', 
+    to: '/'
+  },{
+    label: 'Sobre', 
+    to: '/sobre'
+  },{
+    label: 'Produtos', 
+    to: '/produtos'
+  },{
+    label: 'Contato', 
+    to: '/contato'
+  }];
+  
   return (
     <>
       <section className={styles.section}>
@@ -75,18 +91,18 @@ export default function Footer() {
           <div className={styles.footerContainer__section}>
             <div className={styles.footerContainer__links}>
               <h2 className={styles.footerContainer__links___title}>Links</h2>
-              <p className={styles.footerContainer__links___content}>
-                Home
-              </p>
-              <p className={styles.footerContainer__links___content}>
-                Sobre
-              </p>
-              <p className={styles.footerContainer__links___content}>
-                Produtos
-              </p>
-              <p className={styles.footerContainer__links___content}>
-                Contato
-              </p>
+              {
+                rotas.map((rota, index) => (
+                  <p 
+                    key={index} 
+                    className={styles.footerContainer__links___content} 
+                  >
+                    <Link to={rota.to}>
+                      {rota.label}
+                    </Link>
+                  </p>
+                ))
+              }
             </div>
 
             <div className={styles.footerContainer__newsletter}>

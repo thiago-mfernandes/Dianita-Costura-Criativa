@@ -1,4 +1,4 @@
-@import "scss/styles";
+@import "../../scss/styles.scss";
 
 .section {
   background-color: $bgFooter;
@@ -145,8 +145,15 @@
     }
 
     &___content {
-      color: white;
       margin: 2% 0;
+
+      & > a {
+        color: white;
+        text-decoration: none;
+        &:hover{
+          color: $linkHover;
+        }
+      }
     }
   }
 
@@ -196,6 +203,7 @@
       @include color-fontSize($marromTipo, 1.25rem);
       background-color: $rosaPadrao;
       border: none;
+      cursor: pointer;
       height: 7.5vh;
       padding: 2%;
       transition: all 0.25s;

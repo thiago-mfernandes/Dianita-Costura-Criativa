@@ -31,6 +31,9 @@
     margin: 2.5% 0;
     transition: all 0.25s ease-in-out;
     width: 47.5%;
+    &:hover {
+      cursor: pointer;
+    }
 
     @include tablet {
       width: 30%;

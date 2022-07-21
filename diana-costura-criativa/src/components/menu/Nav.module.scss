@@ -62,8 +62,10 @@
     @include height-width(5vh, 12%);
     background-color: transparent;
     border: none;
-    box-shadow: 4px 4px 4px rgba(0,0,0,8%);
     padding: 2%;
+    &:hover {
+      cursor: pointer;
+    }
 
     @include tablet {
       @include height-width(5vh, 8%);

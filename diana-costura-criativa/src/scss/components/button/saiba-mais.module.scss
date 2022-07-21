@@ -13,6 +13,7 @@
     &:hover {
         @include color-fontSize(white, 1.35rem);
         transition: all 0.25s;
+        cursor: pointer;
     }
     &:active {
         @include color-fontSize($laranjaPrincipal, 1.35rem);

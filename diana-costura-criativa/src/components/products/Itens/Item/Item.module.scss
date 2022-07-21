@@ -99,6 +99,7 @@
       @include color-fontSize(white, 1.175rem);
       background-color: $marromTipo;
       transition: all 0.25s;
+      cursor: pointer;
     }
     &:active {
       background-color: $laranjaPrincipal;

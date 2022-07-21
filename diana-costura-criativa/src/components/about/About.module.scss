@@ -1,6 +1,8 @@
 @import "../../scss/styles.scss";
 
 .about {
+  padding-top: 20%;
+  
   @include desktop {
     @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(center, center);
