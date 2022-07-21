@@ -20,6 +20,7 @@
 .boxMyInfo {
   background-color: $rosaPadrao;
   padding: 5%;
+  margin-bottom: 10%;
 
   &__title {
     @include color-fontSize($marromTipo, 1.25rem);
@@ -65,4 +66,41 @@
       transition: color 0.25s;
     }
   }
+}
+
+.form {
+  @include display-flexDirection(flex, column);
+  @include alignItens-justifyContent(flex-start,center);
+  margin-bottom: 15%;
+
+  &__box {
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(center, flex-start);
+    width: 100%;
+    &:last-of-type {
+      margin-bottom: 10%;
+    }
+  }
+
+  &__input {
+    background-color: transparent;
+    border: 1px solid $marromLinha;
+    height: 7.5vh;
+    margin-bottom: 5%;
+    padding: 2%;
+    width: 100%;
+    &:focus {
+      color: $marromTipo;
+      background-color: $linkActive;
+      outline: 0;
+    }
+  }
+
+  &__input[name="message"] {
+    height: 30vh;
+  }
+}
+
+.botao {
+  @extend .botaoSaibaMais;
 }

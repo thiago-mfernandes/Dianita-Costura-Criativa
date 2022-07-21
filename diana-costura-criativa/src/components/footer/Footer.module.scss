@@ -185,6 +185,7 @@
       margin: 0 0 5% 0;
     }
 
+    //componentizar
     &___input {
       background-color: transparent;
       border: none;
@@ -196,6 +197,7 @@
       &:focus {
         color: $marromTipo;
         background-color: $rosaPadrao;
+        outline: 0;
       }
     }
 

@@ -13,9 +13,8 @@ export default function Contact() {
             Para maiores informações sobre nossos produtos, preços e prazos de entrega, por favor informe seus dados no formulário abaixo e clique em enviar. Responderemos sua solicitação o mais breve possível.
           </p>
         </div>
-
         
-        <div className={styles.boxMyInfo}>{/* caixa colorida */}
+        <div className={styles.boxMyInfo}>
           <h3 className={styles.boxMyInfo__title}>Telefone</h3>
           <p className={styles.boxMyInfo__content}>55 19 983723718</p>
           <h3 className={styles.boxMyInfo__title}>Email</h3>
@@ -49,40 +48,46 @@ export default function Contact() {
         </div>
         
 
-        <form action="">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-            dignissimos soluta atque veniam porro, laudantium impedit inventore
-            quis voluptatem aliquid dolorem ratione perspiciatis magnam sit
-            fugit explicabo natus provident molestiae.
+        <form className={styles.form}>
+          <p className={styles.boxMyInfo__content}>
+            Preencha todos os campos do formulário e deixe sua mensagem:
           </p>
-          <div>
+          <div className={styles.form__box}>
             <input
               type="text"
-              name="nome"
+              name="text"
               required
               placeholder="Informe seu nome.."
+              className={styles.form__input}
             />
             <input
               type="email"
               name="email"
               required
               placeholder="Informe seu email.."
+              className={styles.form__input}
             />
           </div>
-          <input
-            type="text"
-            name="assunto"
-            required
-            placeholder="Informe seu assunto.."
-          />
-          <input
-            type="message"
-            name="message"
-            required
-            placeholder="Informe sua mensagem.."
-          />
-          <button>Enviar Mensagem</button>
+          <div className={styles.form__box}>
+            <input
+              type="text"
+              name="assunto"
+              required
+              placeholder="Informe seu assunto.."
+              className={styles.form__input}
+            />
+            <textarea
+              name="message"
+              required
+              placeholder="Informe sua mensagem.."
+              className={styles.form__input}
+              maxLength={500}
+              minLength={2}
+              rows={300}
+              cols={300}
+            />
+          </div>
+          <button className={styles.botao}>Enviar Mensagem</button>
         </form>
       </section>
     </>
