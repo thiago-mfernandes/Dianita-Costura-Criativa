@@ -27,9 +27,9 @@ export default function Menu() {
       setStickyMenu(false);
     }
   }
+
   window.addEventListener('scroll', scrollPosition);
   
-
   const rotas = [{
     label: 'Home', 
     to: '/'
@@ -43,6 +43,7 @@ export default function Menu() {
     label: 'Contato', 
     to: '/contato'
   }];
+
   
   return (
     <>
@@ -87,8 +88,12 @@ export default function Menu() {
           : `${style.navContainer}`}
       >
         {stickyMenu 
-          ? <LogoBranco className={style.logo} /> 
-          : <LogoPreto className={style.logo} />
+          ? <Link to={rotas[0].to} className={''}>
+            <LogoBranco className={style.logo} />
+          </Link> 
+          : <Link to={rotas[0].to} className={''}>
+            <LogoPreto className={style.logo} />
+          </Link>
         }
 
         <button

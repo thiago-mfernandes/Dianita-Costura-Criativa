@@ -179,15 +179,15 @@
 }
 
 .logo {
-  width: 30%;
+  width: 50%;
 
   @include tablet {
-    width: 25%;
+    width: 50%;
   }
   @include desktop {
     margin: 0;
     padding: 1% 0;
-    width: 25%;
+    width: 90%;
   }
 }
 
