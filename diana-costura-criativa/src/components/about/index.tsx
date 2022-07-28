@@ -31,17 +31,16 @@ export default function About() {
                 Essa sou eu, empreendendo com amor e dedicação.
               </q>
             </p>
-            <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer">
-            </a>
           </div>
 
           <div className={styles.about__imgDiv}>
             <img className={styles.about__img} src={ImgDiana} alt="Foto Diana" />
           </div>
-
-          <button className={styles.about__botaoSaibaMais}>
-            Saiba Mais
-          </button>
+          <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer">
+            <button className={styles.about__botaoSaibaMais}>
+              Saiba Mais
+            </button>            
+          </a>
         </div>
       </section>
     </>

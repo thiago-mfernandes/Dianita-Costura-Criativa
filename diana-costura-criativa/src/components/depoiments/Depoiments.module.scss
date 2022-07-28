@@ -19,6 +19,16 @@
   @include display-flexDirection(flex, column);
   border: $bordaCard;
   margin: 10% 0;
+  width: 100%;
+  //------------------------------------>
+  @include tablet {
+    max-width: 60%
+  }
+  //------------------------------------>
+  @include desktop {
+    max-width: 60%
+  }
+  
 
   &__content {
     @extend .content;

@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
             
             <article className={styles.footerContainer__address}>
-              <h2 className={styles.footerContainer__address___title}>
+              <h2 className={styles.footerContainer__address___title} title="location">
                 Localização
               </h2>
               <address className={styles.footerContainer__address___box}>
@@ -74,7 +74,7 @@ export default function Footer() {
                   className={styles.footerContainer__address___box____icon}
                 />
                 <p className={styles.footerContainer__address___box____content}>
-                  +55 19 983561522
+                  +55 19 983723718
                 </p>
               </address>
               <address className={styles.footerContainer__address___box}>

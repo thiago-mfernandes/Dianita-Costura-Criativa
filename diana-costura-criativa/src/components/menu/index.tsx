@@ -15,7 +15,7 @@ export default function Menu() {
   const [mobileMenu, setState] = useState(false);
   // --desktopMenu é referente a o estado fixo do menu ao scrolar
   const [stickyMenu, setStickyMenu] = useState(false);
-
+  // --width guarda o valor da tela para usar na cor do hamburguer
   const width = window.innerWidth;
    
 

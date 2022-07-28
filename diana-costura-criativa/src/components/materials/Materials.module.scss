@@ -1,5 +1,6 @@
 @import "../../scss/styles.scss";
 
+
 .materials {
   background-image: url("../../assets/bg2.svg");
   background-repeat: no-repeat;
@@ -53,6 +54,7 @@
     @include display-flexDirection(flex, column);
     background-color: $branco;
     border: $bordaCard;
+    //border: 1px dashed $laranjaPrincipal;
     box-shadow: $boxShadow-8;
     margin-bottom: 5%;
     width: 80%;

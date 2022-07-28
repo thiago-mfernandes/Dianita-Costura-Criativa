@@ -24,7 +24,7 @@ interface Props {
 
 function Item({ id, title, preco, description, photo}: Props) {
   
-  const rota = [{to: 'produto'}];
+  //const rota = [{to: 'produto'}];
   //id === 1 && console.log(title);
   return (
     <>
@@ -37,10 +37,11 @@ function Item({ id, title, preco, description, photo}: Props) {
         </h3>
         <p className={styles.produtosCard__content} role='descriçãoDoProduto'>{description}</p>
         <div className={styles.produtosAction}>
-          <button aria-roledescription='botaoCompraProduto' className={styles.produtosAction__btn}>
-            Comprar
-            <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer"></a>
-          </button> 
+          <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer">
+            <button aria-roledescription='botaoCompraProduto' className={styles.produtosAction__btn}>
+              Comprar            
+            </button> 
+          </a>
         </div>
       </div>       
     </>

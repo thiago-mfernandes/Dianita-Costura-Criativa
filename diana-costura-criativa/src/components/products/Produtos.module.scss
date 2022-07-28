@@ -50,6 +50,7 @@
   }
 
   @include desktop {
+    @include alignItens-justifyContent(null, flex-start);
     padding: 2.5% 0;
     margin-bottom: 1.5%;
     & > p {

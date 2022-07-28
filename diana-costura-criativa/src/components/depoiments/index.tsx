@@ -4,11 +4,9 @@ import data from 'data/testimonials.json';
 
 export default function Depoiments() {
   
-  const windowWidth = window.screen.width;
-
   const settings: SliderProps = {
     spaceBetween: 50,
-    slidesPerView: windowWidth < 768 ? 1 : 2,
+    slidesPerView: 1,
     navigation: data.testimonials.length >= 3,
     draggable: data.testimonials.length >= 3,
     loop: data.testimonials.length >= 1,

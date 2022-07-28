@@ -85,6 +85,10 @@
       margin: 0;
       margin-bottom: 5%;
       width: 47.5%;
+      & [title="location"] {
+        //background-color: red;
+        font-size: 1.75rem;
+      }
     }
 
     &___title {
