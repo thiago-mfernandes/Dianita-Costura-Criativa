@@ -2,7 +2,7 @@
 
 .locale {
   @include display-flexDirection(flex, column);
-  margin-bottom: 10%;
+  margin-bottom: $m-b-10;
 
   &__title {
     @extend .title;

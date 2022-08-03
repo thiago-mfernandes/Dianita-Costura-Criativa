@@ -12,7 +12,7 @@
   }
 
   @include desktop {
-    padding: $padding-lateral;
+    padding: $padding-lateral-7;
   }
 
   &__containerContent {
@@ -20,7 +20,7 @@
     @include display-flexDirection(flex, column);
 
     @include desktop {
-      margin-top: 5%;
+      margin-top: $m-t-5;
     }
 
     &___title {
@@ -81,8 +81,8 @@
 
   //link que envolve o botao Saiba Mais
   & > a {
-    display: flex;
-    justify-content: center;
+    @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(center, center);
     text-decoration: none;
     width: 100%;
   }

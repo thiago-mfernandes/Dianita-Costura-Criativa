@@ -39,7 +39,7 @@
   }
 
   &__box {
-    margin-bottom: 5%;
+    margin-bottom: $m-b-5;
     @include tablet {
       width: 47.5%;
     }
@@ -78,15 +78,14 @@
 
     @include tablet {
       margin: 0;
-      margin-bottom: 5%;
+      margin-bottom: $m-b-5;
       width: 47.5%;
     }
     @include desktop {
       margin: 0;
-      margin-bottom: 5%;
+      margin-bottom: $m-b-5;
       width: 47.5%;
       & [title="location"] {
-        //background-color: red;
         font-size: 1.75rem;
       }
     }
@@ -186,7 +185,7 @@
       background-color: transparent;
       border: none;
       border-bottom: 1px solid $branco;
-      margin-bottom: 5%;
+      margin-bottom: $m-b-5;
       padding: 2%;
       &:focus {
         background-color: $rosaPadrao;

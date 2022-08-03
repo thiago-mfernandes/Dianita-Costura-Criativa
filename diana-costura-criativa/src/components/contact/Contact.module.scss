@@ -30,7 +30,7 @@
 .boxMyInfo {
   background-color: $rosaPadrao;
   padding: 5%;
-  margin-bottom: 10%;
+  margin-bottom: $m-b-10;
 
   @include desktop {
     width: 45%;
@@ -40,7 +40,7 @@
     @include color-fontSize($marromTipo, 1.25rem);
     margin: 0 0 2.5%;
     &:first-of-type {
-      margin-top: 7.5%;
+      margin-top: $m-t-7;
     }
   }
 
@@ -72,7 +72,7 @@
 .form {
   @include alignItens-justifyContent(flex-start, center);
   @include display-flexDirection(flex, column);
-  margin-bottom: 15%;
+  margin-bottom: $m-b-15;
 
   @include desktop {
     width: 45%;
@@ -83,7 +83,7 @@
     @include alignItens-justifyContent(center, flex-start);
     width: 100%;
     &:last-of-type {
-      margin-bottom: 10%;
+      margin-bottom: $m-b-10;
     }
   }
 
@@ -91,7 +91,7 @@
     @include height-width(7.5vh, 100%);
     background-color: transparent;
     border: 1px solid $marromLinha;
-    margin-bottom: 5%;
+    margin-bottom: $m-b-5;
     padding: 2%;
     &:focus {
       background-color: $linkActive;

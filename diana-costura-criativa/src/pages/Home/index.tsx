@@ -4,6 +4,7 @@ import Materials from 'components/materials';
 import Products from 'components/products';
 import Location from 'components/location';
 import Header from 'components/header';
+import ExchangePolicy from 'components/exchangePolicy';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Materials />
       <Products />
+      <ExchangePolicy />
       <Location />
       <Depoiments />
     </>

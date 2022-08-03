@@ -18,7 +18,7 @@
   &__container {
     @include alignItens-justifyContent(center);
     @include display-flexDirection(flex, column);
-    margin-bottom: 10%;
+    margin-bottom: $m-b-10;
 
     @include tablet {
       @include alignItens-justifyContent(stretch, space-between);
@@ -56,18 +56,18 @@
     border: $bordaCard;
     //border: 1px dashed $laranjaPrincipal;
     box-shadow: $boxShadow-8;
-    margin-bottom: 5%;
+    margin-bottom: $m-b-5;
     width: 80%;
 
     @include tablet {
-      margin-bottom: 5%;
+      margin-bottom: $m-b-5;
       min-height: 60vh;
       width: 47.5%;
     }
 
     @include desktop {
       @include alignItens-justifyContent(center, flex-start);
-      margin-bottom: 5%;
+      margin-bottom: $m-b-5;
       transition: $transition;
       width: 22.5%;
       &:hover {

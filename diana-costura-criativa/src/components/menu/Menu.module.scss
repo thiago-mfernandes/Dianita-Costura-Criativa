@@ -3,13 +3,13 @@
 .menu {
   &__container {
     max-height: 0;
-    padding: $padding-lateral;
+    padding: $padding-lateral-7;
 
     @include desktop {
       @include alignItens-justifyContent(center, space-between);
       @include display-flexDirection(flex);
       max-height: none;
-      padding: $padding-lateral;
+      padding: $padding-lateral-7;
       position: absolute;
       width: 100%;
       white-space: nowrap;

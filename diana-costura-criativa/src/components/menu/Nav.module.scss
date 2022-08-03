@@ -6,6 +6,7 @@
   @include height-width(80px, 100%);
   position: absolute;
   padding: 5%;
+  transition: $transition;
   top: 0;
 
   @include tablet {
@@ -15,7 +16,7 @@
   @include desktop {
     @include alignItens-justifyContent(center, space-between);
     @include display-flexDirection(flex, row);
-    padding: $padding-lateral;
+    padding: $padding-lateral-7;
     position: fixed;
     top: 50px;
     transition: $transition;
@@ -196,7 +197,7 @@
   @include display-flexDirection(flex, row);
   @include height-width(80px, 100%);
   background-color: $marromTipo;
-  padding: $padding-lateral;
+  padding: $padding-lateral-7;
   position: fixed;
   top: 0px;
   transition: $transition;

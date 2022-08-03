@@ -1,10 +1,10 @@
 @import "../../scss/styles.scss";
 
 .about {
-  padding-top: 20%;
+  padding-top: $p-t-20;
 
   @include tablet {
-    padding-top: 5%;
+    padding-top: p-t-5;
   }
 
   @include desktop {
@@ -68,23 +68,23 @@
     }
   }
   &__img {
-    border-radius: 4px;
+    border-radius: $borderRadius-4;
     box-shadow: $boxShadow-8;
-    margin-bottom: 10%;
+    margin-bottom: $m-b-10;
     width: 100%;
     @include tablet {
       margin: 2.5% auto;
       width: 100%;
     }
     @include desktop {
-      margin-bottom: 0;
-      margin-top: 0;
+      margin-bottom: $m-b-0;
+      margin-top: $m-t-0;
     }
   }
 
   &__content {
     @extend .content;
-    margin-top: 0;
+    margin-top: $m-t-0;
     padding: 0% 5% 5%;
   }
 
