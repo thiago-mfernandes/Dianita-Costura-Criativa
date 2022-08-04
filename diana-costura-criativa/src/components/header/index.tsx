@@ -1,4 +1,7 @@
 import styles from './Header.module.scss';
+import { motion } from 'framer-motion';
+import { titleVariants } from 'animation/titleVariants';
+import { subTitleVariants } from 'animation/subTitleVariants';
 
 export default function Header() {
 
@@ -8,12 +11,21 @@ export default function Header() {
         <div className={styles.header__containerContent}>
           <div>
             <div>
-              <h2 className={styles.header__containerContent___subtitle}>
+              <motion.h2
+                variants={titleVariants}
+                initial='initial'
+                animate='animate'
+                className={styles.header__containerContent___subtitle}
+              >
                 Feitos à mão com
-              </h2>
-              <h1 className={styles.header__containerContent___title}>
+              </motion.h2>
+              <motion.h1 
+                variants={subTitleVariants}
+                initial='initial'
+                animate='animate'
+                className={styles.header__containerContent___title}>
                 Paixão
-              </h1>
+              </motion.h1>
             </div>
             <div className={styles.header__containerContent___box}>
               <p className={styles.header__containerContent___content}>

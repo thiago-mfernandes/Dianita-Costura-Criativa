@@ -1,14 +1,28 @@
 import styles from './About.module.scss';
 import ImgDiana from 'assets/about/about-1.jpeg';
+import { motion } from 'framer-motion';
+import { titleOfSectionVariants } from 'animation/titleOfSectionVariants';
+import { showContentVariants } from 'animation/showContentVariants';
 
 export default function About() {
   return (
     <>
       <section className={styles.about}>
         <div className={styles.about__container}>
-          <h2 className={styles.about__title}>Quem Sou</h2>
+          <motion.h2 
+            variants={titleOfSectionVariants}
+            initial='offScreen'
+            whileInView='onScreen'
+            viewport={{ once: true, amount: 0.8, margin: '100px' }}
+            className={styles.about__title}>Quem Sou</motion.h2>
 
-          <div className={styles.about__container___contentBox}>
+          <motion.div 
+            variants={showContentVariants}
+            initial='offScreen'
+            whileInView='onScreen'
+            viewport={{ once: true, amount: 0.8, margin: '350px' }}
+            className={styles.about__container___contentBox}
+          >
             <p className={styles.about__content}>
               Oi, deixa eu me apresentar...
               <br />
@@ -31,10 +45,17 @@ export default function About() {
                 Essa sou eu, empreendendo com amor e dedicação.
               </q>
             </p>
-          </div>
+          </motion.div>
 
           <div className={styles.about__imgDiv}>
-            <img className={styles.about__img} src={ImgDiana} alt="Foto Diana" />
+            <motion.img 
+              variants={showContentVariants}
+              initial='offScreen'
+              whileInView='onScreen'
+              viewport={{ once: true, amount: 0.8, margin: '250px' }}
+              className={styles.about__img}  
+              src={ImgDiana} 
+              alt="Foto Diana" />
           </div>
           <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer">
             <button className={styles.about__botaoSaibaMais}>

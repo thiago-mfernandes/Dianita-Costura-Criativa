@@ -1,5 +1,7 @@
 import styles from './Item.module.scss';
 import { memo } from 'react';
+import { motion } from 'framer-motion';
+import { allCards } from 'animation/allCards';
 
 interface Props {
   id: number;
@@ -27,24 +29,36 @@ function Item({ id, title, preco, description, photo}: Props) {
   //const rota = [{to: 'produto'}];
   //id === 1 && console.log(title);
   return (
-    <>
-      <div className={styles.produtosCard} key={id} data-testid="produto" role='product_Item'>
-        <img src={`${photo}`} alt={title} className={styles.produtosCard__img} role='imagemDoProduto' />
-        <h3 className={styles.produtosCard__title} role='tituloDoProduto'>
-          {title}
-          <br />
-          <span role='preçoDoProduto'>{preco}</span>
-        </h3>
-        <p className={styles.produtosCard__content} role='descriçãoDoProduto'>{description}</p>
-        <div className={styles.produtosAction}>
-          <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer">
-            <button aria-roledescription='botaoCompraProduto' className={styles.produtosAction__btn}>
-              Comprar            
-            </button> 
-          </a>
-        </div>
-      </div>       
-    </>
+    <motion.div 
+      variants={allCards}
+      initial='offScreen'
+      whileInView='onScreen'
+      viewport={{ once:true, amount: 0.8, margin: '450px' }} 
+      className={styles.produtosCard} 
+      key={id} 
+      data-testid="produto" 
+      role='product_Item'
+    >
+      <img 
+        src={`${photo}`} 
+        alt={title} 
+        className={styles.produtosCard__img} 
+        role='imagemDoProduto' 
+      />
+      <h3 className={styles.produtosCard__title} role='tituloDoProduto'>
+        {title}
+        <br />
+        <span role='preçoDoProduto'>{preco}</span>
+      </h3>
+      <p className={styles.produtosCard__content} role='descriçãoDoProduto'>{description}</p>
+      <div className={styles.produtosAction}>
+        <a href="https://wa.me/5519983723718" target="_blank" rel="noreferrer">
+          <button aria-roledescription='botaoCompraProduto' className={styles.produtosAction__btn}>
+            Comprar            
+          </button> 
+        </a>
+      </div>
+    </motion.div> 
   );
 }
 

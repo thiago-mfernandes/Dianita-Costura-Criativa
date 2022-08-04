@@ -5,6 +5,7 @@ import Produtos from 'pages/Produtos';
 import Footer from 'components/footer';
 import Menu from 'components/menu';
 import { lazy, Suspense } from 'react';
+import { motion } from 'framer-motion';
 
 
 const Contato = lazy(() => import('pages/Contato'));
@@ -12,7 +13,11 @@ const NotFound = lazy(() => import('pages/NotFound'));
 
 export default function AppRouter() {
   return (
-    <main>
+    <motion.main
+      initial={{backgroundColor: '#fff', opacity: 0}}
+      animate={{backgroundColor: 'transparent', opacity: 1}}
+      transition={{duration: 0.45}}
+    >
       <BrowserRouter>
         <Menu />
         <Suspense fallback={<p> Carregando... </p>}>
@@ -26,6 +31,6 @@ export default function AppRouter() {
         </Suspense>
         <Footer />
       </BrowserRouter>
-    </main>
+    </motion.main>
   );
 }

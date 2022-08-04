@@ -3,6 +3,9 @@ import Buscador from './Buscador';
 import Filtros from './Filtros';
 import { useState } from 'react';
 import Itens from './Itens';
+import { motion } from 'framer-motion';
+import { titleOfSectionVariants } from 'animation/titleOfSectionVariants';
+import { showContentVariants } from 'animation/showContentVariants';
 
 
 export default function Products() {
@@ -16,14 +19,28 @@ export default function Products() {
       {/* produtos header*/}
       <section className={styles.container}>
         <div className={styles.produtosHeader}>
-          <h2 className={styles.produtosHeader__title}>Meus Produtos</h2>
-          <p className={styles.produtosHeader__content}>
+          <motion.h2 
+            variants={titleOfSectionVariants}
+            initial='offScreen'
+            whileInView='onScreen'
+            viewport={{ once: true, amount: 0.8, margin: '10px' }}
+            className={styles.produtosHeader__title}
+          >
+            Meus Produtos
+          </motion.h2>
+          <motion.p 
+            variants={showContentVariants}
+            initial='offScreen'
+            whileInView='onScreen'
+            viewport={{ once: true, amount: 0.8, margin: '10px' }}
+            className={styles.produtosHeader__content}
+          >
             A marca Dianita costura criativa, é especialista em oferecer
             produtos para a organização e praticidade ao seu dia a dia no
             trabalho e/ou lazer, aliada a muito estilo e bom gosto. E aquele
             acabamento perfeito com detalhes que você só encontra em um produto
             artesanal.
-          </p>
+          </motion.p>
         </div>
 
         {/* produtos buscador */}

@@ -1,6 +1,9 @@
 import styles from './Depoiments.module.scss';
 import { Slider, SliderProps, Slide } from './slider';
 import data from 'data/testimonials.json';
+import { motion } from 'framer-motion';
+import { titleOfSectionVariants } from 'animation/titleOfSectionVariants';
+import { showContentVariants } from 'animation/showContentVariants';
 
 export default function Depoiments() {
   
@@ -19,11 +22,25 @@ export default function Depoiments() {
     <>
       {/* depoimentos carrosel */}
       <section className={styles.depoiments}>
-        <h2 className={styles.depoiments__title}>Depoimentos</h2>
-        <p className={styles.depoiments__content}>
+        <motion.h2 
+          variants={titleOfSectionVariants}
+          initial='offScreen'
+          whileInView='onScreen'
+          viewport={{ once: true, amount: 0.8, margin: '10px' }} 
+          className={styles.depoiments__title}
+        >
+          Depoimentos
+        </motion.h2>
+        <motion.p 
+          variants={showContentVariants}
+          initial='offScreen'
+          whileInView='onScreen'
+          viewport={{ once: true, amount: 0.8, margin: '10px' }}
+          className={styles.depoiments__content}
+        >
           Saiba o que dizem nossos melhores clientes a respeito dos produtos
           adquiridos:
-        </p>
+        </motion.p>
 
         <Slider settings={settings}>
           {data.testimonials.map((testimonial) => (
