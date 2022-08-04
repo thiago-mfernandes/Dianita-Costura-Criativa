@@ -17,7 +17,7 @@ export default function Products() {
   return (
     <>
       {/* produtos header*/}
-      <section className={styles.container}>
+      <section className={styles.container} id="produtos">
         <div className={styles.produtosHeader}>
           <motion.h2 
             variants={titleOfSectionVariants}

@@ -1,18 +1,17 @@
 import { useState } from 'react';
 import { FaInstagram, FaMapPin, FaWhatsapp } from 'react-icons/fa';
 import { MdEmail, MdFacebook } from 'react-icons/md';
+import { Link } from 'react-scroll';
 import { ReactComponent as LogoPreto } from 'assets/logo-preto.svg';
 import { ReactComponent as LogoBranco } from 'assets/logo-branco.svg';
-import { Link } from 'react-router-dom';
 import styles from './Menu.module.scss';
 import style from './Nav.module.scss';
-
 
 
 export default function Menu() {
   
   // --mobileMenu é referente a tag nav que contem a lista de links
-  const [mobileMenu, setState] = useState(false);
+  const [mobileMenu, setMobileMenuState] = useState(false);
   // --desktopMenu é referente a o estado fixo do menu ao scrolar
   const [stickyMenu, setStickyMenu] = useState(false);
   // --width guarda o valor da tela para usar na cor do hamburguer
@@ -32,16 +31,16 @@ export default function Menu() {
   
   const rotas = [{
     label: 'Home', 
-    to: '/'
+    to: 'home',
   },{
     label: 'Sobre', 
-    to: '/sobre'
+    to: 'sobre'
   },{
     label: 'Produtos', 
-    to: '/produtos'
+    to: 'produtos'
   },{
     label: 'Contato', 
-    to: '/contato'
+    to: 'contato'
   }];
 
   
@@ -88,17 +87,17 @@ export default function Menu() {
           : `${style.navContainer}`}
       >
         {stickyMenu 
-          ? <Link to={rotas[0].to} className={''}>
+          ? <Link to={rotas[0].to} smooth={true} duration={1000}>
             <LogoBranco className={style.logo} />
           </Link> 
-          : <Link to={rotas[0].to} className={''}>
+          : <Link to={rotas[0].to} smooth={true} duration={1000}>
             <LogoPreto className={style.logo} />
           </Link>
         }
 
         <button
           className={style.navContainer__hamburguer}
-          onClick={() => setState(!mobileMenu)}
+          onClick={() => setMobileMenuState(!mobileMenu)}
         >
           <div className={
             //se o stickyMenu for false (position: none): icone marrom
@@ -141,9 +140,14 @@ export default function Menu() {
                 <li 
                   key={index} 
                   className={style.item} 
-                  onClick={() => setState(!mobileMenu)}
+                  onClick={() => setMobileMenuState(!mobileMenu)}
                 >
-                  <Link to={rota.to}>
+                  <Link 
+                    to={rota.to} 
+                    smooth={true} 
+                    duration={1000}
+                    onClick={() => setMobileMenuState(false)}
+                  >
                     {rota.label}
                   </Link>
                 </li>
@@ -155,4 +159,3 @@ export default function Menu() {
     </>
   );
 }
-

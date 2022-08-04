@@ -7,13 +7,13 @@ import { showContentVariants } from 'animation/showContentVariants';
 export default function About() {
   return (
     <>
-      <section className={styles.about}>
+      <section className={styles.about} id="sobre">
         <div className={styles.about__container}>
           <motion.h2 
             variants={titleOfSectionVariants}
             initial='offScreen'
             whileInView='onScreen'
-            viewport={{ once: true, amount: 0.8, margin: '100px' }}
+            viewport={{ once: true, amount: 0.8, margin: '10px' }}
             className={styles.about__title}>Quem Sou</motion.h2>
 
           <motion.div 

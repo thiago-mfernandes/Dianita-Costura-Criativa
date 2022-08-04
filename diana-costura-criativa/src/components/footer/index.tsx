@@ -3,7 +3,7 @@ import { ReactComponent as Logo } from 'assets/logo-branco.svg';
 import { MdFacebook } from 'react-icons/md';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { showContentVariants } from 'animation/showContentVariants';
 
@@ -11,16 +11,16 @@ export default function Footer() {
 
   const rotas = [{
     label: 'Home', 
-    to: '/'
+    to: 'home'
   },{
     label: 'Sobre', 
-    to: '/sobre'
+    to: 'sobre'
   },{
     label: 'Produtos', 
-    to: '/produtos'
+    to: 'produtos'
   },{
     label: 'Contato', 
-    to: '/contato'
+    to: 'contato'
   }];
   
   return (
@@ -116,7 +116,7 @@ export default function Footer() {
                   key={index} 
                   className={styles.footerContainer__links___content} 
                 >
-                  <Link to={rota.to}>
+                  <Link to={rota.to} smooth={true} duration={1000}>
                     {rota.label}
                   </Link>
                 </p>

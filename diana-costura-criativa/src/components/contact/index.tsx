@@ -1,20 +1,37 @@
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { MdFacebook } from 'react-icons/md';
 import styles from './Contact.module.scss';
+import { motion } from 'framer-motion';
+import { titleOfSectionVariants } from 'animation/titleOfSectionVariants';
+import { allCards } from 'animation/allCards';
 
 export default function Contact() {
   return (
     <>
-      <section className={styles.container}>
+      <section className={styles.container} id="contato">
         
         <div className={styles.boxTitle}>
-          <h2 className={styles.boxTitle__title}>Contato</h2>
+          <motion.h2 
+            variants={titleOfSectionVariants}
+            initial='offScreen'
+            whileInView='onScreen'
+            viewport={{ once: true, amount: 0.8, margin: '10px' }} 
+            className={styles.boxTitle__title}
+          >
+            Contato
+          </motion.h2>
           <p className={styles.boxTitle__content}>
             Para maiores informações sobre nossos produtos, preços e prazos de entrega, por favor informe seus dados no formulário abaixo e clique em enviar. Responderemos sua solicitação o mais breve possível.
           </p>
         </div>
         
-        <div className={styles.boxMyInfo}>
+        <motion.div 
+          variants={allCards}
+          initial='offScreen'
+          whileInView='onScreen'
+          viewport={{ once:true, amount: 0.8, margin: '400px' }} 
+          className={styles.boxMyInfo}
+        >
           <h3 className={styles.boxMyInfo__title}>Telefone</h3>
           <p className={styles.boxMyInfo__content}>55 19 983723718</p>
           <h3 className={styles.boxMyInfo__title}>Email</h3>
@@ -45,7 +62,7 @@ export default function Contact() {
               <FaWhatsapp className={styles.boxSocialMedia__icon} />
             </a>
           </div>
-        </div>
+        </motion.div>
         
 
         <form className={styles.form}>
