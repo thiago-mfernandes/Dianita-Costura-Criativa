@@ -1,5 +1,5 @@
 import styles from './About.module.scss';
-import ImgDiana from 'assets/about/about-1.jpeg';
+import ImgDiana from 'assets/about/about-1.jpg';
 import { motion } from 'framer-motion';
 import { titleOfSectionVariants } from 'animation/titleOfSectionVariants';
 import { showContentVariants } from 'animation/showContentVariants';

@@ -226,7 +226,7 @@
     }
 
     @include desktop {
-      @include alignItens-justifyContent(center, flex-start);
+      @include alignItens-justifyContent(center, space-between);
       @include display-flexDirection(flex, row);
       width: 50%;
     }

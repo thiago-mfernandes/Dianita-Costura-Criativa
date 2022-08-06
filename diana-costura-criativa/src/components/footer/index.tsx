@@ -1,5 +1,5 @@
 import styles from './Footer.module.scss';
-import { ReactComponent as Logo } from 'assets/logo-branco.svg';
+import Logo from 'assets/logo-branco.png';
 import { MdFacebook } from 'react-icons/md';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
@@ -34,7 +34,7 @@ export default function Footer() {
             viewport={{ once: true, amount: 0.8, margin: '30px' }} 
             className={styles.footerContainer__box}
           >
-            <Logo className={styles.footerContainer__box___logo} />
+            <img src={Logo} alt="Logo" className={styles.footerContainer__box___logo}/>
             <p className={styles.footerContainer__box___content}>
               Peças com personalidade e <br />
               originalidade você encontra aqui.

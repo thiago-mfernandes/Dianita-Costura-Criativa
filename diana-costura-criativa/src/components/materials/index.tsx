@@ -1,8 +1,8 @@
 import styles from './Materials.module.scss';
-import Linhas from 'assets/flaticon/yarn.svg';
-import Tecido from 'assets/flaticon/tecido.svg';
-import Botao from  'assets/flaticon/botao.svg';
-import Agulha from 'assets/flaticon/agulha.svg';
+import Linhas from 'assets/flaticon/yarn.png';
+import Tecido from 'assets/flaticon/tecido.png';
+import Botao from  'assets/flaticon/botao.png';
+import Agulha from 'assets/flaticon/agulha.png';
 import { motion } from 'framer-motion';
 import { titleOfSectionVariants } from 'animation/titleOfSectionVariants';
 import { showContentVariants } from 'animation/showContentVariants';

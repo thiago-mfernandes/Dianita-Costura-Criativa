@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { FaInstagram, FaMapPin, FaWhatsapp } from 'react-icons/fa';
 import { MdEmail, MdFacebook } from 'react-icons/md';
 import { Link } from 'react-scroll';
-import { ReactComponent as LogoPreto } from 'assets/logo-preto.svg';
-import { ReactComponent as LogoBranco } from 'assets/logo-branco.svg';
+import LogoPreto from 'assets/logo-preto.png';
+import LogoBranco from 'assets/logo-branco.png';
 import styles from './Menu.module.scss';
 import style from './Nav.module.scss';
 
@@ -88,10 +88,10 @@ export default function Menu() {
       >
         {stickyMenu 
           ? <Link to={rotas[0].to} smooth={true} duration={1000}>
-            <LogoBranco className={style.logo} />
+            <img src={LogoBranco} alt="Logotipo" className={style.logo}/>
           </Link> 
           : <Link to={rotas[0].to} smooth={true} duration={1000}>
-            <LogoPreto className={style.logo} />
+            <img src={LogoPreto} alt="Logotipo" className={style.logo}/>
           </Link>
         }
 
