@@ -23,14 +23,14 @@
   }
 
   &__navClose {
-    @include height-width(45vh, 100vw);
+    @include height-width(1vh, 100vw);
     position: absolute;
     right: 0;
-    transform: translate(100vw);
+    left: 0;
     transition: $transition;
     top: 80px;
-    //visibility: visible;
-    display: none;
+    overflow: auto;
+    visibility: hidden;
 
     @include desktop {
       @include alignItens-justifyContent(flex-start, flex-end);
@@ -48,10 +48,12 @@
     @include height-width(45vh, 100vw);
     position: absolute;
     right: 0;
-    transform: translate(0%);
+    left: 0;
     transition: $transition;
     top: 80px;
+    overflow: auto;
     visibility: visible;
+    padding: 7.5%;
 
     @include tablet {
       height: 50vh;
@@ -93,13 +95,14 @@
   &__ulClose {
     @include alignItens-justifyContent(flex-end);
     @include display-flexDirection(flex, column);
-    @include height-width(45vh, 100vw);
+    @include height-width(1vh, 96vw);
     background-color: $branco;
+    list-style: none;
     margin: 0;
     padding: 7.5%;
     position: absolute;
     right: 0px;
-    transform: translate(100%);
+    left: 0;
     transition: $transition;
 
     @include desktop {
@@ -116,6 +119,7 @@
       visibility: visible;
       width: 90%;
     }
+
     & li {
       @include tablet {
         font-size: 1rem;
@@ -128,15 +132,16 @@
   &__ulOpen {
     @include alignItens-justifyContent(flex-end);
     @include display-flexDirection(flex, column);
-    @include height-width(45vh, 100vw);
+    @include height-width(45vh, 96vw);
     background-color: $branco;
     list-style: none;
     margin: 0;
     padding: 7.5%;
     position: absolute;
     right: 0px;
-    transform: translate(0%);
+    left: 0;
     transition: $transition;
+    
 
     @include tablet {
       margin: 0;
