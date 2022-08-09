@@ -26,17 +26,18 @@
     @include height-width(45vh, 100vw);
     position: absolute;
     right: 0;
-    transform: translate(100%);
+    transform: translate(100vw);
     transition: $transition;
     top: 80px;
-    visibility: visible;
+    //visibility: visible;
+    display: none;
 
     @include desktop {
       @include alignItens-justifyContent(flex-start, flex-end);
       @include display-flexDirection(flex, row);
       @include height-width(fit-content, 70%);
       padding-right: 0;
-      right: 0;
+      right: 7.5%;
       top: 0px;
       transform: translate(0%);
       transition: $transition;

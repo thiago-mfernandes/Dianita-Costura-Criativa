@@ -90,7 +90,7 @@
       @extend .title;
       border-bottom: $bordaCard;
       border-top: $bordaCard;
-      padding: 2.5% 0;
+      padding: 2.5%;
       @include desktop {
         font-size: 1.25rem;
       }

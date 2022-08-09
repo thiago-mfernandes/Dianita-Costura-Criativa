@@ -92,7 +92,7 @@ export default function Materials() {
               alt="Botões de Plástico de Metal"
               className={styles.materials__card___icon}
             />
-            <h3 className={styles.materials__card___title}>Botões de Plástico de Metal</h3>
+            <h3 className={styles.materials__card___title}>Botões Plásticos e Metálicos</h3>
             <p className={styles.materials__card___content}>
               Feitos de Resina plastica altamente durável ou ligas metálicas que evitam a oxidação, um problema muito inconveniente.
             </p>

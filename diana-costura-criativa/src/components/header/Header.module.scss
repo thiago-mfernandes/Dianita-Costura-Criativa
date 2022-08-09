@@ -7,9 +7,6 @@
   background-image: url("../../assets/bg1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  & > div {
-    flex-grow: 2;
-  }
 
   @include desktop {
     padding: $padding-lateral-7;
@@ -18,9 +15,12 @@
   &__containerContent {
     @include alignItens-justifyContent(center, center);
     @include display-flexDirection(flex, column);
+    margin-top: $m-t-30;
+    margin-bottom: $m-b-30;
 
     @include desktop {
-      margin-top: $m-t-5;
+      margin-top: $m-t-20;
+      margin-bottom: 0;
     }
 
     &___title {
@@ -85,6 +85,15 @@
     @include alignItens-justifyContent(center, center);
     text-decoration: none;
     width: 100%;
+    margin-top: 15%;
+
+    @include desktop {
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(center, center);
+      text-decoration: none;
+      width: 100%;
+      margin-top: 5%;
+    }    
   }
 
   &__botao {

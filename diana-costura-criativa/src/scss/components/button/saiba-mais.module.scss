@@ -2,7 +2,7 @@
 
 .botaoSaibaMais {
   @include color-fontSize($marromTipo, 1.25rem);
-  @include height-width(10vh, 100%);
+  @include height-width(10vh, 60%);
   background-color: $bgBotao;
   border: none;
   margin: 2.5% 0;
