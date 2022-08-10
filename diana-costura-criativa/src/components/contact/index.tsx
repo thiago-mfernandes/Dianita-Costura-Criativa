@@ -4,6 +4,19 @@ import styles from './Contact.module.scss';
 import { motion } from 'framer-motion';
 import { titleOfSectionVariants } from 'animation/titleOfSectionVariants';
 import { allCards } from 'animation/allCards';
+import emailjs from 'emailjs-com';
+
+function sendEmail(e:any) {
+  e.preventDefault();
+
+  emailjs.sendForm('dianitaMessage', 'dianitaTemplate', 'form.current', 'IPIHhrT_YpoRh8ivr')
+    .then((result) => {
+      alert('Mensagem enviada com sucesso!');
+    }, (error) => {
+      alert(error.message);
+    });
+    e.target.reset();
+}
 
 export default function Contact() {
   return (
@@ -63,23 +76,23 @@ export default function Contact() {
             </a>
           </div>
         </motion.div>
-        
+       
 
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={sendEmail}>
           <p className={styles.boxMyInfo__content}>
             Preencha todos os campos do formulário e deixe sua mensagem:
           </p>
           <div className={styles.form__box}>
             <input
               type="text"
-              name="text"
+              name="user_name"
               required
               placeholder="Informe seu nome.."
               className={styles.form__input}
             />
             <input
               type="email"
-              name="email"
+              name="user_email"
               required
               placeholder="Informe seu email.."
               className={styles.form__input}
@@ -88,13 +101,13 @@ export default function Contact() {
           <div className={styles.form__box}>
             <input
               type="text"
-              name="assunto"
+              name="user_subject"
               required
               placeholder="Informe seu assunto.."
               className={styles.form__input}
             />
             <textarea
-              name="message"
+              name="user_message"
               required
               placeholder="Informe sua mensagem.."
               className={styles.form__input}
@@ -104,7 +117,7 @@ export default function Contact() {
               cols={300}
             />
           </div>
-          <button className={styles.botao}>Enviar Mensagem</button>
+          <button className={styles.botao} type='submit'>Enviar Mensagem</button>
         </form>
       </section>
     </>
