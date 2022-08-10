@@ -29,8 +29,9 @@
     left: 0;
     transition: $transition;
     top: 80px;
-    overflow: auto;
+    overflow: hidden;
     visibility: hidden;
+    
 
     @include desktop {
       @include alignItens-justifyContent(flex-start, flex-end);
