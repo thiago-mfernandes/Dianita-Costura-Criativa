@@ -9,13 +9,13 @@ import emailjs from 'emailjs-com';
 function sendEmail(e:any) {
   e.preventDefault();
 
-  emailjs.sendForm('dianitaMessage', 'dianitaTemplate', 'form.current', 'IPIHhrT_YpoRh8ivr')
+  emailjs.sendForm('dianitaMessage', 'dianitaTemplate', e.target, 'IPIHhrT_YpoRh8ivr')
     .then((result) => {
       alert('Mensagem enviada com sucesso!');
     }, (error) => {
       alert(error.message);
     });
-    e.target.reset();
+  e.target.reset();
 }
 
 export default function Contact() {
