@@ -83,7 +83,7 @@
     @include alignItens-justifyContent(center, flex-start);
     width: 100%;
     &:last-of-type {
-      margin-bottom: $m-b-10;
+      margin-bottom: $m-b-2;
     }
   }
 
@@ -117,3 +117,4 @@
     margin: 0;
   }
 }
+

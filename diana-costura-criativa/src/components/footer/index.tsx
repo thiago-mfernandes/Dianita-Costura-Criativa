@@ -6,8 +6,30 @@ import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { showContentVariants } from 'animation/showContentVariants';
+import emailjs from 'emailjs-com';
+import { useState } from 'react';
+import Message from 'components/contact/Mensagem';
 
 export default function Footer() {
+
+  const [sendMessage, setSendMessage] = useState(false);
+
+  function sendEmail(e:any) {
+    e.preventDefault();  
+  
+    emailjs.sendForm('dianitaMessage', 'dianitaNewsletter', e.target, 'IPIHhrT_YpoRh8ivr')
+      .then((result) => {
+        setTimeout(() => {
+          setSendMessage(true);
+        }, 100);
+        setTimeout(() => {
+          setSendMessage(false);
+        },4500);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
+  }
 
   const rotas = [{
     label: 'Home', 
@@ -124,7 +146,8 @@ export default function Footer() {
             }
           </motion.div>
 
-          <motion.div 
+          <motion.form
+            onSubmit={sendEmail} 
             variants={showContentVariants}
             initial='offScreen'
             whileInView='onScreen'
@@ -134,18 +157,22 @@ export default function Footer() {
             <h2 className={styles.footerContainer__newsletter___title}>
               Novidades
             </h2>
+            {sendMessage ? <Message type='footer'/> : <span></span> }
             <p className={styles.footerContainer__newsletter___content}>
               Cadastre seu email para receber notificações de novos produtos
             </p>
             <input
               className={styles.footerContainer__newsletter___input}
-              type="text"
+              type="email"
               placeholder="info@example.com"
             />
-            <button className={styles.footerContainer__newsletter___button}>
+            <button 
+              type='submit'
+              className={styles.footerContainer__newsletter___button}
+            >
               Assinar
             </button>
-          </motion.div>
+          </motion.form>
         </div>
 
         <motion.div 
