@@ -21,6 +21,10 @@
     flex-wrap: wrap;
     padding: 5%;
 
+    @include desktop {
+      padding: 0;
+    }
+
     & > a {
       @extend .linkBotaoSaibaMais;
     }

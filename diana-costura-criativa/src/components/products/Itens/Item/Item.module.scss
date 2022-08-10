@@ -41,7 +41,7 @@
     margin: 0;
     padding: 2.5%;
     @include desktop {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
 
     & span {
@@ -62,7 +62,7 @@
       flex-grow: 2;
     }
     @include desktop {
-      font-size: 1.25rem;
+      font-size: 1rem;
       flex-grow: 2;
     }
   }

@@ -25,16 +25,16 @@
   }
 
   @include desktop {
-    @include color-fontSize($laranjaPrincipal, 1.75rem);
+    @include color-fontSize($laranjaPrincipal, 1.25rem);
     width: 75%;
     &:hover {
-      @include color-fontSize($branco, 1.85rem);
+      @include color-fontSize($branco, 1.35rem);
       box-shadow: $boxShadow-24;
       transform: translateY(-10px);
       transition: $transition;
     }
     &:active {
-      @include color-fontSize($laranjaPrincipal, 1.85rem);
+      @include color-fontSize($laranjaPrincipal, 1.35rem);
       background-color: $marromAcinzentado;
       transition: $transition;
     }

@@ -51,6 +51,9 @@
     &___content {
       @include color-fontSize($branco, 1rem);
       margin: 5% 0;
+      @include desktop {
+        width: 80%;
+      }
     }
   }
 
@@ -123,6 +126,8 @@
     }
 
     @include desktop {
+      @include alignItens-justifyContent(center, center);
+      @include display-flexDirection(flex, column);
       margin: 0 2.5%;
       width: 47.5%;
     }
@@ -130,9 +135,11 @@
     &___title {
       @extend .title;
       color: $rosaPadrao;
+      font-size: 1.75rem;
       text-align: left;
       @include desktop {
         margin: 2.5% 0;
+        text-align: center;
       }
     }
 
@@ -168,6 +175,7 @@
     &___title {
       @extend .title;
       color: $rosaPadrao;
+      font-size: 1.75rem;
       text-align: left;
       @include desktop {
         margin: 2.5% 0;

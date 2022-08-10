@@ -34,14 +34,16 @@
     
 
     @include desktop {
-      @include alignItens-justifyContent(flex-start, flex-end);
+      @include alignItens-justifyContent(center, flex-start);
       @include display-flexDirection(flex, row);
-      @include height-width(fit-content, 70%);
+      @include height-width(80px, 50%);
       padding-right: 0;
-      right: 7.5%;
+      right: 0;
+      left: 40%;
       top: 0px;
       transform: translate(0%);
       transition: $transition;
+      visibility: visible;
     }
   }
 
