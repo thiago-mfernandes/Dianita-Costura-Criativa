@@ -193,7 +193,7 @@ export default function Footer() {
           <p>
             Designed by{' '}
             <a
-              href="https://www.instagram.com/thiago_mfernandes/"
+              href="https://wa.me/5519984009105"
               target="_blank"
               rel="noreferrer"
             >
