@@ -273,6 +273,18 @@
         "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.8.jpeg",
         "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.9.jpeg"
       ]
+    },
+    {
+      "id": 18,
+      "title": "Cata-Caca",
+      "type": "Mini Necessaire",
+      "preco": "R$15.00",
+      "description": "Material externo nylon e forro 100% algodão.",
+      "photo": "assets/produtos/cata-caca/cata-caca.jpeg",
+      "photoSlider": [
+        "assets/produtos/porta-talher-e-jogo-americano/p-talher-americano-1.jpg"
+      ],
+      "link": "https://www.instagram.com/reel/Ci2K19NLk76/"
     }
   ]
 }

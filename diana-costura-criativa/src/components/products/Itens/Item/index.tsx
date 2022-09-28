@@ -10,6 +10,7 @@ interface Props {
   description: string;
   photo: string;
   photoSlider: string[];
+  link?: string
 }
 
 {
@@ -24,7 +25,7 @@ interface Props {
     */
 }
 
-function Item({ id, title, preco, description, photo}: Props) {
+function Item({ id, title, preco, description, photo, link}: Props) {
   
   //const rota = [{to: 'produto'}];
   //id === 1 && console.log(title);
@@ -57,6 +58,18 @@ function Item({ id, title, preco, description, photo}: Props) {
             Comprar            
           </button> 
         </a>
+        {
+          link 
+            ? <button className={styles.produtosAction__howUse}>
+              <a
+                href={link}
+                target='_blank'
+                rel='noreferrer'>
+                  Como Usar?
+              </a>
+            </button>
+            : ''
+        }
       </div>
     </motion.div> 
   );
