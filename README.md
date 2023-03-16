@@ -121,17 +121,19 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - **[Typescript](https://www.typescriptlang.org/)**
 
--  **[Jest](https://jestjs.io/pt-BR/)**
+- **[Jest](https://jestjs.io/pt-BR/)**
 
--  **[Rocketseat Unform](https://github.com/unform/unform)**
+- **[Rocketseat Unform](https://github.com/unform/unform)**
 
 - **[Emailjs](https://www.emailjs.com/)**
 
 - **[Framer Motion](https://www.framer.com/motion/)**
 
+- **[Sass](https://sass-lang.com/)**
+
 #### **Utilitários**
 
--   **[React Icons](https://react-icons.github.io/react-icons/)**
+- **[React Icons](https://react-icons.github.io/react-icons/)**
 
 - **[Json Server](https://github.com/typicode/json-server)**
 
