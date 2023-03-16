@@ -40,7 +40,7 @@ Projeto desenvolvido com o intuito de expandir os canais de comunicação, fazer
 - - [x] Filtro de produtos por categorias
 - - [x] Listagem de produtos
 - - [x] Botão de ação de compra
-- [x] Poílítica de devolução
+- [x] Política de devolução
 - [x] Localização
 - [x] Depoimentos
 - [x] Formulário de contato
