@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./diana-costura-criativa/src/assets/hero.jpg" />
+  <img alt="Capa do site" src="./diana-costura-criativa/src/assets/hero.jpg" />
 </h1>
 
 # Dianita Costura Criativa
