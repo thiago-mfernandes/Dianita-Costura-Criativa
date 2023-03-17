@@ -32,7 +32,7 @@ Projeto desenvolvido com o intuito de expandir os canais de comunicação, fazer
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙ Funcionalidades
 
 - [x] Quem somos
 - [x] Meus Materiais
