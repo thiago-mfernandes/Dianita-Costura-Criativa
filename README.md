@@ -68,10 +68,10 @@ O layout da aplicação está disponível no Figma:
 ### 💻 Web
 
 <p align="center">
-  <img alt="Imagem da pagina home" src="./diana-costura-criativa/src/assets/desktop-home-page.jpg" width="400px">
-  <img alt="Imagem da pagina de filtro de produtos" src="./diana-costura-criativa/src/assets/desktop-materials.jpg" width="400px">
-  <img alt="Imagem da pagina de produtos" src="./diana-costura-criativa/src/assets/desktop-filter-products.jpg" width="400px">
-  <img alt="Imagem da pagina de contato" src="./diana-costura-criativa/src/assets/desktop-contact.jpg" width="400px">
+  <img alt="Imagem da pagina home" src="./diana-costura-criativa/src/assets/desktop-home-page.jpg" width="300px">
+  <img alt="Imagem da pagina de filtro de produtos" src="./diana-costura-criativa/src/assets/desktop-materials.jpg" width="300px">
+  <img alt="Imagem da pagina de produtos" src="./diana-costura-criativa/src/assets/desktop-filter-products.jpg" width="300px">
+  <img alt="Imagem da pagina de contato" src="./diana-costura-criativa/src/assets/desktop-contact.jpg" width="300px">
 </p>
 
 ---
